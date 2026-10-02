@@ -6,6 +6,65 @@ Choices the brief left open (BRIEF section 13), with the reason for each. Newest
 
 - **Optional 3D map view (three.js).** The 2D map stays the default, as the brief requires. An "Explore in 3D" toggle on the Map tab shows the same clusters, colours and click-to-open panel in 3D. three.js (MIT) is bundled into the page, adding about 0.7 MB toward the 8 MB budget, so it works offline and needs no CDN. It is scheduled for M6 unless it's moved earlier.
 
+## M2: papers
+
+### Analysis files
+
+- **Who writes what.** The thinking stage (`/study-papers`) writes `analysis/topics.json` and `analysis/papers.json`. The CLI derives `analysis/weightage.json` and `report.md` from them and never changes them. `studymap schema topics|papers` prints the JSON Schema, which is also the interface for a later `--api` mode.
+- **Why `topics.json`.** The brief lists only `papers.json` and `weightage.json`, but questions need topic ids before content nodes exist (M3). M3 turns each topic into one or more nodes and keeps the ids. Topics can carry slide and lab page ranges as sources, so slide emphasis and coverage can be computed.
+- **Granularity.** One question is the smallest part that carries its own marks, so 2025 Q1c becomes (i), (ii) and (iii).
+- **Validation.** `validate` checks the analysis against `course.yaml` and the corpus, and reports every problem as `file:line`:
+  - every cited page, slide or line range must exist;
+  - an exam paper's marks must add up to its total (unless `marks_note` explains a choice);
+  - repeats must point to another paper;
+  - a question with no topic needs an `unmapped_reason`;
+  - a reduced `relevance` needs a reason.
+
+  Mode and type mismatches against the brief's rules are warnings.
+- **Scanned papers.** Claude reads them from the page renders, and `transcribed_from_image` marks every question from a scan as unverified in the report. There is no OCR, because tesseract isn't installed; the 2024 OS phone scan read cleanly anyway.
+
+### Weightage
+
+- **Paper share.** A topic's share of a paper is the marks it got divided by the paper's total. A question's marks are split evenly between its topics. Papers are averaged, weighted by their `relevance` (0–1, with a reason). The 2024 OS paper counts at 0.5: it was set before the current offering, in a different format, and asks three questions on material that isn't in the current slides.
+- **Slides as a prior.** The paper share is blended with slide emphasis (the topic's share of covered, non-duplicate slides), the slides counting as one more paper: `(R × papers + slides) / (R + 1)`, where R is the summed relevance. With no papers this becomes slides alone, the brief's fallback, and the report and Plan tab say so. With few papers, topics that were taught but not yet asked keep some weight.
+- **Sample questions** have no marks. They don't move shares, but they count toward each topic's mode and appear wherever its questions are listed.
+- **Weight classes.** Points are a topic's share × its exam's weight in the grade, summed over exams. Topics making up the first 50% of points are high, the next 30% med, and the rest low.
+- **Mode per topic.** The dominant mode among its questions, by marks × relevance. Ties go to apply, then understand, because practice takes longest.
+- **Study order.** It is computed per exam, not course-wide. The course-wide order was dominated by the compre, which has no papers and so runs on slides alone, and the next exam is what matters. Each exam's list runs until 80% of its share; the rest is listed after it.
+
+### Report and Plan tab
+
+- **`report.md`** is regenerated on every `report` and `build`, and written only when it changes. It has these sections:
+  - at a glance, and "read this first" notes;
+  - patterns;
+  - weightage per exam;
+  - what to study per exam;
+  - weights for the whole course;
+  - repeats;
+  - papers analysed;
+  - coverage;
+  - unverified;
+  - how the numbers are made.
+- **Plan tab chart.** A ranked bar list in one hue. Per the dataviz rules, that's one series with no value ramp and no per-cluster bar colours; cluster identity comes from a swatch beside the label. Every row also shows its value, so the tooltip (on hover, focus or tap) only adds the breakdown. Bars are 14 px with a 4 px rounded end.
+- **Bar colour.** `--bar` is `#3A44AE` in light mode and `#7B84E6` in dark mode, both validated against their surfaces with the dataviz validator. The site's dark accent `#A7AEFF` failed the dark lightness band.
+- **Mode split.** Shown as stat tiles (practise, understand, memorise), not a chart.
+- **Optional map.** A course builds as soon as its papers are analysed (Plan tab only), and the map joins once there is content. `build` also refreshes `report.md`.
+- **Past questions.** The Plan's study order opens each topic to its past questions with the key's answers. The full Past papers tab, with generated and verified solutions, comes in M4.
+- **`check`** now exercises the Plan tab on every viewport:
+  - bars render;
+  - a hover, a tap on phones, and keyboard focus show the tooltip;
+  - opening a topic shows its questions;
+  - the exam switch redraws the page.
+
+### Ingest additions
+
+- **`corpus/outline.md`.** Every source on a line or two: titles per page with near-duplicates left out, `[img]` marks on visual pages, papers with their keys, and labs by language. The analysis stage plans from it instead of loading every slide (10 KB for the whole OS course).
+
+### course.yaml, without changing the contract
+
+- **OS syllabus.** The midsem date, cheat-sheet rule and calculator go in the midsem `format`. The syllabus goes in `notes_for_claude`, the one-sheet allowance is `cheatsheet.pages: 2`, and the Pintos assignments are excluded with `ignore`.
+- **Proposed fields.** Optional per-exam `date` and `covers` (decks or topics) would let the Plan count down to the exam and scope the slide prior to its syllabus. That changes the folder contract, so it needs your approval first.
+
 ## M1: skeleton
 
 ### Project and tooling
