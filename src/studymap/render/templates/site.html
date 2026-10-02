@@ -12,7 +12,7 @@
    CUSTOMISE PER TOPIC: --band / --band-ink, --accent, --warm, --font-display, and the GLYPH in the script. */
 :root {
   --bg: #F3F4F6; --surface: #FFFFFF; --surface-2: #ECEEF3; --ink: #1A1D2B; --muted: #555A6D; --faint: #7F8496; --line: #D9DCE4;
-  --accent: #3A44AE; --accent-ink: #FFFFFF; --accent-soft: #E5E7F7;
+  --accent: #3A44AE; --accent-ink: #FFFFFF; --accent-soft: #E5E7F7; --bar: #3A44AE;
   --warm: #B96F0E; --warm-hi: #E9A13B; --warm-soft: #FAEBD3;
   --band: #E4E6EF; --band-ink: #2B3050;
   --good: #1D7648; --good-soft: #DDF1E5; --bad: #B3372B; --bad-soft: #FAE1DD;
@@ -26,7 +26,7 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0E0F15; --surface: #161821; --surface-2: #1E2130; --ink: #ECE9E1; --muted: #A9ACBB; --faint: #7D8194; --line: #2A2E3D;
-    --accent: #A7AEFF; --accent-ink: #11131C; --accent-soft: #232848;
+    --accent: #A7AEFF; --accent-ink: #11131C; --accent-soft: #232848; --bar: #7B84E6;
     --warm: #F2B347; --warm-hi: #FFD27A; --warm-soft: #372A12; --band: #1C1F2D; --band-ink: #D8DBF0;
     --good: #66D39C; --good-soft: #13301F; --bad: #FF8F82; --bad-soft: #3A1916;
     --k0: #58C6BE; --k1: #F27D70; --k2: #D4C35B; --k3: #D597CC; --k4: #F4A65A; --k5: #76C97C;
@@ -36,7 +36,7 @@
 }
 :root[data-theme="dark"] {
   --bg: #0E0F15; --surface: #161821; --surface-2: #1E2130; --ink: #ECE9E1; --muted: #A9ACBB; --faint: #7D8194; --line: #2A2E3D;
-  --accent: #A7AEFF; --accent-ink: #11131C; --accent-soft: #232848;
+  --accent: #A7AEFF; --accent-ink: #11131C; --accent-soft: #232848; --bar: #7B84E6;
   --warm: #F2B347; --warm-hi: #FFD27A; --warm-soft: #372A12; --band: #1C1F2D; --band-ink: #D8DBF0;
   --good: #66D39C; --good-soft: #13301F; --bad: #FF8F82; --bad-soft: #3A1916;
   --k0: #58C6BE; --k1: #F27D70; --k2: #D4C35B; --k3: #D597CC; --k4: #F4A65A; --k5: #76C97C;
@@ -269,6 +269,62 @@ table.tbl td:first-child { font-weight: 650; color: var(--warm); width: 34%; }
 .score { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .foot { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
 .foot summary { cursor: pointer; font-weight: 600; }
+/* plan */
+.plan-top { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin-bottom: 8px; }
+.plan-top h2 { margin: 0; }
+#plan-basis { margin: 0 0 16px; }
+.readme { background: var(--warm-soft); border-radius: var(--radius); padding: 12px 16px; margin-bottom: 16px; font-size: 14.5px; }
+.readme ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 10px; margin-bottom: 16px; }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; }
+.kpi .v { font-size: 28px; font-weight: 640; line-height: 1.1; }
+.kpi .l { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.plan-grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); align-items: start; margin-bottom: 16px; }
+@media (min-width: 1040px) { .plan-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } }
+.pcard { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow); min-width: 0; margin-bottom: 16px; }
+.plan-grid .pcard { margin-bottom: 0; }
+.pcard h3 { font-size: 17px; margin: 0 0 2px; }
+.pcard .sub { color: var(--muted); font-size: 13.5px; margin: 0 0 12px; }
+table.bars { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px; }
+table.bars td { padding: 4px 0; vertical-align: middle; }
+table.bars tr { outline-offset: -2px; }
+table.bars col.cn { width: 28px; } table.bars col.ct { width: 40%; } table.bars col.cv { width: 118px; }
+table.bars .n { color: var(--faint); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+table.bars .t { padding-right: 10px; overflow-wrap: break-word; line-height: 1.3; }
+table.bars .t .sw { margin-right: 7px; vertical-align: 1px; }
+table.bars .bar { height: 14px; background: var(--bar); border-radius: 0 4px 4px 0; min-width: 3px; }
+table.bars tr:hover .bar, table.bars tr:focus-visible .bar { opacity: .78; }
+table.bars .v { padding-left: 10px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.bars .v .m { color: var(--muted); font-size: 12.5px; margin-left: 4px; }
+@media (max-width: 719px) { table.bars col.ct { width: 50%; } table.bars col.cv { width: 54px; } table.bars col.cn { width: 22px; } table.bars .v .m { display: none; } }
+.ptip { position: fixed; }
+.ptip .tv { font-weight: 650; } .ptip .tl { opacity: .85; }
+.tag.apply { background: var(--accent-soft); color: var(--accent); }
+.tag.understand { background: var(--warm-soft); color: var(--warm); }
+.tag.recall, .tag.slides { background: var(--surface-2); color: var(--muted); }
+.order { margin: 0; padding-left: 26px; display: grid; gap: 6px; }
+.order > li > details > summary { cursor: pointer; }
+.order .meta { color: var(--muted); font-size: 13.5px; font-variant-numeric: tabular-nums; }
+.later { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+.modes3 { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
+.modes3 ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; font-size: 14px; }
+.modes3 .sw { margin-right: 7px; }
+.patterns { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.patterns > li > p { margin: 0 0 4px; }
+.pq { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--bg); margin-top: 6px; }
+.pq summary { cursor: pointer; font-size: 14px; }
+.pq .where { font-size: 12.5px; font-weight: 650; color: var(--ink); margin-right: 4px; }
+.pq-body { font-size: 14.5px; margin-top: 6px; min-width: 0; }
+.pq-body p { margin: 6px 0; }
+.pq-body pre { background: var(--surface-2); padding: 8px 10px; border-radius: 6px; overflow-x: auto; font-size: 13px; line-height: 1.45; }
+.pq-body code { font-size: .92em; }
+.pq-ans { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 6px; }
+.caveat { background: var(--bad-soft); border-radius: 6px; padding: 6px 8px; font-size: 13.5px; }
+.tblwrap { overflow-x: auto; }
+table.mini { border-collapse: collapse; font-size: 13px; margin: 6px 0; font-variant-numeric: tabular-nums; }
+table.mini th, table.mini td { border: 1px solid var(--line); padding: 2px 8px; text-align: left; }
+.gaps { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14.5px; }
+.muted { color: var(--muted); }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
 </style>
 </head>
@@ -289,6 +345,7 @@ table.tbl td:first-child { font-weight: 650; color: var(--warm); width: 34%; }
 
 <nav class="tabs-bar" aria-label="Sections">
   <div class="wrap"><div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-view="plan" aria-selected="false">Plan</button>
     <button class="tab" role="tab" data-view="map" aria-selected="true">Map</button>
     <button class="tab" role="tab" data-view="atlas" aria-selected="false">Atlas <span class="count" id="c-atlas"></span></button>
     <button class="tab" role="tab" data-view="sheets" aria-selected="false">Cram sheets</button>
@@ -297,6 +354,24 @@ table.tbl td:first-child { font-weight: 650; color: var(--warm); width: 34%; }
 </nav>
 
 <main class="wrap">
+  <section class="view" id="v-plan" hidden aria-label="Plan">
+    <div class="plan-top"><h2>Exam plan</h2><div class="seg" id="plan-exam" role="group" aria-label="Choose an exam"></div></div>
+    <p class="lede" id="plan-basis"></p>
+    <div class="readme" id="plan-notes" hidden></div>
+    <div class="kpis" id="plan-kpis"></div>
+    <div class="plan-grid">
+      <section class="pcard" aria-labelledby="h-bars"><h3 id="h-bars">Where the marks are</h3><p class="sub" id="plan-bars-sub"></p>
+        <table class="bars" id="plan-bars"></table><button class="btn" type="button" id="plan-more" hidden style="margin-top:10px"></button></section>
+      <section class="pcard" aria-labelledby="h-order"><h3 id="h-order">Study in this order</h3><p class="sub">Open a topic to see the past questions on it, with the key's answers.</p>
+        <ol class="order" id="plan-order"></ol><p class="later" id="plan-later"></p></section>
+    </div>
+    <section class="pcard" id="plan-patterns-card" aria-labelledby="h-pat"><h3 id="h-pat">How the paper asks it</h3><p class="sub">Patterns that repeat across the papers, each with the questions behind it.</p><ul class="patterns" id="plan-patterns"></ul></section>
+    <section class="pcard" aria-labelledby="h-modes"><h3 id="h-modes">Practise, understand or cram</h3><p class="sub">What kind of knowing each topic needs, judged from how the papers ask it.</p><div class="modes3" id="plan-modes"></div></section>
+    <div class="plan-grid">
+      <section class="pcard" aria-labelledby="h-types"><h3 id="h-types">Question types</h3><p class="sub" id="plan-types-sub"></p><table class="bars" id="plan-types"></table></section>
+      <section class="pcard" aria-labelledby="h-gaps"><h3 id="h-gaps">Gaps and unverified</h3><ul class="gaps" id="plan-gaps"></ul></section>
+    </div>
+  </section>
   <section class="view" id="v-map" aria-label="Map">
     <div class="map-layout">
       <div class="map-stage" id="stage">
@@ -389,7 +464,11 @@ $("#brand-glyph").querySelectorAll(".bg1").forEach(e => e.style.fill = "var(--wa
 $("#brand-glyph").querySelectorAll(".bg2").forEach(e => e.style.fill = "var(--warm-hi)");
 $("#brand-glyph").querySelectorAll(".bg3").forEach(e => { e.style.fill = "none"; e.style.stroke = "var(--warm)"; e.style.strokeWidth = "4"; });
 const m = D.meta;
-$("#stats").innerHTML = `<span><b>${m.nodes}</b>ideas</span><span><b>${m.edges}</b>links</span><span><b>${m.facts}</b>facts</span>${m.questions ? `<span><b>${m.questions}</b>questions</span>` : ""}`;
+const HAS_MAP = D.nodes.length > 0;
+if (HAS_MAP) $("#stats").innerHTML = `<span><b>${m.nodes}</b>ideas</span><span><b>${m.edges}</b>links</span><span><b>${m.facts}</b>facts</span>${m.questions ? `<span><b>${m.questions}</b>questions</span>` : ""}`;
+else if (D.plan) { const c = D.plan.counts; $("#stats").innerHTML = `<span><b>${c.papers}</b>past papers</span><span><b>${c.questions}</b>questions</span><span><b>${c.topics}</b>topics</span>`; }
+if (!D.plan) $('.tab[data-view="plan"]').hidden = true;
+if (!HAS_MAP) { $('.tab[data-view="map"]').hidden = true; $('.tab[data-view="atlas"]').hidden = true; }
 $("#c-atlas").textContent = m.nodes; $("#c-q").textContent = m.questions || "";
 if (!D.sheets.length) $('.tab[data-view="sheets"]').hidden = true;
 if (!D.sets.length) $('.tab[data-view="questions"]').hidden = true;
@@ -401,13 +480,14 @@ if (D.cfg.sources.length) foot.push(`<details><summary>Sources (${D.cfg.sources.
 $("#foot").innerHTML = foot.join("");
 
 // router
-const VIEWS = ["map", "atlas", "sheets", "questions"];
+const VIEWS = ["plan", "map", "atlas", "sheets", "questions"];
+const firstView = () => VIEWS.find(v => !$(`.tab[data-view="${v}"]`).hidden) || "map";
 const done = {};
 function show(view, o = {}) {
-  if (!VIEWS.includes(view) || $(`.tab[data-view="${view}"]`).hidden) view = "map";
+  if (!VIEWS.includes(view) || $(`.tab[data-view="${view}"]`).hidden) view = firstView();
   VIEWS.forEach(v => $("#v-" + v).hidden = v !== view);
   $$(".tab").forEach(t => t.setAttribute("aria-selected", String(t.dataset.view === view)));
-  if (!done[view]) { done[view] = true; ({ atlas: () => Atlas.build(), sheets: renderSheets, questions: () => Qs.build() })[view]?.(); }
+  if (!done[view]) { done[view] = true; ({ plan: () => Plan.build(), atlas: () => Atlas.build(), sheets: renderSheets, questions: () => Qs.build() })[view]?.(); }
   if (view === "map") Map_.resize();
   if (!o.keep) window.scrollTo(0, 0);
   if (!o.noHash) { try { history.replaceState(null, "", "#" + view); } catch (e) {} }
@@ -424,7 +504,7 @@ document.addEventListener("click", ev => {
 });
 
 // map
-const Map_ = (() => {
+const Map_ = !HAS_MAP ? { select() {}, resize() {}, fit() {}, get selected() { return null; } } : (() => {
   const svg = $("#mapsvg"), vp = $("#vp"), stage = $("#stage"), tip = $("#tip");
   const [bx0, by0, bx1, by1] = D.meta.bounds;
   let T = { k: 1, x: 0, y: 0 }, selected = null, W = 0, H = 0, fitted = false;
@@ -670,7 +750,110 @@ const Qs = (() => {
   return { build, reveal: revealQ };
 })();
 
-function boot() { const h = (location.hash || "").slice(1); show(VIEWS.includes(h) ? h : store.get("view", "map"), { noHash: true }); Map_.fit(false); Panel(null); }
+// plan: where the marks are and what to do first. Labels go in with esc() or textContent: they are data.
+const Plan = (() => {
+  const P = D.plan;
+  if (!P) return { build() {} };
+  const T = P.topics, QD = P.questions;
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const pct = x => (x >= 0.095 || x === 0) ? Math.round(x * 100) + "%" : (x * 100).toFixed(1) + "%";
+  const num = x => String(Math.round(x * 10) / 10);
+  const MODE = { apply: "practise", understand: "understand", recall: "cram" };
+  const modeTag = id => { const m = T[id].mode; return m ? `<span class="tag ${m}">${MODE[m]}</span>` : `<span class="tag slides">slides only</span>`; };
+  const sw = id => `<span class="sw k${T[id].color}" aria-hidden="true"></span>`;
+  const COLS = `<colgroup><col class="cn"><col class="ct"><col><col class="cv"></colgroup>`;
+  let cur = store.get("plan-exam", P.default_exam), all = false, built = false;
+  if (!P.exams.some(e => e.name === cur)) cur = P.default_exam;
+  const tip = el("div", { class: "tooltip ptip", role: "tooltip" }); tip.hidden = true; document.body.appendChild(tip);
+  function qItem(id) {
+    const q = QD[id]; if (!q) return "";
+    const ans = q.answer ? `<div class="pq-ans"><div class="sect-h">${q.hints ? "Hints" : "Answer (key)"}</div>${q.answer}</div>`
+                         : `<p class="muted">No answer in the key yet: worked solutions come in M4.</p>`;
+    return `<details class="pq"><summary><span class="where">${esc(q.label)}</span> ${esc(q.type)} · ${MODE[q.mode]}</summary><div class="pq-body">${q.text}${ans}${q.caveat ? `<p class="caveat"><b>Careful:</b> ${q.caveat}</p>` : ""}</div></details>`;
+  }
+  function showTip(tr, x, y) {
+    const E = P.exams.find(e => e.name === cur), t = E.topics.find(t => t.id === tr.dataset.t), info = T[t.id];
+    tip.textContent = "";
+    const line = (cls, text) => { const d = document.createElement("div"); if (cls) d.className = cls; d.textContent = text; tip.appendChild(d); };
+    line("tv", `${pct(t.share)} of the ${E.name}` + (E.reference_total ? ` · ≈${num(t.share * E.reference_total)} of ${num(E.reference_total)} marks` : ""));
+    line("", info.name);
+    if (E.basis === "papers+slides") line("tl", `papers ${pct(t.paper_share)} · slides ${pct(t.slide_share)}`);
+    const marks = E.papers.filter(p => t.marks[p.id]).map(p => `${p.label}: ${num(t.marks[p.id])} marks`);
+    if (marks.length) line("tl", marks.join(" · "));
+    if (t.samples.length) line("tl", `${t.samples.length} sample question${t.samples.length > 1 ? "s" : ""}`);
+    tip.hidden = false;
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    tip.style.left = Math.max(8, Math.min(window.innerWidth - w - 8, x + 14)) + "px";
+    tip.style.top = Math.max(8, Math.min(window.innerHeight - h - 8, y + 14)) + "px";
+  }
+  function barRows(rows, max, tipOn) {
+    return rows.map((r, i) => `<tr ${tipOn ? `tabindex="0" data-t="${esc(r.id)}"` : ""}><td class="n">${i + 1}</td><td class="t">${r.label}</td><td><div class="bar" style="width:${(100 * r.value / max).toFixed(1)}%"></div></td><td class="v">${r.v}</td></tr>`).join("");
+  }
+  function render() {
+    const E = P.exams.find(e => e.name === cur), RT = E.reference_total;
+    $$("#plan-exam button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.e === cur)));
+    const np = E.papers.length;
+    const basis = { "papers+slides": `Weights from ${np} past paper${np === 1 ? "" : "s"} (${E.papers.map(p => esc(p.label) + (p.relevance < 1 ? `, counted at ${pct(p.relevance)} weight` : "")).join("; ")}), blended with slide emphasis (the slides count ${pct(E.slide_prior)}).`,
+      papers: `Weights from ${np} past papers.`, slides: "<b>No past papers for this exam yet.</b> The weights come from how many slides each topic gets: treat them as a rough guide.", none: "Nothing to go on yet." }[E.basis];
+    $("#plan-basis").innerHTML = (E.weight != null ? `The <b>${esc(E.name)}</b> is ${num(E.weight)}% of the grade. ` : "") + (E.format ? esc(E.format) + " " : "") + basis;
+    // headline numbers: how the marks split by kind of knowing
+    const kp = [];
+    if (E.modes.length) { const by = Object.fromEntries(E.modes.map(m => [m.mode, m.share])); for (const [m, lab] of [["apply", "of marks: practise problems"], ["understand", "of marks: explain and justify"], ["recall", "of marks: memorise"]]) kp.push(`<div class="kpi"><div class="v">${pct(by[m] || 0)}</div><div class="l">${lab}</div></div>`); }
+    if (RT) { const ref = E.papers[0]; kp.push(`<div class="kpi"><div class="v">${num(RT)}</div><div class="l">marks in the ${esc(ref.label)} paper</div></div>`); }
+    if (!E.modes.length) kp.push(`<div class="kpi"><div class="v">${E.topics.length}</div><div class="l">topics weighted from the slides</div></div>`);
+    $("#plan-kpis").innerHTML = kp.join("");
+    // bars: one hue, value at the end; hover or focus a row for the breakdown
+    const rows = E.topics.filter(t => t.share > 0), shown = all ? rows : rows.slice(0, 12), max = rows.length ? rows[0].share : 1;
+    $("#plan-bars-sub").textContent = `Expected share of the ${E.name}` + (RT ? `, and ≈ marks out of ${num(RT)}` : "") + ". Hover or focus a row for the breakdown.";
+    $("#plan-bars").innerHTML = `<caption class="sr-only">Share of the ${esc(E.name)} by topic</caption>${COLS}<tbody>` + barRows(shown.map(t => ({ id: t.id, label: sw(t.id) + esc(T[t.id].label), value: t.share, v: pct(t.share) + (RT ? `<span class="m">≈${num(t.share * RT)}</span>` : "") })), max, true) + "</tbody>";
+    const more = $("#plan-more"); more.hidden = rows.length <= 12; more.textContent = all ? "Show the top 12" : `Show all ${rows.length} topics`;
+    // the order: topics until 80% of the share, then the rest in one line
+    let run = 0; const first = [], rest = [];
+    for (const t of rows) { if (run < 0.8) { first.push(t); run += t.share; } else rest.push(t); }
+    $("#plan-order").innerHTML = first.map(t => { const qs = t.questions.concat(t.samples); return `<li><details><summary><b>${esc(T[t.id].label)}</b> ${modeTag(t.id)} <span class="meta">${pct(t.share)}${RT ? ` · ≈${num(t.share * RT)} marks` : ""}${qs.length ? ` · asked ${qs.length}×` : ""}</span></summary>${qs.length ? qs.map(qItem).join("") : `<p class="muted">Not asked in the papers yet; it's here because of the slides.</p>`}</details></li>`; }).join("");
+    $("#plan-later").textContent = rest.length ? "Then, if time allows: " + rest.map(t => T[t.id].label).join(" · ") + "." : "";
+    // practise / understand / cram
+    const groups = { apply: [], understand: [], recall: [], none: [] };
+    rows.forEach(t => groups[T[t.id].mode || "none"].push(t.id));
+    $("#plan-modes").innerHTML = [["apply", "Practise", "do problems by hand"], ["understand", "Understand", "explain and justify"], ["recall", "Cram", "memorise"], ["none", "Slides only", "not asked yet"]]
+      .filter(([k]) => groups[k].length).map(([k, h, d]) => `<div><div class="sect-h">${h} · ${d}</div><ul>${groups[k].map(id => `<li>${sw(id)}${esc(T[id].label)}</li>`).join("")}</ul></div>`).join("");
+    // question types
+    $("#plan-types-sub").textContent = E.types.length ? `Share of marks in the ${E.name} papers, by type.` : "No papers for this exam yet.";
+    const tmax = E.types.length ? E.types[0].share : 1;
+    $("#plan-types").innerHTML = `<caption class="sr-only">Question types by share of marks</caption>${COLS}<tbody>` + barRows(E.types.map(x => ({ id: x.type, label: esc(x.type), value: x.share, v: pct(x.share) + `<span class="m">${x.count} q</span>` })), tmax, false) + "</tbody>";
+  }
+  function build() {
+    if (built) return; built = true;
+    const seg = $("#plan-exam");
+    P.exams.forEach(e => { const b = el("button", { type: "button", "data-e": e.name }); b.textContent = e.name; b.addEventListener("click", () => { cur = e.name; store.set("plan-exam", cur); render(); }); seg.appendChild(b); });
+    seg.hidden = P.exams.length < 2;
+    if (P.notes.length) { const n = $("#plan-notes"); n.innerHTML = `<b>Read this first</b><ul>${P.notes.map(x => `<li>${x}</li>`).join("")}</ul>`; n.hidden = false; }
+    if (P.patterns.length) $("#plan-patterns").innerHTML = P.patterns.map(p => `<li><p>${p.text}</p><details><summary class="muted">The ${p.questions.length} question${p.questions.length > 1 ? "s" : ""} behind it</summary>${p.questions.map(qItem).join("")}</details></li>`).join("");
+    else $("#plan-patterns-card").hidden = true;
+    const g = [], C = P.coverage, U = P.unverified;
+    g.push(`<li><b>${C.unmapped}</b> past questions not mapped to a topic.</li>`);
+    C.not_in_slides.forEach(t => g.push(`<li><b>${esc(t.label)}</b> was asked (${t.questions.length}×) but isn't in your slides.</li>`));
+    if (C.slides[1]) g.push(`<li>${C.slides[0]} of ${C.slides[1]} slides belong to a topic.</li>`);
+    if (U.transcribed) g.push(`<li>${U.transcribed} questions were transcribed from scans.</li>`);
+    if (U.unofficial) g.push(`<li>${U.unofficial} answers come from an unofficial key.</li>`);
+    if (U.no_answer) g.push(`<li>${U.no_answer} questions have no answer yet (M4 adds checked solutions).</li>`);
+    if (U.caveats) g.push(`<li>${U.caveats} answers carry a <b>Careful</b> note: the key looks wrong or ambiguous there.</li>`);
+    $("#plan-gaps").innerHTML = g.join("");
+    $("#plan-more").addEventListener("click", () => { all = !all; render(); });
+    const bars = $("#plan-bars");
+    bars.addEventListener("pointermove", ev => { const tr = ev.target.closest("tr[data-t]"); if (tr) showTip(tr, ev.clientX, ev.clientY); else tip.hidden = true; });
+    bars.addEventListener("pointerleave", ev => { if (ev.pointerType === "mouse") tip.hidden = true; });
+    bars.addEventListener("click", ev => { const tr = ev.target.closest("tr[data-t]"); if (tr) { const r = tr.getBoundingClientRect(); showTip(tr, r.left + r.width * 0.4, r.bottom - 6); } });
+    document.addEventListener("pointerdown", ev => { if (!ev.target.closest("#plan-bars")) tip.hidden = true; });
+    bars.addEventListener("focusin", ev => { const tr = ev.target.closest("tr[data-t]"); if (tr) { const r = tr.getBoundingClientRect(); showTip(tr, r.left + r.width * 0.4, r.bottom - 6); } });
+    bars.addEventListener("focusout", () => tip.hidden = true);
+    window.addEventListener("scroll", () => tip.hidden = true, { passive: true });
+    render();
+  }
+  return { build };
+})();
+
+function boot() { const h = (location.hash || "").slice(1); show(VIEWS.includes(h) ? h : store.get("view", firstView()), { noHash: true }); Map_.fit(false); if (HAS_MAP) Panel(null); }
 window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (VIEWS.includes(h)) show(h); });
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot); else boot();
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { if (!$("#v-map").hidden && !Map_.selected) Map_.fit(false); });

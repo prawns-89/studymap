@@ -159,6 +159,14 @@ def build_data(content: Content) -> tuple[dict, BuildStats]:
     return data, stats
 
 
+def empty_data(title: str, eyebrow: str = "") -> dict:
+    """Page data with no map, for a course that has a paper analysis but no content yet."""
+    return dict(cfg=dict(title=title, eyebrow=eyebrow, tagline="", center="", caption="", howto="", footer="", tags={},
+                         sources=[]),
+                meta=dict(nodes=0, edges=0, facts=0, questions=0, bounds=[-100, -100, 100, 100]),
+                clusters=[], nodes=[], edges=[], sheets=[], sets=[])
+
+
 def data_json(data: dict) -> str:
     return json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 

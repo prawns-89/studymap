@@ -134,10 +134,15 @@ def cmd_build(a) -> int:
         print("Fix these and run again:\n  " + "\n  ".join(map(str, e.issues)))
         return 1
     s = r.stats
-    print(f"nodes {s.nodes} · links {s.edges} · facts {s.facts} · sheets {s.sheets} · questions {s.questions} · "
-          f"label overlaps left {s.overlaps}")
-    for name, pos in s.answer_positions:
-        print(f"  {name}: answer positions {pos}")
+    if s:
+        print(f"nodes {s.nodes} · links {s.edges} · facts {s.facts} · sheets {s.sheets} · questions {s.questions} · "
+              f"label overlaps left {s.overlaps}")
+        for name, pos in s.answer_positions:
+            print(f"  {name}: answer positions {pos}")
+    else:
+        print("no map content yet: the page has the Plan tab only")
+    if r.plan:
+        print(f"plan: {len(r.plan['exams'])} exams · {len(r.plan['topics'])} topics · report.md refreshed")
     print(f"wrote {display_path(r.out)} ({r.size / 1024:.0f} KB, sha256 {r.sha256[:12]})")
     return 0
 
