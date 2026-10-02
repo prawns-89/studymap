@@ -98,6 +98,26 @@ def cmd_validate(a) -> int:
     return 1 if errors else 0
 
 
+def cmd_report(a) -> int:
+    from .analysis.report import pct
+    from .analysis.stage import run_report
+    course = _course(a.course)
+    r = run_report(course, load_config(course))
+    if not r.analysis.present:
+        print(f"studymap: no analysis yet: expected {display_path(course / OUT_DIR / 'analysis' / 'topics.json')} "
+              "(the /study-papers command writes it)", file=sys.stderr)
+        return 1
+    _print_analysis(r.analysis)
+    if r.weightage is None:
+        return 1
+    for e in r.weightage["exams"]:
+        top = [t for t in e["topics"] if t["share"] > 0][:5]
+        names = {t["id"]: t["name"] for t in r.weightage["topics"]}
+        print(f"{e['name']} ({e['basis']}): " + " · ".join(f"{names[t['id']]} {pct(t['share'])}" for t in top))
+    print(f"wrote {display_path(r.report)} and analysis/weightage.json ({r.written} changed)")
+    return 0
+
+
 def cmd_schema(a) -> int:
     import json
     from .analysis.models import PapersFile, TopicsFile
@@ -165,6 +185,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("course", type=Path)
     p.add_argument("--content", type=Path, help="content folder (default: <course>/_studymap/content)")
     p.set_defaults(fn=cmd_validate)
+
+    p = sub.add_parser("report", help="validate the paper analysis and write report.md and analysis/weightage.json")
+    p.add_argument("course", type=Path)
+    p.set_defaults(fn=cmd_report)
 
     p = sub.add_parser("schema", help="print the JSON Schema of analysis/topics.json or analysis/papers.json")
     p.add_argument("which", choices=["topics", "papers"])
