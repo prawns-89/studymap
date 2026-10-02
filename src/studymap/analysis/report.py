@@ -4,6 +4,7 @@ from __future__ import annotations
 from ..course import CourseConfig
 from .models import PapersFile, TopicsFile
 
+MODE_WORD = {"apply": "practise", "understand": "understand", "recall": "cram"}
 TYPE_WORD = {"long-explain": "explain", "code-write": "write code", "code-trace": "trace code", "code-fix": "fix code"}
 
 
@@ -34,6 +35,21 @@ class Labels:
     def topic(self, tid: str) -> str:
         return self.t[tid].name if tid in self.t else tid
 
+    def short(self, tid: str) -> str:
+        t = self.t.get(tid)
+        return (t.label or t.name) if t else tid
+
+    def q_list(self, qids: list[str]) -> str:
+        """'all 13 questions of 2025 midsem' when a list is a whole paper, else the questions one by one."""
+        parts, by_paper = [], {}
+        for q in qids:
+            by_paper.setdefault(self.q[q].paper, []).append(q)
+        for pid, lst in by_paper.items():
+            whole = [q.id for q in self.q.values() if q.paper == pid]
+            parts.append(f"all {len(lst)} questions of {self.paper(pid)}" if lst == whole and len(lst) > 3
+                         else ", ".join(self.q_short(q) for q in lst))
+        return "; ".join(parts)
+
 
 def render(cfg: CourseConfig, w: dict, topics: TopicsFile, papers: PapersFile | None, index: dict) -> str:
     L = Labels(papers, topics)
@@ -61,7 +77,7 @@ def render(cfg: CourseConfig, w: dict, topics: TopicsFile, papers: PapersFile | 
         if top:
             rt = e["reference_total"]
             out.append("  - Top topics: " + "; ".join(
-                f"{L.topic(t['id'])} {pct(t['share'])}" + (f" (≈{num(t['share'] * rt)}/{num(rt)} marks)" if rt else "")
+                f"{L.short(t['id'])} {pct(t['share'])}" + (f" (≈{num(t['share'] * rt)}/{num(rt)} marks)" if rt else "")
                 for t in top) + ".")
         if e["modes"]:
             out.append("  - By marks: " + " · ".join(f"{m['mode']} {pct(m['share'])}" for m in e["modes"]) + ".")
@@ -107,13 +123,45 @@ def render(cfg: CourseConfig, w: dict, topics: TopicsFile, papers: PapersFile | 
                 f"{TYPE_WORD.get(x['type'], x['type'])} {pct(x['share'])} ({x['count']} q)" for x in e["types"]) + ".", ""]
 
     # ------------------------------------------------------------------ study order
-    out += ["## Suggested study order", "",
-            "Whole course, by expected share of the grade" + ("" if w["weighted"] else " (exam weights missing from course.yaml: exams count equally)")
-            + ". Mode is how the papers ask it: **apply** = practise problems, **understand** = be able to explain, "
-            "**recall** = memorise.", ""]
-    out += ["| # | Topic | Weight | Mode | Asked | Points |", "|---|---|---|---|---|---|"]
+    mode_of = {t["id"]: t["mode"] for t in w["topics"]}
+    asked_n = {t["id"]: len(t["questions"]) for t in w["topics"]}
+    for e in exams:
+        if e["basis"] not in ("papers+slides", "papers"):
+            continue
+        rt = e["reference_total"]
+        out += [f"## What to study for the {e['name']}, in order", "",
+                "**practise** = do problems by hand (the papers ask you to apply it) · **understand** = be able to explain "
+                "and justify · **cram** = memorise · *slides only* = not asked in the papers yet.", ""]
+        run, rest = 0.0, []
+        for t in [t for t in e["topics"] if t["share"] > 0]:
+            if run >= 0.8:
+                rest.append(t)
+                continue
+            run += t["share"]
+            m = MODE_WORD.get(mode_of[t["id"]], "*slides only*")
+            asked = f" · asked {asked_n[t['id']]}×" if asked_n[t["id"]] else ""
+            marks = f" (≈{num(t['share'] * rt)}/{num(rt)})" if rt else ""
+            out.append(f"1. **{L.short(t['id'])}**: {m} · {pct(t['share'])}{marks}{asked}")
+        if rest:
+            out += ["", "Then, if time allows: " + " · ".join(L.short(t["id"]) for t in rest) + "."]
+        out.append("")
+        groups = {}
+        for t in e["topics"]:
+            if t["share"] > 0:
+                groups.setdefault(mode_of[t["id"]], []).append(L.short(t["id"]))
+        for mode, word in (("apply", "Practise"), ("understand", "Understand"), ("recall", "Cram"), (None, "Slides only")):
+            if groups.get(mode):
+                out.append(f"- **{word}:** " + " · ".join(groups[mode]))
+        out.append("")
+
+    out += ["## Weights for the whole course", "",
+            "By expected share of the grade" + ("" if w["weighted"] else " (exam weights missing from course.yaml: exams count "
+            "equally)") + ". The weight sets how deep the study material goes in M3.", "",
+            "| # | Topic | Weight | Mode | Asked | " + ("≈ % of grade" if w["weighted"] else "Points") + " |",
+            "|---|---|---|---|---|---|"]
     for i, t in enumerate(w["topics"], 1):
-        out.append(f"| {i} | {t['name']} | {t['weight']} | {t['mode'] or '·'} | {len(t['questions']) or '·'} | {t['points']:.2f} |")
+        out.append(f"| {i} | {t['name']} | {t['weight']} | {t['mode'] or '·'} | {len(t['questions']) or '·'} | "
+                   f"{t['points']:.1f} |")
     out.append("")
 
     # ------------------------------------------------------------------ repeats
@@ -148,7 +196,7 @@ def render(cfg: CourseConfig, w: dict, topics: TopicsFile, papers: PapersFile | 
                 out += [p.notes, ""]
             out += ["| Q | Marks | Type | Mode | Difficulty | Topics | Answer |", "|---|---|---|---|---|---|---|"]
             for q in qs:
-                ans = "·" if not q.answer else ("key" + (" ⚠" if q.answer.caveat else ""))
+                ans = "·" if not q.answer else (("hints" if p.kind == "sample" else "key") + (" ⚠" if q.answer.caveat else ""))
                 topics_s = ", ".join(L.topic(t) for t in q.topics) or f"*unmapped: {q.unmapped_reason}*"
                 out.append(f"| {q.number} | {num(q.marks) if q.marks is not None else '·'} | {q.type} | {q.mode} | "
                            f"{q.difficulty} | {topics_s} | {ans} |")
@@ -179,11 +227,10 @@ def render(cfg: CourseConfig, w: dict, topics: TopicsFile, papers: PapersFile | 
         out += ["Nothing.", ""]
     else:
         if un["transcribed"]:
-            out.append(f"- **Transcribed from scans ({len(un['transcribed'])}):** check the wording against the page images "
-                       "if an answer depends on a detail.")
+            out.append(f"- **Transcribed from scans:** {L.q_list(un['transcribed'])}. Check the wording against the page "
+                       "images if an answer depends on a detail.")
         if un["unofficial_key"]:
-            out.append(f"- **Answers from an unofficial key ({len(un['unofficial_key'])}):** "
-                       + ", ".join(L.q_short(q) for q in un["unofficial_key"]) + ".")
+            out.append(f"- **Answers from an unofficial key:** {L.q_list(un['unofficial_key'])}.")
         if un["no_answer"]:
             out.append(f"- **No answer yet ({len(un['no_answer'])}):** worked solutions are generated and checked in M4: "
                        + ", ".join(L.q_short(q) for q in un["no_answer"]) + ".")

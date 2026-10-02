@@ -35,6 +35,7 @@ class Topic(Strict):
     """One thing a question can be about. M3 turns each topic into one or more content nodes."""
     id: str = Field(pattern=ID)
     name: str
+    label: str = Field("", max_length=32, description="short name for charts and summaries (defaults to name)")
     cluster: str
     sources: list[str] = Field(default=[], description="corpus refs, page ranges allowed: 'slides/7 - CPU Scheduling.pdf#p8-13'")
     note: str = ""

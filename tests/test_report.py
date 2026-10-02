@@ -46,7 +46,12 @@ def test_report_reads_well_and_is_stable(ingested_course, capsys):
               "| # | Topic | Share | ≈ marks /10 | 2024 midsem | Samples | Slides |",
               "| 1 | IPC | 30% | 3 | 6 | · | · |", "| 2 | Scheduling metrics | 24% | 2.4 | 2 | · | 2 |", "## Coverage", "**Unmapped questions: 0.**",
               "**Asked in papers but not in your slides:** IPC (2024 midsem Q2 [6])",
-              "**Transcribed from scans (2):**", "**No answer yet (2):**", "## How the numbers are made"]:
+              "**Transcribed from scans:** 2024 midsem Q1 [4], 2024 midsem Q2 [6].", "**No answer yet (2):**",
+              "## What to study for the midsem, in order",
+              "1. **IPC**: understand · 30% (≈3/10) · asked 1×\n1. **Scheduling metrics**: practise · 24% (≈2.4/10) · asked 1×",
+              "1. **Round robin**: practise · 17% (≈1.7/10) · asked 1×\n\nThen, if time allows: Process states.",
+              "- **Practise:** Scheduling metrics · Round robin\n- **Understand:** IPC · Paging\n- **Slides only:** Process states",
+              "| 1 | IPC | high | understand | 1 | 9.0 |", "## How the numbers are made"]:
         assert s in rep, s
     before = rep
     assert main(["report", str(ingested_course)]) == 0

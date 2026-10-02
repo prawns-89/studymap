@@ -112,7 +112,7 @@ def cmd_report(a) -> int:
         return 1
     for e in r.weightage["exams"]:
         top = [t for t in e["topics"] if t["share"] > 0][:5]
-        names = {t["id"]: t["name"] for t in r.weightage["topics"]}
+        names = {t["id"]: t["label"] for t in r.weightage["topics"]}
         print(f"{e['name']} ({e['basis']}): " + " · ".join(f"{names[t['id']]} {pct(t['share'])}" for t in top))
     print(f"wrote {display_path(r.report)} and analysis/weightage.json ({r.written} changed)")
     return 0

@@ -133,7 +133,7 @@ def compute(cfg: CourseConfig, topics: TopicsFile, papers: PapersFile | None, co
     for t in order:
         vs = votes.get(t.id)
         mode = max(MODE_ORDER, key=lambda m: (vs[m], -MODE_ORDER.index(m))) if vs else None
-        topic_rows.append(dict(id=t.id, name=t.name, cluster=t.cluster, emphasis=emph[t.id], in_slides=emph[t.id] > 0,
+        topic_rows.append(dict(id=t.id, name=t.name, label=t.label or t.name, cluster=t.cluster, emphasis=emph[t.id], in_slides=emph[t.id] > 0,
                                points=R(points[t.id]), weight=klass[t.id], mode=mode, questions=tq.get(t.id, [])))
 
     return dict(schema_version=1, weighted=weighted, exams=exams_out, topics=topic_rows,
