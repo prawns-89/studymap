@@ -7,7 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 from . import __version__
-from .course import OUT_DIR, CourseError, display_path
+from .course import OUT_DIR, CourseError, display_path, load_config
 
 LATER = {
     "verify": ("run every numerical check script and code runner", "M4"),
@@ -58,18 +58,50 @@ def cmd_ingest(a) -> int:
     return 1 if r.failed else 0
 
 
+def _print_analysis(an) -> None:
+    for i in an.errors:
+        print(i)
+    for i in an.warnings:
+        print(f"warning: {i}")
+    if not an.errors and an.topics is not None:
+        p = an.papers
+        print(f"{display_path(an.dir)}: ok · {len(an.topics.clusters)} clusters · {len(an.topics.topics)} topics"
+              + (f" · {len(p.papers)} papers · {len(p.questions)} questions · {len(p.patterns)} patterns" if p else " · no papers.json"))
+
+
 def cmd_validate(a) -> int:
+    from .analysis import load_analysis
     from .render import ContentError, load_valid, resolve_content
     course = _course(a.course)
+    an = load_analysis(course, load_config(course))
+    errors = 0
+    if an.present:
+        _print_analysis(an)
+        errors += len(an.errors)
     try:
-        c = load_valid(course, a.content)
-    except ContentError as e:
-        print("\n".join(map(str, e.issues)))
-        print(f"{len(e.issues)} problem{'s' if len(e.issues) != 1 else ''}")
-        return 1
-    print(f"{display_path(resolve_content(course, a.content))}: ok · {len(c.clusters)} clusters · {len(c.nodes)} nodes · "
-          f"{sum(len(n['facts']) for n in c.nodes)} facts · {len(c.sheets)} sheets · "
-          f"{sum(len(q) for _, q in c.sets)} questions")
+        cdir = resolve_content(course, a.content)
+    except FileNotFoundError:
+        if not an.present:
+            raise FileNotFoundError(f"{a.course}: nothing to validate yet (no analysis/ and no content/)") from None
+        cdir = None
+    if cdir is not None:
+        try:
+            c = load_valid(course, a.content)
+            print(f"{display_path(cdir)}: ok · {len(c.clusters)} clusters · {len(c.nodes)} nodes · "
+                  f"{sum(len(n['facts']) for n in c.nodes)} facts · {len(c.sheets)} sheets · "
+                  f"{sum(len(q) for _, q in c.sets)} questions")
+        except ContentError as e:
+            print("\n".join(map(str, e.issues)))
+            errors += len(e.issues)
+    if errors:
+        print(f"{errors} problem{'s' if errors != 1 else ''}")
+    return 1 if errors else 0
+
+
+def cmd_schema(a) -> int:
+    import json
+    from .analysis.models import PapersFile, TopicsFile
+    print(json.dumps({"topics": TopicsFile, "papers": PapersFile}[a.which].model_json_schema(), indent=1))
     return 0
 
 
@@ -129,10 +161,14 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("-q", "--quiet", action="store_true", help="only print the summary")
     p.set_defaults(fn=cmd_ingest)
 
-    p = sub.add_parser("validate", help="parse and validate the content files; errors as file:line")
+    p = sub.add_parser("validate", help="check the paper analysis and the content files; errors as file:line")
     p.add_argument("course", type=Path)
     p.add_argument("--content", type=Path, help="content folder (default: <course>/_studymap/content)")
     p.set_defaults(fn=cmd_validate)
+
+    p = sub.add_parser("schema", help="print the JSON Schema of analysis/topics.json or analysis/papers.json")
+    p.add_argument("which", choices=["topics", "papers"])
+    p.set_defaults(fn=cmd_schema)
 
     p = sub.add_parser("build", help="render index.html")
     p.add_argument("course", type=Path)

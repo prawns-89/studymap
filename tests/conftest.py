@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import io
+import json
 import shutil
 from pathlib import Path
 
@@ -188,3 +189,52 @@ def course(course_template, tmp_path) -> Path:
     dst = tmp_path / "CS-F999"
     shutil.copytree(course_template, dst)
     return dst
+
+
+# --------------------------------------------------------------------------- a small paper analysis
+
+TOPICS = {
+    "clusters": [{"id": "sched", "name": "Scheduling"}, {"id": "mem", "name": "Memory"}],
+    "topics": [
+        {"id": "rr", "name": "Round robin", "cluster": "sched", "sources": ["slides/07-sched.pdf#p2-3"]},
+        {"id": "states", "name": "Process states", "cluster": "sched", "sources": ["slides/07-sched.pdf#p4"]},
+        {"id": "metrics", "name": "Scheduling metrics", "cluster": "sched", "sources": ["slides/07-sched.pdf#p5-6"]},
+        {"id": "paging", "name": "Paging", "cluster": "mem", "sources": ["slides/08-paging.pptx#s1-3"]},
+        {"id": "ipc", "name": "IPC", "cluster": "mem", "sources": []},
+    ],
+    "uncovered_ok": [{"ref": "slides/07-sched.pdf#p1", "reason": "title slide"}],
+}
+PAPERS = {
+    "papers": [
+        {"id": "2024-midsem", "path": "papers/2024-midsem.pdf", "exam": "midsem", "year": 2024, "total_marks": 10,
+         "keys": [{"path": "papers/2024-midsem-key.pdf"}], "transcribed_from_image": True},
+        {"id": "samples", "path": "papers/sample-questions.pdf", "kind": "sample", "exam": "midsem"},
+    ],
+    "questions": [
+        {"id": "2024-midsem-q1", "paper": "2024-midsem", "number": "1", "marks": 4, "type": "numerical", "mode": "apply",
+         "difficulty": "medium", "topics": ["rr", "metrics"], "text": "Run RR with q = 2.", "src": "papers/2024-midsem.pdf#p1",
+         "answer": {"text": "5.67 ms", "src": ["papers/2024-midsem-key.pdf#p1"]}},
+        {"id": "2024-midsem-q2", "paper": "2024-midsem", "number": "2", "marks": 6, "type": "long-explain",
+         "mode": "understand", "difficulty": "easy", "topics": ["ipc"], "text": "Compare pipes and shared memory.",
+         "src": "papers/2024-midsem.pdf#p2"},
+        {"id": "samples-1", "paper": "samples", "number": "1", "type": "short", "mode": "understand", "difficulty": "easy",
+         "topics": ["paging"], "text": "Explain round robin.", "src": "papers/sample-questions.pdf#p1"},
+    ],
+    "patterns": [{"text": "Every paper has a scheduling numerical.", "questions": ["2024-midsem-q1"]}],
+}
+
+
+def write_analysis(course, topics=TOPICS, papers=PAPERS):
+    d = course / "_studymap" / "analysis"
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "topics.json").write_text(json.dumps(topics, indent=1))
+    if papers is not None:
+        (d / "papers.json").write_text(json.dumps(papers, indent=1))
+    return d
+
+
+@pytest.fixture
+def ingested_course(course):
+    from studymap.ingest import ingest
+    ingest(course, log=lambda s: None)
+    return course
