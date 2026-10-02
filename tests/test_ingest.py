@@ -298,3 +298,12 @@ def test_sids_are_stable_and_collision_free():
     s = make_sids(["slides/a b.pdf", "slides/a-b.pdf", "notes/x.md"])
     assert s["notes/x.md"] == "notes-x-md"
     assert s["slides/a b.pdf"] != s["slides/a-b.pdf"] and s["slides/a b.pdf"].startswith("slides-a-b-pdf-")
+
+
+def test_outline_lists_titles_without_duplicates(ingested):
+    course, _ = ingested
+    o = (course / "_studymap" / "corpus" / "outline.md").read_text()
+    deck = next(ln for ln in o.split("\n") if ln.startswith("  p1 CPU Scheduling"))
+    assert "p2 " not in deck and "p3 Round robin" in deck and "p5 Gantt chart [img]" in deck
+    assert "**papers/2024-midsem.pdf** (2 pages)" in o and "key: papers/2024-midsem-key.pdf · 2 image-only pages" in o
+    assert "- **labs/lab1/** 6 files · c ×1, makefile ×1, mipsasm ×1, x86asm ×1" in o

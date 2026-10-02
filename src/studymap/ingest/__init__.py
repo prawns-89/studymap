@@ -20,7 +20,7 @@ from ..course import OUT_DIR, load_config, parse_paper_name
 from ..manifest import Manifest, SourceEntry, digest, sha256_file, write_atomic, write_if_changed
 from .dedupe import find_duplicates
 from .records import SourceRecord
-from .views import source_md
+from .views import outline_md, source_md
 from .walk import Candidate, make_sids, walk
 
 # bump a number to re-extract every source of that type on the next run
@@ -246,5 +246,6 @@ def _views(root: Path, corpus: Path, man: Manifest, res: IngestResult, cfg) -> t
                  sources=sources_out, failed=[dict(path=a, error=b) for a, b in res.failed],
                  skipped=[dict(path=a, reason=b) for a, b in res.skipped], warnings=warnings)
     written += write_if_changed(corpus / "index.json", json.dumps(index, indent=1, ensure_ascii=False) + "\n")
+    written += write_if_changed(corpus / "outline.md", outline_md(recs, dups, papers))
     written += write_if_changed(corpus / "dedupe.json", json.dumps(dups, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
     return written, stats, index["papers"], warnings
