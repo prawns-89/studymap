@@ -1,8 +1,9 @@
 """`studymap check`: open the built site in headless Chromium with the network blocked.
 
 Ported from reference/mindmap_check.py and extended: four viewports (desktop and phone, light and dark),
-fails on page or console errors, on missing map nodes, on a node click or keyboard selection that shows
-no facts, and on horizontal scrolling. Screenshots go to _studymap/check/.
+fails on page or console errors, on horizontal scrolling, and on any part of the page that doesn't respond:
+the Plan tab (bars, tooltip, the order's questions, the exam switch) and the map (node count, a click and
+keyboard Enter that show facts). Screenshots go to _studymap/check/.
 """
 from __future__ import annotations
 
@@ -79,30 +80,67 @@ def check(html: Path, shots: Path) -> CheckResult:
                 pg.goto(url, wait_until="load")
                 pg.wait_for_timeout(600)
                 fail = lambda msg: res.failures.append(f"{name}: {msg}")
+                has_map, has_plan = pg.evaluate("[D.nodes.length > 0, !!D.plan]")
 
-                expect = pg.evaluate("D.nodes.length - (D.cfg.center ? 1 : 0)")
-                drawn = pg.locator("#g-node .node").count()
-                if drawn != expect:
-                    fail(f"map shows {drawn} nodes, data has {expect}")
-                res.shots.append(_shot(pg, shots, f"{name}-1-map"))
+                if has_plan:
+                    pg.click('.tab[data-view="plan"]')
+                    pg.wait_for_timeout(300)
+                    rows = pg.locator("#plan-bars tr[data-t]")
+                    if not rows.count():
+                        fail("the Plan tab drew no topic bars")
+                    else:
+                        rows.first.tap() if phone else rows.first.hover()
+                        pg.wait_for_timeout(150)
+                        if not pg.locator(".ptip").is_visible():
+                            fail(f"{'tapping' if phone else 'hovering'} a topic bar shows no tooltip")
+                        rows.first.focus()
+                        if not pg.locator(".ptip").is_visible():
+                            fail("focusing a topic bar shows no tooltip")
+                        pg.evaluate("document.activeElement.blur()")
+                        pg.mouse.move(2, 2)
+                        pg.mouse.click(2, 2)
+                    res.shots.append(_shot(pg, shots, f"{name}-0-plan"))
+                    first = pg.locator("#plan-order > li > details > summary").first
+                    if first.count():
+                        first.click()
+                        if not pg.locator("#plan-order > li > details[open] .pq").count():
+                            fail("opening the first topic in the order shows no questions")
+                        first.click()
+                    exams = pg.locator("#plan-exam button")
+                    if exams.count() > 1:
+                        before = pg.inner_text("#plan-bars-sub")
+                        exams.nth(1).click()
+                        pg.wait_for_timeout(150)
+                        if pg.inner_text("#plan-bars-sub") == before:
+                            fail("switching the exam didn't redraw the plan")
+                        exams.nth(0).click()
+                    if name == "desktop":
+                        res.notes.append(f"plan: {rows.count()} topic bars, {exams.count()} exams")
 
-                pt = pg.evaluate(NEAREST)
-                if pt:
-                    pg.mouse.click(*pt)
-                    pg.wait_for_timeout(500)
-                    nf = pg.locator("#panel .facts li").count()
-                    if not nf:
-                        fail("clicking a node opened no facts")
-                    elif name == "desktop":
-                        res.notes.append(f"clicked a node: panel shows {nf} facts")
-                    res.shots.append(_shot(pg, shots, f"{name}-2-node"))
-
-                pg.click("#z-fit")
-                pg.evaluate("document.querySelector('#g-node .node').focus()")
-                pg.keyboard.press("Enter")
-                pg.wait_for_timeout(300)
-                if not pg.locator("#panel .facts li").count():
-                    fail("keyboard Enter on a focused node opened no facts")
+                if has_map:
+                    pg.click('.tab[data-view="map"]')
+                    pg.wait_for_timeout(300)
+                    expect = pg.evaluate("D.nodes.length - (D.cfg.center ? 1 : 0)")
+                    drawn = pg.locator("#g-node .node").count()
+                    if drawn != expect:
+                        fail(f"map shows {drawn} nodes, data has {expect}")
+                    res.shots.append(_shot(pg, shots, f"{name}-1-map"))
+                    pt = pg.evaluate(NEAREST)
+                    if pt:
+                        pg.mouse.click(*pt)
+                        pg.wait_for_timeout(500)
+                        nf = pg.locator("#panel .facts li").count()
+                        if not nf:
+                            fail("clicking a node opened no facts")
+                        elif name == "desktop":
+                            res.notes.append(f"clicked a node: panel shows {nf} facts")
+                        res.shots.append(_shot(pg, shots, f"{name}-2-node"))
+                    pg.click("#z-fit")
+                    pg.evaluate("document.querySelector('#g-node .node').focus()")
+                    pg.keyboard.press("Enter")
+                    pg.wait_for_timeout(300)
+                    if not pg.locator("#panel .facts li").count():
+                        fail("keyboard Enter on a focused node opened no facts")
 
                 for i, view in enumerate(["atlas", "sheets", "questions"], 3):
                     tab = pg.locator(f'.tab[data-view="{view}"]')
@@ -113,9 +151,14 @@ def check(html: Path, shots: Path) -> CheckResult:
                             fail(f"{view} tab didn't open its view")
                         res.shots.append(_shot(pg, shots, f"{name}-{i}-{view}"))
 
-                over = pg.evaluate("document.documentElement.scrollWidth - window.innerWidth")
-                if over > 1:
-                    fail(f"page scrolls horizontally by {over}px")
+                for view in ("plan", "map"):
+                    tab = pg.locator(f'.tab[data-view="{view}"]')
+                    if tab.is_visible():
+                        tab.click()
+                        pg.wait_for_timeout(200)
+                        over = pg.evaluate("document.documentElement.scrollWidth - window.innerWidth")
+                        if over > 1:
+                            fail(f"the {view} tab scrolls horizontally by {over}px")
                 for e in errs:
                     fail(e)
                 ctx.close()

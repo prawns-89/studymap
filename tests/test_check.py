@@ -3,7 +3,7 @@ import pytest
 
 from studymap.cli import main
 
-from .conftest import EXAMPLES
+from .conftest import EXAMPLES, write_analysis
 
 pytestmark = pytest.mark.browser
 
@@ -45,3 +45,14 @@ def test_check_fails_on_a_script_error(tmp_path, capsys):
     html.write_text(page, encoding="utf-8")
     assert main(["check", str(tmp_path), "--html", str(html), "--shots", str(tmp_path / "s")]) == 1
     assert "boom" in capsys.readouterr().out
+
+
+@needs_browser
+def test_check_exercises_the_plan_tab(ingested_course, capsys):
+    write_analysis(ingested_course)
+    assert main(["build", str(ingested_course)]) == 0
+    assert main(["check", str(ingested_course)]) == 0
+    out = capsys.readouterr().out
+    assert "plan: 5 topic bars, 1 exams" in out and "check passed" in out
+    shots = {p.name for p in (ingested_course / "_studymap" / "check").glob("*.png")}
+    assert {"desktop-0-plan.png", "phone-dark-0-plan.png"} <= shots and not any("map" in s for s in shots)

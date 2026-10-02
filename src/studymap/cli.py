@@ -161,7 +161,7 @@ def cmd_check(a) -> int:
     for w in r.warnings:
         print(f"warning: {w}")
     if r.ok:
-        print("check passed: no page or console errors, map and panel work, tabs open, no horizontal scroll")
+        print("check passed: no page or console errors, every tab responds, no horizontal scroll")
         return 0
     print("check FAILED:\n  " + "\n  ".join(r.failures))
     return 1
