@@ -1,0 +1,7 @@
+=sheet Where it happens | Location is the classic trap. | table
+- Light reactions :: thylakoid membranes | light_reactions
+- Calvin cycle :: stroma | calvin
+=sheet Look-alikes | Pairs that get swapped. | groups
+## PSI vs PSII | photosystems
+- PSII (P680) :: acts first; splits water | photosystems
+- PSI (P700) :: acts second; makes NADPH | photosystems

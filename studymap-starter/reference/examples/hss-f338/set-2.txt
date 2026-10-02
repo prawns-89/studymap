@@ -1,0 +1,641 @@
+!set Set 2 | 80 new questions with answers. | shuffle
+@complit | 
+Q In the course's example of the second approach (a theme or idea across languages), which idea is traced?
++ The nation: belonging and national identity
+- The journey of the hero
+- Love in separation
+- The fall of kingdoms
+= Approach 2 takes an idea such as the nation: what it is, what belonging means, what national identity means.
+
+@requirements | 
+Q Which of the following pairs would qualify as a comparative literature study by the course's definition?
++ A Sanskrit play and a Hindi film based on it
+- Two chapters of the same Marathi novel
+- Two modern Tamil short stories by the same author
+- A modern Gujarati novel and another Gujarati novel of the same decade
+= Comparison across languages, across time or across art forms qualifies. Staying in one language, one period and one form does not.
+
+@aims | 
+Q Which of the following is NOT among the six aims of the course?
++ To learn to compose poetry in two Indian languages
+- To learn the literary history of India
+- To understand the role translation plays in comparative study
+- To see how texts stay the same and how they change
+= The aims: diversity, literary history, theories, how comparative studies are done, translation, and how texts relate, differ, stay the same and change.
+
+@method_discipline | 
+Q As a discipline, comparative literature looks at ________.
++ All the options are correct
+- how literature travels across borders
+- how literature interacts with history, philosophy, art and culture
+- how literature shapes our understanding of the world
+- None of the options is correct
+= All three are in the recap: method and discipline, tool and field.
+
+@indira | 
+Q In Indira Gandhi's 1971 statement, India is "not just its six lakh villages and towns" and "not just its ________ children".
++ fifty-five crore
+- thirty crore
+- seventy million
+- hundred crore
+= Fifty-five crore children. Thirty crores is Bharati's figure; seventy million is Vande Mataram's.
+
+@religions | 
+Q According to the slide on religious groups, Buddhism accounts for about ________ of India's population.
++ 0.7%
+- 0.37%
+- 1.7%
+- 2.30%
+= Hindu 79.80, Muslim 14.23, Christian 2.30, Sikh 1.7, Buddhist 0.7, Jain 0.37.
+
+@outcome | 
+Q The slide says India has deep links with three civilisations: ________.
++ Hindu, Islamic and Christian
+- Hindu, Buddhist and Jain
+- Vedic, Dravidian and Islamic
+- Hindu, Islamic and Persian
+= Hence the slide's question: is India an "unnatural nation"?
+
+@vocab | 
+Q In political talk, the slides note, the word "country" is often used to mean ________.
++ people
+- state
+- nation
+- government
+= Country often stands for "people". The nation is more abstract; the state is the structure of power.
+
+@memory_forgetting | 
+Q The slides say history can give a nation a body. The slide's word for this is ________.
++ corporeality
+- sovereignty
+- territoriality
+- homogeneity
+= History gives the nation "corporeality"; the nation is then treated as sacred, immune to change and inflexible.
+
+@gellner | 
+Q Ernest Gellner connects nationalism above all to ________.
++ the needs of industrial society
+- print-capitalism and the novel
+- shared myths and historical memories
+- the spiritual inner domain
+= Gellner: industrial modernity and homogenisation through education. Anderson: print-capitalism. Smith: shared myths and memories.
+
+@smith | 
+Q Anthony D. Smith's definition of the nation includes all of the following EXCEPT ________.
++ a single official language imposed by the state
+- shared myths and historical memories
+- a single economy
+- common rights and duties for all members
+= Smith: historic similarity, shared myths and memories, a mass public culture, a single economy, common rights and duties legitimised by nationalism.
+
+@inner_domain | 
+Q Because modernity, education and print-capitalism did not reach every Indian equally, Indian nationalism spread through ________.
++ the spiritual, inner domain
+- the rational, public domain
+- the colonial courts of law
+- the census and the map
+= Imagined and experienced in the private, spiritual domain, hence India as a Mother Goddess.
+
+@tagore_mother | 
+Q The refrain of the Tagore song to the Mother quoted in the lecture is ________.
++ the doors of your golden temple have unlocked
+- I bow to thee, Mother
+- victory, victory, victory to thee
+- long live the Republic of Bharat
+= Golden temple: Tagore's song. "I bow to thee, Mother": Vande Mataram. "Victory...": Jana Gana Mana. "Long live...": Bharati.
+
+@bharati | 
+Q "We are of the same caste and race... every one is Bharat's King!" This is the ending of a poem by ________.
++ Subramania Bharati
+- Muhammad Iqbal
+- Firaq Gorakhpuri
+- Bankimchandra Chatterjee
+= Bharati's "Indian Republic", a republic of equality.
+
+@boundaries | 
+Q Many modern social scientists prefer the term "South Asia", which the slide says includes ________.
++ Sri Lanka, Nepal, Pakistan and Bangladesh
+- Myanmar, Thailand, Nepal and Bhutan
+- Afghanistan, Pakistan, Iran and Nepal
+- Sri Lanka, Maldives, Myanmar and Tibet
+= Not foolproof: is Myanmar part of it? Myanmar links with Thailand, Pakistan with Afghanistan.
+
+@what_lit | 
+Q Which of the following is NOT among the slides' descriptions of literature?
++ A record kept only by the state
+- A historical document
+- A product of the creative imagination
+- A mode of cultural expression
+= Literature is a mode of cultural expression, a product of the creative imagination, a historical document, and more.
+
+@lit_teaches | 
+Q Research quoted on the slides says literature provides otherwise unavailable insights into the ways ________ are produced, experienced and enacted in human social life.
++ emotions
+- nations
+- rituals
+- languages
+= Neurobiological and psychological research on emotions.
+
+@folklore | 
+Q Which of the following is NOT listed as verbal folklore?
++ Games
+- Proverbs
+- Prose narratives
+- Lullabies
+= Verbal: proverbs, riddles, lullabies, tales, ballads, prose narratives, songs. Games are nonverbal.
+
+@folk_songs | 
+Q The slides list ________ categories of folk song.
++ nine
+- five
+- seven
+- twelve
+= Male-centred, female-centred, family relationships, love, fate/gods/demons, humorous, ribald, natural environment, community.
+
+@nilavilakku | 
+Q "Many tongues, one voice." The traditional lamp used to explain this idea is the ________.
++ Nilavilakku
+- chandelier
+- hanging lantern
+- temple bell
+= K. M. George's Nilavilakku: many wicks, one light. Past papers call it "base lamps".
+
+@against_plural | 
+Q Peruvian, Cuban, Mexican and Argentine literatures illustrate ________.
++ one language, many literatures
+- many languages, one literature
+- literatures defined by race
+- literatures without national names
+= Spanish (and English) literatures take national names: one language, many literatures.
+
+@commonality | 
+Q Which literary movements does the slide say crossed India's linguistic and regional barriers?
++ Bhakti, the Progressive and the Modernist
+- Bhakti, Sufi and Sikh
+- Romantic, Realist and Modernist
+- Progressive, Dalit and Feminist
+= Bhakti, Progressive and Modernist.
+
+@civilisation | 
+Q The slides define civilisation as "an advanced state of human society, in which a high level of culture, science, industry, and ________ has been reached".
++ government
+- religion
+- literature
+- trade
+= Macaulay's insult made asserting India's civilisational glory part of the nationalist project.
+
+@sahitya_akademi | 
+Q The Sahitya Akademi's special award for contributions to languages it does not formally recognise, and to classical and medieval literature, is the ________.
++ Bhasha Samman
+- Jnanpith Award
+- Sahitya Akademi Fellowship
+- Kabir Samman
+= The Bhasha Samman. The Akademi also gives 24 awards a year for literary works and 24 for translations.
+
+@cultural_unity | 
+Q The slides say plots from the Ramayana and Mahabharata were used in both ________.
++ Tamil Sangam poetry and Sanskrit plays
+- Prakrit inscriptions and Pali sutras
+- Kannada grammars and Tamil grammars
+- Buddhist gathas and Jain Agamas
+= Evidence of a cultural unity expressed through Sanskrit texts, Tamil literature and folk narratives.
+
+@perception_reality | 
+Q "India has one literature that is written in many languages." According to the slides, this thesis ________.
++ has never been properly explored and validated
+- was proven by the Sahitya Akademi in 1954
+- was rejected by K. M. George
+- is accepted only for Sanskrit and Tamil
+= Also: Indian Literature is often confused with ancient Sanskrit works, and no modern concept has been formulated.
+
+@earliest_langs | 
+Q According to the slides, the subject of the earliest known Indian texts was ________.
++ the relationship of man with the world around him, and with its creator
+- the deeds of kings and their wars
+- love in all its moods
+- the grammar of the sacred language
+= A common frame of reference across the five earliest languages.
+
+@vedas | 
+Q According to the slides, people believed the Vedas were ________.
++ created by God, with the human narrator only a medium
+- composed by Vyasa in a single sitting
+- remembered and recorded by human authors
+- translated from an older Tamil original
+= Sruti is revealed. Remembered, human-authored texts are Smriti.
+
+@yagna | 
+Q The main impulse behind the Vedic prayers was ________.
++ the desire for a good life: a long and healthy life, cattle, children
+- the wish for liberation from rebirth
+- fear of the demons
+- the search for Atman and Brahman
+= The central motif is the sacrifice. The gods rule fire, water, wind and earth.
+
+@brahmanas | 
+Q The speculation in the Brahmanas is not only theological but also ________.
++ philosophical, grammatical, etymological and metrical
+- romantic, heroic and comic
+- political, economic and legal
+- astronomical, medical and military
+= The Brahmanas: eleven prose texts that comment on the mantras and prescribe their use in sacrifices.
+
+@sbau | 
+Q Which sequence correctly traces the Sruti texts from hymn to philosophy?
++ Samhita → Brahmana → Aranyaka → Upanishad
+- Samhita → Aranyaka → Brahmana → Upanishad
+- Brahmana → Samhita → Upanishad → Aranyaka
+- Upanishad → Aranyaka → Brahmana → Samhita
+= S-B-A-U: hymn, ritual, forest meditation, philosophy.
+
+@vedangas | 
+Q Which Vedanga deals with metre?
++ Chandas
+- Siksha
+- Kalpa
+- Jyotisha
+= Chandas = metre, siksha = phonetics, kalpa = ritual, jyotisha = astronomy.
+
+@puranas | 
+Q The most popular Purana, the Bhagavata Purana, tells the story of ________.
++ Krishna's life
+- Rama's exile
+- Shiva and Parvati's marriage
+- the churning of the ocean
+= The Puranas belong to Smriti.
+
+@sutra_dharma | 
+Q Smriti texts are often written in sutra form. "Sutra" means ________.
++ thread
+- collection
+- remembered
+- forest
+= A sutra "threads together" large bodies of knowledge as briefly as possible.
+
+@natyashastra | 
+Q Bharata's Natyashastra is dated between ________.
++ the 1st century BC and the 1st century AD
+- the 12th and 2nd centuries BC
+- the 4th and 5th centuries AD
+- 300 BC and 100 AD
+= It sets the ground rules for Sanskrit aesthetic theory.
+
+@purusharthas | 
+Q Which of the following is NOT one of the four goals of life that a Sanskrit play's hero achieves?
++ Yoga
+- Artha
+- Kama
+- Moksha
+= Dharma, artha, kama, moksha.
+
+@fables | 
+Q The Kathasaritsagara is by ________.
++ Somadeva
+- Vishnusharma
+- Bharata
+- Sudraka
+= Panchatantra: Vishnusharma. Kathasaritsagara: Somadeva.
+
+@prakrit | 
+Q The earliest dated Indian literary records, and the main evidence of Prakrit in literary composition, are the ________.
++ Ashokan inscriptions
+- Sattasai anthologies
+- Jain Agamas
+- Kavirajamargam
+= By the 5th century AD Prakrit was also used for songs, Buddhist gathas, Jaina writings and the Sattasai anthologies, to which women contributed.
+
+@apabhramsa | 
+Q Apabhramsa had become a literary language by the ________ and was first used in ________ writings.
++ 7th century AD; Jaina
+- 5th century AD; Buddhist
+- 3rd century BC; Vedic
+- 10th century AD; Bhakti
+= Later it was used for sandhi bandhas (Puranic stories) and rasa bandhas (lyrics).
+
+@sangam | 
+Q The Sangam corpus contains over ________ poems.
++ 2,000
+- 400
+- 1,612
+- 10,000
+= Over two thousand poems: direct, subtle, astonishingly contemporary.
+
+@three_sangams | 
+Q All surviving Sangam works are said to come from the third Sangam at Madurai, EXCEPT ________.
++ the Tolkappiyam
+- the Purananuru
+- the Paripatal
+- the Kuruntokai
+= The Tolkappiyam survived from the second Sangam.
+
+@ettuttokai | 
+Q Which of the following is NOT one of the Eight Anthologies (Ettuttokai)?
++ Tirumurukarruppatai
+- Kuruntokai
+- Ainkurunuru
+- Narrinai
+= Tirumurukarruppatai is the tenth of the Ten Long Poems (Pattuppattu).
+
+@sangam_features | 
+Q The Paripatal contains poems about four deities: ________.
++ Vishnu, Shiva, Durga and Murugan
+- Indra, Agni, Vayu and Varuna
+- Brahma, Vishnu, Shiva and Kama
+- Murugan, Ganesha, Lakshmi and Saraswati
+= So Sangam poetry, though not overwhelmingly religious, is not unconnected with religion.
+
+@tolkappiyam | 
+Q The first two sections of the Tolkappiyam deal with ________, while the third covers prosody, rhetoric, poetics, genres and themes.
++ orthography, phonology, morphology and syntax
+- love and war
+- the five tinais
+- the rules of sacrifice
+= Three sections; 1,612 cuttirams.
+
+@vs_sanskrit_poetics | 
+Q In Sanskrit rasa theory, permanent emotions are called ________ and transient emotions ________.
++ sthayi; vyabhichari
+- vyabhichari; sthayi
+- akam; puram
+- rasa; bhava
+= Tamil poetry also groups poems by emotion, but portrays emotions very differently from the rasas.
+
+@tinais | 
+Q The tinai of the lowland, linked with a lover's unfaithfulness, is ________.
++ Marutam
+- Mullai
+- Neytal
+- Palai
+= Kurinci meets, Neytal worries, Palai travels, Mullai unites, Marutam cheats.
+
+@palai | 
+Q "In the desert... seized and devoured by wildfire... the girl with freckles like kino flowers." This sample poem illustrates ________.
++ Palai: separation on a journey
+- Kurinci: the lovers' meeting
+- Neytal: anxiety on the shore
+- Marutam: unfaithfulness
+= The burning wasteland against the cool remembered house.
+
+@tamil_epics | 
+Q The Tamil epics Cilappatikaram and Manimekalai reflect ________ world views.
++ Buddhist and Jain
+- Vedic and Puranic
+- Saiva and Vaishnava
+- Sufi and Bhakti
+= They departed from the Sanskrit epics and centre strong, empowered women.
+
+@epic_def | 
+Q Which of the following is NOT part of the slides' definition of an epic?
++ A short lyric on a private emotion
+- A long verse narrative
+- A serious subject
+- A formal or elevated style
+= An epic is a long verse narrative on a serious subject in an elevated style, with a hero on whom the fate of a people depends.
+
+@literary_epics | 
+Q Milton's Paradise Lost imitated the style of ________.
++ Virgil's Aeneid
+- Homer's Iliad
+- Dante's Divine Comedy
+- Spenser's The Faerie Queene
+= Virgil, then Milton, then Blake's prophetic books and Keats's Hyperion.
+
+@epic_spirit | 
+Q The term "epic" is extended to large prose fiction with epic spirit, such as ________.
++ Tolstoy's War and Peace
+- Virgil's Aeneid
+- Beowulf
+- Keats's Hyperion
+= Also Melville's Moby Dick and Joyce's Ulysses; in verse, Dante's Divine Comedy and Spenser's Faerie Queene.
+
+@indian_epics | 
+Q Are the Indian epics traditional or literary epics? The best answer is that they are ________.
++ both: they grew out of oral tradition but are attributed to named poets
+- purely traditional, since they have no known authors
+- purely literary, since Valmiki and Vyasa wrote them alone
+- neither, since they are Sruti texts
+= Collective works that evolved over centuries, yet attributed to Valmiki and Vyasa. They belong to Smriti.
+
+@ramayana | 
+Q The Ramayana is about ________ the size of the Iliad and the Odyssey put together.
++ twice
+- half
+- the same as
+- ten times
+= Twice as big as the Iliad and the Odyssey together.
+
+@ramayana_tradition | 
+Q Winternitz thought the first form of the Ramayana emerged in the ________ and its final form in the ________.
++ 4th century BC; 2nd century AD
+- 12th century BC; 2nd century BC
+- 6th century BC; 1st century AD
+- 2nd century BC; 4th century AD
+= Jacobi, by contrast, accepts only five kandas as genuine.
+
+@mbh_dating | 
+Q The Mahabharata is called Shat Sahasra Samhita because it has about ________ shlokas.
++ one hundred thousand
+- twenty-four thousand
+- eighteen thousand
+- one thousand
+= About 100,000 shlokas in 18 parvas. It predates the Buddha.
+
+@upjeevya | 
+Q The Ramayana and the Mahabharata are called Upjeevya Kavya because they are ________.
++ source books for later oral and written works
+- sung only at festivals
+- the oldest Sruti texts
+- written in the upjeevya metre
+= Many writers adapted them in their own languages, Kamban among them.
+
+@agni | 
+Q The Agni hymn ends: "Be to us easy of approach, even as ________."
++ a father to his son
+- a king to his people
+- the dawn to the night
+- a priest to the gods
+= Agni: chosen priest, hotar, messenger, dispeller of the night, father to son.
+
+@vayu | 
+Q In the Vayu hymn, Mitra and Varuna are praised as those "who make the ________ complete".
++ oil-fed rite
+- Soma feast
+- road of heaven
+- ship of hymns
+= They are lovers and cherishers of Law (rita, the cosmic order).
+
+@ashvins | 
+Q In the Rig Veda, the Ashvins are also called ________.
++ Nasatyas
+- Kanvas
+- Angiras
+- Maruts
+= The Kanvas are a family of poets named in the hymn; Angiras is a name of Agni.
+
+@uma | 
+Q Uma tells Indra that the dazzling Light was ________.
++ Brahma, the Creator, the Supreme God
+- Agni in disguise
+- the demons' last trick
+- the Dawn, Daughter of the Sky
+= "Your victories were really His victories."
+
+@maitreyi | 
+Q To explain how individual selves merge into the Great Soul at death, Yajnavalkya uses the image of ________.
++ salt water in the sea
+- a chariot and its horses
+- a lamp with many wicks
+- a blade of grass
+= "If a drop of salt water is put in the sea it loses its identity..."
+
+@nachiketa | 
+Q Nachiketa asks his father "to whom will you offer me?" because his father was giving away ________.
++ lean, useless cows
+- all his gold
+- his other sons
+- stolen horses
+= Vajasravas gives worthless cattle at his yajna. Angered by the question, he offers Nachiketa to Death.
+
+@chariot | 
+Q In Yama's ladder, what is said to be greater than the soul?
++ The seed of the world
+- The intellect
+- The mind
+- The sense-objects
+= Senses, sense-objects, mind, intellect, soul, the seed of the world, and above all the Ultimate Person.
+
+@valmiki_abduction | 
+Q In Valmiki's scene, Ravana mocks Rama for giving up his home and kingdom because ________.
++ a woman spoke and he resigned
+- his father was weak
+- he feared the rakshasas
+- a sage cursed him
+= The woman is Queen Kaikeyi, whom Sita also blames.
+
+@valmiki_abduction | 
+Q "So might a soaring eagle bear a serpent's consort through the air." This simile describes ________.
++ Ravana carrying Sita into the sky
+- Jatayu attacking Ravana
+- Surpanakha fleeing to Khara
+- the Ashvins' chariot
+= One of Valmiki's cosmic and animal similes; the other is Mercury stealing Rohini's light.
+
+@kamban_intro | 
+Q Kamban's Tamil Ramayana, composed around the 12th century, is called the ________.
++ Ramavataram
+- Ramcharitmanas
+- Ramopakhyana
+- Raghuvamsha
+= A retelling, not a translation. The extract is from the Aranya Kandam.
+
+@godavari | 
+Q Kamban's Godavari flows through "the five tracts described in classical poetry". These tracts are ________.
++ the five tinais of Sangam poetry
+- the five Vedangas
+- the five kandas accepted by Jacobi
+- the five rivers of Punjab
+= Kamban slips Tamil landscape poetics into Rama's story.
+
+@surpanakha | 
+Q When Rama objects on grounds of caste, Surpanakha replies that her father was a Vedic brahmin and her mother was the daughter of ________.
++ King Chalakantaka
+- King Janaka
+- the sage Agastya
+- Kubera
+= "Your objection is invalid and I am saved!"
+
+@surpanakha_lament | 
+Q Rama tells Surpanakha he still has the arrow that killed ________, her mother's mother.
++ Tataka
+- Kumbhakarna
+- Khara
+- Dushana
+= He has vowed to destroy the whole rakshasa race.
+
+@valmiki_vs_kamban | 
+Q Which of the following similes is Kamban's rather than Valmiki's?
++ Sita clinging to Rama like a coral creeper against a raincloud
+- Ravana like Mercury stealing Rohini's light
+- Ravana bearing Sita as an eagle bears a serpent's consort
+- Ravana, twenty-armed, like a dark cloud
+= Kamban's similes are sensuous and layered: a miser's fame, cobra venom, a coral creeper, a miser's hoard.
+
+@meghaduta | beyond
+Q In the Meghaduta, the cloud's journey runs from ________ to ________.
++ the Vindhyas; the Himalayas
+- the Himalayas; the Vindhyas
+- Ujjain; Kashi
+- Lanka; Ayodhya
+= From the past papers. Kalidasa lavishly describes Vidisha and Ujjain along the way.
+
+@kalidasa | beyond
+Q The work generally believed to have been written by Kalidasa in his youth is ________.
++ Ritusamhara
+- Meghaduta
+- Raghuvamsha
+- Abhijnanashakuntalam
+= The 2024 paper.
+
+@ashadh | beyond
+Q In Ashadh Ka Ek Din, the new name Kalidasa takes after finding fame at the royal court is ________.
++ Matrugupta
+- Chandragupta
+- Kirtigupta
+- Samudragupta
+= The 2024 paper. As Matrugupta he is sent to govern Kashmir.
+
+@ashadh | beyond
+Q Although Ashadh Ka Ek Din takes its title from the Meghaduta, scholars say its plot aligns more easily with Kalidasa's ________.
++ Abhijnanashakuntalam
+- Raghuvamsha
+- Malavikagnimitram
+- Kumarasambhava
+= The 2024 paper.
+
+@cilappatikaram | beyond
+Q Who is commonly known as "the venerable ascetic prince"?
++ Ilanko Atikal
+- Cenkuttuvan
+- Cittalai Cattanar
+- Tiruvalluvar
+= The 2024 paper: Ilanko Atikal, author of the Cilappatikaram.
+
+@cilappatikaram | beyond
+Q The literary sequel to the Cilappatikaram is ________.
++ Manimekalai
+- Tirukkural
+- Ettuttokai
+- Kamba Ramayana
+= The 2024 paper. Both are post-Sangam Tamil epics.
+
+@bhakti | beyond
+Q Which of the following is a Bhakti poet?
++ Lal Ded
+- Valmiki
+- Bharata
+- Visakhadatta
+= The 2023 paper lists Andal, Lal Ded and Tukaram as Bhakti poets; Valmiki is not one.
+
+@bhakti | beyond
+Q Like many Bhakti saint-poets, Kabir came from the working class. By profession he was a ________.
++ weaver
+- cobbler
+- boatman
+- potter
+= The 2023 paper.
+
+@urdu | beyond
+Q The language of the common folk in Delhi and its surrounding areas in late medieval times is known as ________.
++ Khariboli
+- Nastaliq
+- Awadhi
+- Dakkhani
+= The 2023 paper. Nastaliq is a script; Dakkhani is a southern name for Urdu.
+
+@sufism | beyond
+Q Who among the following is NOT regarded as a Sufi thinker?
++ Javed Akhtar
+- Amir Khusraw
+- Bulleh Shah
+- Shah Qalandar
+= The 2023 paper.

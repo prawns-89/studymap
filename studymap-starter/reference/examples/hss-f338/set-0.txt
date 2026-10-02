@@ -1,0 +1,636 @@
+!set Past papers | Both Quiz 1 papers with the official answers. | keep
+@sahitya_akademi | 2023,2024
+Q The establishment that is mandated to sustain and promote literary activities in India with a view to forging national cultural unity is ________.
+- National Translation Mission
+- Sahitya Samvad
+- Central Institute of Indian Languages
++ Sahitya Akademi
+= The Government Resolution: foster literary activity in all Indian languages and "through them promote the cultural unity of the country". Inaugurated 12 March 1954.
+
+@brahmanas | 2023,2024
+Q ________ had to be studied while carrying on with one's daily life in the larger community, whereas ________ were meant for study in the seclusion of the forest.
+- Aranyakas; Upanishads
+- Samhitas; Brahmanas
+- Vedas; Samhitas
++ Brahmanas; Aranyakas
+= Brahmanas were studied during daily life in the community; Aranyakas in the forest (aranya = forest).
+
+@indian_epics | 2023,2024
+Q The Hindus also relate to the Indian epics as ________.
+- Itihaas, or myths, legends & stories
+- Itihaas, or historiography
+- Itihaas, or social philosophy
++ Itihaas, or that which happened
+= Your notes: Itihaas, "that which occurred".
+
+@brahmanas | 2023,2024
+Q The commentaries on the Vedas are to be found in the ________.
+- Upanishads
+- Puranas
++ Brahmanas and Aranyakas
+- Samhitas
+= The Brahmanas are the commentaries; the Aranyakas continue the enquiry in the forest.
+
+@prasad | 2023,2024
+Q "Desperately Seeking India" is a poem written by ________.
+- Rajendra Prasad
+- Venkatesh Prasad
+- Ravishankar Prasad
++ G.J.V. Prasad
+= The poem whose speaker is an outsider everywhere: "In Madras, an Aryan spy..."
+
+@complit | 2023,2024
+Q Comparative literary analysis is usually carried out by adopting the two approaches of picking ________.
+- Plot and setting
+- Point of view and conflict
+- Language and character(s)
++ Genre and theme
+= Genre across languages, or idea/theme across languages.
+
+@upanishads | 2023,2024
+Q There are about ________ principal Upanishads.
+- 7
+- 16
+- 10
++ 13
+= Thirteen principal Upanishads (eleven Brahmanas, three Aranyakas).
+
+@tolkappiyam | 2023,2024
+Q Tolkappiyam is a text from the ________.
+- Jain religious tradition
++ Tamil Sangam literature
+- Sanskrit literature
+- Buddhist religious tradition
+= The earliest known Tamil work: a grammar that survived from the second Sangam.
+
+@meghaduta | 2023,2024
+Q Kalidasa's Meghaduta or Cloud Messenger, falls into the category of ________.
+- Belles-lettres
+- Play
++ Lyric poem
+- Novel
+= Not in your notes. In the notes' terms it is a laghukavya (lyric poetry).
+
+@indira | 2023,2024
+Q India is a thought and an idea because ________.
++ All the options are correct
+- India is so vast and diverse that it is not possible to capture its essence and define it in simple cartographic terms
+- Despite India's astonishing diversity and variegated history, a fundamental unity ties together India and all Indians
+- India's long civilisational continuity has shaped its unique outlook and that outlook has transcended the borders of India and influenced peoples and cultures elsewhere in the world
+- None of the options is correct
+- India is much more than the sum total of its peoples, cultures, histories, and geographical area
+= Every listed reason fits the lecture built around Indira Gandhi's 1971 line.
+
+@civilisation | 2023,2024
+Q The statement that "a single shelf of a good European library was worth the whole native literature of India" was made by ________.
++ T.B. Macaulay
+- James Mill
+- Robert Clive
+- Friedrich Max Müller
+= Macaulay, the villain of the slide on Indian civilisation.
+
+@vocab | 2023,2024
+Q Which of the following is a relatively more abstract concept?
+- People
+- State
+- Country
++ Nation
+= The nation is more abstract; the state carries a sense of power; a country is native land.
+
+@vedas | 2023,2024
+Q The word "Veda" derives from the verb word ________.
+- Vadati
++ Vid
+- Ved
+- Viditva
+= Vid: to know.
+
+@vocab | 2023,2024
+Q Which of the following embodies a sense of power structure?
+- People
++ State
+- Country
+- Nation
+= The state carries a sense of the structure of power.
+
+@tamil_bhakti | 2023,2024
+Q Bhakti literature in the Tamil-speaking region emerged from the devotional songs sung by the ________.
+- Madhva and Gour saints
+- Brahmin and Vaishnava saints
+- Brahmin and Saiva saints
++ Saiva and Vaishnava saints
+= Tamil Bhakti, 6th–7th centuries AD: Saiva and Vaishnava saints, a personal god, protest against ritual.
+
+@sruti | 2023,2024
+Q The Sruti texts contain whatever is heard and revealed, and the Smriti texts are made up of all that is remembered, recorded from memory and later consolidated into a literary tradition.
++ The whole statement is true
+- Only true about Smriti texts
+- The whole statement is false
+- Only true about Sruti texts
+= Both halves match the notes word for word.
+
+@against_plural | 2023,2024
+Q One of the most compelling arguments in favour of the literature of India being singular is that ________ cannot be considered the only yardstick for categorizing literature.
+- Region
+- Class
++ Language
+- Gender
+= Argument 1 against the plural: language can't be the only criterion.
+
+@nilavilakku | 2023,2024
+Q The idea of India's many languages producing a unitary Indian literature is often explained by the analogy of traditional Indian ________.
+- Temple Bells
+- Anklets
++ Base Lamps
+- Chandelier
+= K. M. George's Nilavilakku: many wicks, one light.
+
+@mahabharata | 2023,2024
+Q Bhagavad Gita is contained in the following ancient text ________.
++ Mahabharata
+- Ramayana
+- Veda
+- Purana
+= The Mahabharata contains the Bhagavad Gita, the essence and source of Hindu philosophical thought.
+
+@epic_def | 2023,2024
+Q An epic does not have the following feature:
+- Formal and elevated style
+- Long verse narrative
++ Cramped or meagre setting
+- Serious subject-matter
+= The epic's setting is huge in scale: worldwide or larger.
+
+@valmiki | 2023,2024
+Q The term "Adikavi" is commonly used to refer to ________.
+- Adi Shankara
+- Vyasa
++ Valmiki
+- Ilango Adigal
+= Valmiki, the first poet; the Ramayana is the first epic in Sanskrit.
+
+@requirements | 2023,2024
+Q In order to carry out a comparative literature study, one needs to know at least ________.
++ Two languages
+- One language
+- Three languages
+- Four languages
+= The classic requirement: at least two languages.
+
+@sruti | 2023,2024
+Q Which of the following is not included in the body of Shruti texts?
+- Vedas
+- Aranyakas
++ Puranas
+- Brahmanas
+- Upanishads
+= The Puranas are Smriti.
+
+@cultural_unity | 2023,2024
+Q ________ served as the link language in India during ancient times.
+- Apabhramsha
+- Pali
++ Sanskrit
+- Prakrit
+= Even after Apabhramsa, the Prakrits and Pali came along, Sanskrit stayed a link language.
+
+@smriti | 2023,2024
+Q Which of the following is not included in the body of Smriti texts?
+- Mahabharata
+- Vedangas
++ Samhitas
+- Ramayana
+- Bhagavatapurana
+= Samhitas are Sruti. Smriti = Vedangas, epics, Puranas.
+
+@dilemmas | 2023,2024
+Q Which of the following dilemmas does not contribute to the difficulty in the conceptualization of the category called 'Indian literature'?
+- Indigenous Indian languages versus languages of India's erstwhile colonizers
+- Scheduled versus unscheduled languages of India
++ Elite culture versus popular culture in India
+- Singular Indian literature versus plural Indian literatures
+= The other three are the dilemmas in Part 1.
+
+@memory_forgetting | 2023,2024
+Q Which of the following factors is contrary to the general assumptions about a nation?
+- Homogeneity among the population
++ Heterogeneity among the population
+- Forgetting episodes of violence, brutality and humiliation
+- Remembering of past triumphs and accomplishments
+= Nation-building wants unity and homogeneity, memory and selective forgetting.
+
+@prakrit | 2023,2024
+Q Some of the characters in many ancient Sanskrit plays are depicted as speaking in ________.
+- Tamil
++ Prakrit
+- Telugu
+- Kannada
+= Especially women and servants.
+
+@meghaduta | 2023,2024
+Q In Kalidasa's Meghaduta or Cloud Messenger, the banished Yaksha has been away from his home in the Himalayas for ________ months when the first cloud warns him of the approach of the rainy season.
++ 8
+- 6
+- 7
+- 5
+= Not in your notes. Eight months.
+
+@civilisation | 2023,2024
+Q The concept of "Bharatvarsha" acquired new meaning and significance during the ________ times.
+- Buddhist revival
+- Medieval
+- Ancient
++ Colonial
+= Colonial times: Macaulay, the "civilizing mission", and the nationalist answer.
+
+@mahabharata | 2023,2024
+Q The original name of the epic Mahabharata is ________.
+- Maya
+- Daya
+- Chaya
++ Jaya
+= Jaya ("victory"), by Vyasa; then Bharata by Vaisampayana; then Mahabharata by Sauti.
+
+@earliest_langs | 2023,2024
+Q The earliest writing in India was in ________.
++ Sanskrit, Pali, Prakrit, Tamil and Kannada
+- Sanskrit, Pali, Prakrit, Tamil and Gujari
+- Sanskrit, Pali, Prakrit, Tamil and Telugu
+- Sanskrit, Pali, Prakrit, Tamil and Apabhramsa
+= The five earliest languages end with Kannada.
+
+@fables | 2023,2024
+Q Visnusarma's Panchatantra falls under the category of ________.
+- Gadyakavya
++ Fable
+- Mahakavya
+- Prasasti
+= Panchatantra (Vishnusharma) and Kathasaritsagara (Somadeva) are the most popular fables.
+
+@samhitas | 2023,2024
+Q The Vedic collections of hymns, prayers, benedictions, sacrificial formulae, and litanies are called ________.
+- Upanishads
++ Samhitas
+- Aranyakas
+- Brahmanas
+= Samhita means collection, "joined together".
+
+@requirements | 2023,2024
+Q Which of the following comparisons does not qualify as an instance of doing comparative literature studies?
++ Modern Bengali novel and modern Bengali short story
+- Spanish novel and German novel
+- Hindi film and Hindi short story
+- Classical Sanskrit drama and contemporary Gujarati drama
+= Same language, same period, same art form: nothing is crossed. The others cross language, art form, or time and language.
+
+@kamban_intro | 2023,2024
+Q Which of the following is not regarded as a text from the classical Tamil period?
++ Kamban's Ramavataram
+- Tiruvalluvar's Tirukkural
+- Ilango Adigal's Cilappatikaram
+- Chithalai Chathanar's Manimekalai
+= Kamban wrote around the 12th century. The 2024 paper asks the same question as "the ancient period of Tamil literature".
+
+@natyashastra | 2023,2024
+Q Natyashastra, the classical Sanskrit theoretical text on the performing arts, was written by ________.
++ Bharata
+- Bhasa
+- Visakhadatta
+- Kalidasa
+= Bharata, 1st century BC to 1st century AD.
+
+@vedas | 2023,2024
+Q The oldest of the vedas is the ________.
+- Sama Veda
+- Atharva Veda
+- Yajur Veda
++ Rig Veda
+= The Rigveda is the earliest known work of its kind.
+
+@translation | 2023,2024
+Q Translation plays an important role in comparative study because translation helps us to uncover ________.
+- How texts remain the same and how they undergo change
++ Both the options are correct
+- Both the options are wrong
+- How texts relate to each other and how they differ
+= Course aim 6 covers both.
+
+@akam_puram | 2023,2024
+Q The two major forms of literature as per Tamil Sangam poetics are ________.
+- 'Puram' and 'Corkkam'
+- 'Cankam' and 'Puram'
++ 'Akam' and 'Puram'
+- 'Akam' and 'Cankam'
+= Akam (love, the interior) and puram (war, the outer world).
+
+@meghaduta | 2023,2024
+Q In his Meghaduta or Cloud Messenger, Kalidasa lavishly describes the cities of ________ and ________ that the monsoon clouds will pass through in their long journey from the Vindhyas to the Himalayas.
+- Nashik; Haridwar
++ Vidisha; Ujjain
+- Ujjain; Nashik
+- Vidisha; Haridwar
+= Not in your notes. The 2024 paper asked for one city: Ujjain (distractors Haridwar, Banaras, Nashik).
+
+@khusraw | 2023
+Q The musical instruments that Amir Khusraw is given credit for having introduced to India are ________.
+- Sarangi and bansuri
+- Pakhawaj and mridangam
++ Sitar and tabla
+- Sarod and santoor
+= Not in your notes. Sitar and tabla.
+
+@urdu | 2023
+Q The Urdu language has historically been known by various names but never by the name of ________.
++ Bhatiali
+- Rekhta
+- Dakkhani
+- Hindavi
+= Not in your notes. Bhatiali is a Bengali boatmen's folk-song genre.
+
+@khusraw | 2023
+Q Amir Khusraw was popularly known as ________.
++ Tuti-e-Hind
+- Sher-e-Hind
+- Fakhr-e-Hind
+- Kaisar-i-Hind
+= Not in your notes. Tuti-e-Hind, the Parrot of India.
+
+@urdu | 2023
+Q Urdu, Arabic and Persian gave to Indian literature the literary trope and form of the ________.
+- Rubai
+- Qasida
++ All of the above
+- Ghazal
+= Not in your notes. Ghazal, qasida and rubai.
+
+@bhakti | 2023
+Q The term 'Bhakti' in the Tamil language quite literally stands for ________.
+- Consecration
+- Devotion
++ Eating God
+- Piety
+= Not in your notes. The course key says "eating God"; "devotion" is the trap.
+
+@bhakti | 2023
+Q Who among the following is not a Bhakti poet?
+- Andal
++ Valmiki
+- Lal Ded
+- Tukaram
+= Andal (Tamil), Lal Ded (Kashmiri) and Tukaram (Marathi) are Bhakti poets. Valmiki is the Adikavi.
+
+@bhakti | 2023
+Q Like many other Bhakti saint-poets of the medieval period, Kabir came from the working class and he was by profession a ________.
+- Boatman
+- Cobbler
++ Weaver
+- Carpenter
+= Not in your notes. A weaver.
+
+@bhakti | 2023
+Q The songs of some of the Bhakti saint-poets made their way into the ________.
+- Dhammapada
+- Quran
+- Bible
++ Guru Granth Sahib
+= Not in your notes. The Guru Granth Sahib.
+
+@nanak | 2023
+Q Guru Nanak had a mystical experience when he was ________ years of age.
++ 30
+- 20
+- 10
+- 40
+= Not in your notes. Thirty.
+
+@urdu | 2023
+Q The language of the common folk in Delhi and its surrounding areas during the late medieval times is known as ________.
++ Khariboli
+- Awadhi
+- Nastaliq
+- Dakkhani
+= Not in your notes. Nastaliq is a script, not a language.
+
+@nanak | 2023
+Q In Sikhism, there is a powerful fusion of the ________ and ________ philosophies.
++ Bhakti; Sufi
+- Hindu; Buddhist
+- Sufi; Baul
+- Saiva; Vaishnava
+= Not in your notes. Bhakti and Sufi.
+
+@sufism | 2023
+Q Who among the following is not regarded as a Sufi thinker?
+- Amir Khusraw
+- Bullhe Shah
+- Shah Qalandar
++ Javed Akhtar
+= Not in your notes. Javed Akhtar is a modern screenwriter and lyricist.
+
+@nanak | 2023
+Q Before the Guru Gaddi (Seat of the Guru) was passed on to the holy scripture Guru Granth Sahib, Sikhism was led by ________ human gurus or spiritual masters.
+- 9
++ 10
+- 12
+- 11
+= Not in your notes. Ten.
+
+@bhakti | 2023
+Q The Bhakti movement spread across India by travelling through the following regional route:
+- South-North-East-West
+- South-North-West-East
++ South-West-North-East
+- South-East-North-West
+= Not in your notes. It began in the Tamil south.
+
+@sufism | 2023
+Q Sufism derives from the Arabic term for a mystic, sufi, which is in turn derived from 'suf', plausibly a reference to the ________ of early Islamic ascetics.
+- Yellow silk sash
+- Green cotton headgear
+- White muslin raiment
++ Blue woollen garment
+= Not in your notes. Suf = wool.
+
+@literary_epics | 2023
+Q In the Western context, which one of the following is not considered a traditional epic?
++ Paradise Lost
+- Iliad
+- Beowulf
+- Odyssey
+= Paradise Lost is a literary epic imitating Virgil's Aeneid.
+
+@sufism | 2023
+Q Which of the following is not one of the pillars of Sufism?
++ Hajj
+- Ishraq
+- Iman
+- Ihsan
+= Not in your notes. Hajj is a pillar of Islam.
+
+@medieval_performance | 2023
+Q Literary texts that were written to complement performances came into vogue during the following period of Indian literature:
+- Contemporary Indian literature
+- Ancient Indian literature
+- Indian literature under colonial rule
++ Medieval Indian literature
+= Not in your notes. The medieval period, 1000–1800.
+
+@khusraw | 2023
+Q Amir Khusraw was the spiritual disciple of ________.
+- Fariduddin Ganjshakar
+- Khwaja Moinuddin Chishti
++ Hazrat Nizamuddin Auliya
+- Qutbuddin Bakhtiar Kaki
+= Not in your notes. Nizamuddin Auliya of Delhi.
+
+@tinais | 2024
+Q tinai is a concept associated with ________ poetics.
+- Sanskrit
+- Telugu
++ Tamil
+- Kannada
+= Tamil Sangam poetics: the five landscapes of love.
+
+@tinais | 2024
+Q There are a total of ________ tinais.
+- 6
+- 7
++ 5
+- 4
+= Kurinci, Neytal, Palai, Mullai, Marutam.
+
+@cilappatikaram | 2024
+Q Who among the following is commonly known as "the venerable ascetic prince"?
+- Veeraraghavachariar
+- Cenkuttuvan
++ Ilanko Atikal
+- Cittalaic Cattanar
+= Not in your notes. Ilanko Atikal, author of the Cilappatikaram.
+
+@ashadh | 2024
+Q In Mohan Rakesh's play Ashadh Ka Ek Din, the reason provided by the protagonist Kalidasa for not accepting the position of court poet at Ujjain was that ________.
+- His first priority was to restore his dilapidated house
+- He wished to take care of his maternal uncle Matul
+- He was sceptical of the artificial life at the royal court
++ He did not want to be uprooted from his natural surroundings
+= Not in your notes.
+
+@cilappatikaram | 2024
+Q The Cilappatikaram is set in the three kingdoms of ________.
++ Cholas, Pantiyas, and Cerals
+- Pantiyas, Chalukyas, and Cerals
+- Cholas, Sinhalas, and Cerals
+- Cholas, Gangas, and Chalukyas
+= Not in your notes. The Chola, Pandya and Chera kingdoms.
+
+@cilappatikaram | 2024
+Q The literary sequel to the Tamil epic Cilappatikaram is ________.
+- Tolkappiyam
+- Thirukural
++ Manimekalai
+- Ettuttokai
+= Your notes pair the two as the Tamil epics.
+
+@cilappatikaram | 2024
+Q The ornament at the centre of the plot of Cilappatikaram is ________.
+- A waist chain
+- An earring
++ An anklet
+- A necklace
+= Not in your notes. "Cilappatikaram" means the tale of an anklet.
+
+@kannada | 2024
+Q The earliest known literary work in Kannada is ________.
+- Rajasekharavilasa
++ Kavirajamargam
+- Lilavati
+- Vacanakavyas
+= Kavirajamargam, around 850 AD.
+
+@karna_kunti | 2024
+Q In the dialogue between Karna and Kunti on the eve of the great battle of Kurukshetra that Rabindranath Tagore recreates for his contemporary audience, Tagore's treatment of the subject departs from the original epic in that it is more ________.
+- Feminist
+- Aristocratic
++ Psychological
+- Historical
+= Not in your notes. More psychological.
+
+@kalidasa | 2024
+Q The text generally believed to have been written by Kalidasa in his youth is ________.
+- Malavikagnimitra
++ Ritusamhara
+- Vikramorvashi
+- Meghaduta
+= Not in your notes. The Ritusamhara.
+
+@kalidasa | 2024
+Q Most scholars and critics believe that Kalidasa lived during the ________.
+- Shunga Empire
+- Sinhala Empire
+- Maurya Empire
++ Gupta Empire
+= Not in your notes. The Gupta Empire.
+
+@ashadh | 2024
+Q Although Mohan Rakesh's play Ashadh Ka Ek Din borrows its title from Kalidasa's Meghaduta, scholars argue that the plot of Rakesh's play aligns more easily with Kalidasa's play ________.
++ Abhijanashakuntalam
+- Malavikagnimitra
+- Vikramorvashi
+- Raghuvamsha
+= Not in your notes. Abhijnanashakuntalam.
+
+@discovery | 2024
+Q Identify the scholar whose name is not connected with Tamil Sangam Literature.
+- CW Thamotharampillai
+- AK Ramanujan
++ MS Swaminathan
+- UV Swaminatha Iyer
+= The other three rediscovered or translated the Sangam poems.
+
+@three_sangams | 2024
+Q In ancient Tamil Nadu, there were ________ academies where poets congregated to debate & authorize literary works.
++ 3
+- 4
+- 5
+- 2
+= Then-Madurai, Kapadapuram and Madurai.
+
+@ashadh | 2024
+Q In Mohan Rakesh's play Ashadh Ka Ek Din, the protagonist Kalidasa gets married to a princess named ________.
+- Ambika
+- Shakuntala
+- Mallika
++ Priyangumanjari
+= Not in your notes. Priyangumanjari.
+
+@ashadh | 2024
+Q In Mohan Rakesh's play Ashadh Ka Ek Din, the new name that the protagonist Kalidasa assumes after finding fame and glory in the royal court is ________.
+- Chandragupta
+- Samudragupta
++ Matrugupta
+- Kirtigupta
+= Not in your notes. Matrugupta.
+
+@ashadh | 2024
+Q Mohan Rakesh was a pioneer of the ________ literary movement in Hindi literature.
+- Nayi Jawani
++ Nayi Kahani
+- Nayi Kavita
+- Naya Natak
+= Not in your notes. Nayi Kahani.
+
+@cilappatikaram | 2024
+Q To the traditional categories of Tamil literary discourse, Ilanko Atikal introduced the new category ________.
+- Love/erotic
+- War/heroic
+- Transient/ephemeral
++ Mythic/allegory
+= Not in your notes. Love/erotic is akam and war/heroic is puram; the mythic/allegorical is the new category.
+
+@tinais | 2024
+Q Which of the following is not one of the tinais?
++ Plateau
+- Mountain
+- Coast
+- Jungle
+= Mountain = Kurinci (hills), coast = Neytal (seashore), jungle = Mullai (forest). There is no plateau tinai.

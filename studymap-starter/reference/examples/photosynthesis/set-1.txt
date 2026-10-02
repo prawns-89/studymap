@@ -1,0 +1,24 @@
+!set Practice set | Five questions to check the map. | shuffle
+@light_reactions | exam
+Q The oxygen released in photosynthesis comes from ________.
++ water
+- carbon dioxide
+- glucose
+- RuBP
+= Photolysis splits water in the light reactions.
+
+@calvin | exam
+Q The Calvin cycle takes place in the ________.
++ stroma
+- thylakoid membrane
+- grana lumen
+- cytoplasm
+= The light reactions are in the thylakoids; the Calvin cycle is in the stroma.
+
+@photosystems |
+Q Which photosystem splits water?
++ Photosystem II
+- Photosystem I
+- Both photosystems
+- Neither photosystem
+= PSII (P680) acts first and splits water.

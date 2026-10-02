@@ -1,0 +1,67 @@
+!title Photosynthesis Map
+!eyebrow Biology · Plant physiology
+!tagline How light becomes sugar: the reactions, the machinery, and the limits.
+!center photosynthesis
+!center-caption light in, sugar out
+!tag exam | asked in exams | warm
+!tag extra | beyond the syllabus | dashed
+
+%L | Light reactions | Stage 1 | In the thylakoid membranes
+@light_reactions | Light-dependent reactions | Light reactions | 1
+- Take place in the **thylakoid membranes** of the chloroplast.
+- Use light energy to split water (**photolysis**), releasing **O₂** as a by-product. {exam}
+- Produce **ATP** and **NADPH** for the Calvin cycle.
+> calvin | supply ATP and NADPH
+> chloroplast | happen in the thylakoids
+@photosystems | Photosystems I and II | Photosystems | 2
+- **PSII** (P680) acts first and splits water; **PSI** (P700) re-energises electrons to make NADPH. {exam}
+- Named in order of discovery, not the order they work.
+> light_reactions | the two engines
+@etc | Electron transport chain | Electron transport | 2
+- Carries electrons from PSII to PSI, pumping protons into the thylakoid space.
+> atp_synthase | builds the proton gradient
+@atp_synthase | ATP synthase | ATP synthase | 3
+- Protons flowing back through it drive ATP formation (**chemiosmosis**).
+
+%C | Calvin cycle | Stage 2 | In the stroma
+@calvin | Calvin cycle (light-independent reactions) | Calvin cycle | 1
+- Takes place in the **stroma**.
+- Fixes **CO₂** into sugar using ATP and NADPH. {exam}
+- Three phases: **fixation, reduction, regeneration** of RuBP.
+> rubisco | its first enzyme
+@rubisco | RuBisCO | RuBisCO | 1
+- Enzyme that fixes CO₂ onto **RuBP**; probably the most abundant protein on Earth. {extra}
+- Also reacts with O₂ (**photorespiration**), which wastes energy.
+> c4_cam | the problem C4 and CAM solve
+@g3p | G3P, the sugar output | G3P | 2
+- Glyceraldehyde-3-phosphate: the three-carbon sugar that leaves the cycle.
+- Two G3P make one **glucose**.
+> calvin | the product
+
+%S | Structure | Where | The chloroplast
+@chloroplast | Chloroplast | Chloroplast | 1
+- Double-membrane organelle with **thylakoids** stacked into **grana**, surrounded by **stroma**.
+- Contains its own DNA. {extra}
+@pigments | Pigments | Pigments | 2
+- **Chlorophyll a** is the main pigment; chlorophyll b and **carotenoids** are accessory pigments.
+- Chlorophyll absorbs red and blue light and reflects **green**. {exam}
+> photosystems | sit in the photosystems
+
+%F | Limits | Factors | What speeds it up or slows it down
+@limiting | Limiting factors | Limiting factors | 1
+- **Light intensity**, **CO₂ concentration** and **temperature**. {exam}
+- The factor in shortest supply sets the rate.
+> rubisco | temperature affects the enzyme
+@c4_cam | C4 and CAM plants | C4 & CAM | 2
+- **C4** (maize, sugarcane) separate CO₂ capture in space; **CAM** (cacti, pineapple) separate it in time, opening stomata at night.
+> limiting | adaptations to heat and drought
+
+%O | Overview | Big picture | The whole process
+@photosynthesis | Photosynthesis | Photosynthesis | 1
+- 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂. {exam}
+- Converts light energy into chemical energy stored in sugar.
+> light_reactions | stage 1
+> calvin | stage 2
+@respiration | Link to respiration | Respiration | 3
+- Cellular respiration runs roughly the reverse equation, releasing the stored energy.
+> photosynthesis | the mirror image

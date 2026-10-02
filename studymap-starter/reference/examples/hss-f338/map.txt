@@ -1,0 +1,907 @@
+!title HSS F338 Quiz Atlas
+!eyebrow Comparative Indian Literature · Quiz 1
+!tagline Every fact from your notes, linked into one map, with both past papers and three new sets of 80 questions.
+!center nilavilakku
+!center-caption many wicks, one light
+!tag 2023 | 2023 paper | warm
+!tag 2024 | 2024 paper | warm
+!tag outside | outside source | dashed
+!tag notes+ | added context | cool
+!tag notes | from another part of the notes | plain
+!tag beyond | not in notes | dashed
+!source Kalidasa (Wikipedia) | https://en.wikipedia.org/wiki/Kalidasa
+
+%A | Comparative | Part 1 | What "comparative" means
+@complit | Comparative literature: two approaches | Comparative lit | 1
+- The study of literatures in different languages, compared with one another.
+- Approach 1: pick a **genre**. Example: the European novel of the 18th century, comparing French, German, Italian and English novels side by side.
+- Approach 2: pick a **theme or idea**. Example: the idea of the nation: how languages and literatures express what a nation is, what belonging means, what national identity means.
+- Memory hook: **genre across languages, or idea across languages**. Past papers phrase it as "genre and theme" (distractors: plot and setting; point of view and conflict; language and characters). {2023,2024}
+> requirements | what comparison needs
+> method_discipline | method and discipline
+> valmiki_vs_kamban | the method in action: one story, two languages
+@requirements | What comparison needs, and how far it reaches | Scope of comparison | 2
+- You need to know **at least two languages** and use them to read and compare literary texts (past-paper answer; distractors one, three, four). {2023,2024}
+- Comparison works **across time**: classical and medieval texts alongside modern ones, e.g. a Sanskrit text alongside a Hindi text.
+- It isn't limited to literature vs literature: you can compare literature with **other art forms, e.g. film**.
+- So a pair that stays inside one language, one period and one form does **not** qualify: modern Bengali novel vs modern Bengali short story (past-paper answer). Hindi film vs Hindi short story qualifies (art forms); classical Sanskrit drama vs contemporary Gujarati drama qualifies (time and language); Spanish novel vs German novel qualifies (languages). {2023,2024}
+> translation | reading across languages
+@aims | Six aims of the course | Course aims | 3
+- 1 Get familiar with the diversity of literature around us in India.
+- 2 Learn the literary history of India.
+- 3 Learn something of the theories of comparative literature.
+- 4 Watch and learn how comparative studies of literary texts are actually done.
+- 5 Understand the role translation plays in comparative study.
+- 6 See how texts relate to each other and how they differ: how they stay the same, and how they change.
+> translation | aims 5 and 6
+@translation | The role of translation | Translation | 2
+- Translation helps uncover **both** how texts relate to each other and how they differ **and** how texts remain the same and how they undergo change. Past-paper answer: "Both the options are correct". {2023,2024}
+- Your readings are translations too: the Rig Veda hymns and the Ramayana extract are **Ralph T. H. Griffith**'s; the Sangam poems are **A. K. Ramanujan**'s.
+> rigveda_reading | Griffith, 1896
+> valmiki_abduction | Griffith's rhyming translation
+> ramanujan | translator of the Sangam poems
+@indianlit_def | What is Indian Literature? (first pass) | Indian literature? | 2
+- The literatures produced in the different Indian languages.
+- **22 scheduled** languages against countless unscheduled ones.
+- Indian languages vs **English**, and by extension French, Portuguese, Dutch and the other colonial languages. English has a special role.
+- The question the course keeps returning to: **singular or plural**? Indian Literature, or Indian Literatures?
+> dilemmas | the three dilemmas
+> language_atlas | 22 scheduled languages
+> concept_il | Part 4 takes it up
+@dilemmas | Dilemmas in defining "Indian literature" | Dilemmas | 2
+- The three dilemmas in Part 1: indigenous Indian languages vs the colonisers' languages; scheduled vs unscheduled languages; singular vs plural Indian literature(s).
+- **Not** on the list: elite culture vs popular culture. Both past papers use it as the odd one out. {2023,2024}
+@evaluation | Evaluation | Evaluation | 3
+- Quiz 1: 20%. Quiz 2: 20%. In-class assignment: 20%. Comprehensive exam: 40%.
+- Dates are announced in advance. The slide says there is no "surprise" factor.
+- The past Quiz 1 papers had 60 questions at 0.25 marks each (15 marks), taken in about 20 minutes. {2023,2024}
+@method_discipline | Method and discipline | Method + discipline | 2
+- Comparative literature is **both a method and a discipline**: a tool for analysis and an independent field with its own theories, questions, approaches, scope and identity.
+- As a discipline it studies how literature travels across borders, how it interacts with history, philosophy, art and culture, and how it shapes our understanding of the world.
+
+%B | Indian | Part 2 | Nation, identity and the idea of India
+@what_is_india | What is Indian? Who is an Indian? What is India? What was India? | Four questions | 3
+- The lecture opens with these questions. The slides are mostly images: maps, India's cultural influence, the Indian diaspora.
+- The point: none of the questions has a simple answer.
+> indira | "India is an idea"
+> name_india | even the name is a construct
+@indira | "India is an idea": Indira Gandhi, 1971 | Indira Gandhi, 1971 | 1
+- "India is not just its land, mountains and rivers, India is not just its **six lakh** villages and towns, India is not just its **fifty-five crore** children, India is a thought, India is an idea."
+- Past-paper question "India is a thought and an idea because ___": **All the options are correct**. The options were: too vast and diverse to define in cartographic terms; a fundamental unity ties India and all Indians together; civilisational continuity that has influenced cultures beyond India; more than the sum of its peoples, cultures, histories and geography. {2023,2024}
+> prasad | the idea punctured
+> fundamental_unity | "a fundamental unity ties together India"
+@prasad | "Desperately Seeking India": G. J. V. Prasad | Desperately Seeking India | 1
+- A poem by **G. J. V. Prasad** (past-paper distractors: Rajendra, Venkatesh and Ravishankar Prasad). {2023,2024}
+- "In Delhi, without a visa. In Madras, an Aryan spy. Kashmir's no vacation. They tell me it's a nation. And Punjab wants to die. In Bombay, I'm an invader. In Assam, an exploiting trader. They would throw me from the hills, kick me from the plains. I promise never to mention India again."
+- Bitter and funny: the speaker is an outsider in every region. If everyone is a foreigner somewhere, where is India?
+> ethnic | Indo-Aryan and Dravidian
+> ramayana | "Aryan spy": the Ramayana read as Aryan expansion south
+@ethnic | Ethnic groups | Ethnic groups | 2
+- Five main groups: **Indo-Aryans, Dravidians, Tibeto-Burmans, Austroasiatics and Negritos**.
+- Other communities: Parsis (Zoroastrians), Jews, Anglo-Indians, Arabs, Persians, Turks, Afghans, Central Asians and others.
+@religions | Religious groups (%) | Religions % | 2
+- Hinduism **79.80** · Islam **14.23** · Christianity **2.30** · Sikhism **1.7** · Buddhism **0.7** · Jainism **0.37** · other religions **0.66** · unspecified **0.24**.
+- Rounded: about 80 Hindu, 14 Muslim, a bit over 2 Christian, under 2 Sikh, under 1 Buddhist, under half a percent Jain.
+@language_atlas | The language atlas of India | Language atlas | 1
+- **5** language families · **14** major writing systems (scripts) · **22** languages in the Eighth Schedule of the Constitution · **400** spoken languages · **thousands** of dialects.
+- Chant it: five, fourteen, twenty-two, four hundred, thousands.
+> sahitya_akademi | the Akademi works in 24 languages, English included
+> indianlit_def | scheduled vs unscheduled
+@outcome | Outcome: an "unnatural nation"? | Unnatural nation? | 2
+- India is complex and diverse, impossible to generalise about, with a vast, elaborate and varied past.
+- Deep links with **three civilisations: Hindu, Islamic and Christian**.
+- So what holds India together? Is it, in the slide's quotation marks, an **"unnatural nation"**?
+> global_south | why the nation looks forced here
+@vocab | Nation, country, people, state | Nation vs state | 1
+- **Country**: a tract of native land, mostly rural or geographical areas; it usually includes the people who live there. In political talk "country" often means "people".
+- **Nation**: more **abstract**. Past-paper answer to "a relatively more abstract concept". {2023,2024}
+- **State**: carries a sense of the **structure of power**. Past-paper answer to "embodies a sense of power structure". {2023,2024}
+> memory_forgetting | how a nation is built
+@nation_history | Nations are modern | Nations are modern | 2
+- Nations are modern, not ancient.
+- Before nations there were empires, kingdoms and city-states. The slides also list republics, municipal kingdoms, confederations of local republics, and empires.
+> modernity | a product of modernity
+@memory_forgetting | Memory and forgetting | Memory & forgetting | 1
+- A nation is built through **shared memory and selective forgetting**: past triumphs and accomplishments are kept; episodes of violence, brutality and humiliation are forgotten.
+- Nation-building wants **unity and homogeneity**, usually resting on a common language, culture, religion, territory and history. "The essence of a nation is that all individuals have many things in common."
+- Race, religion, language and geography are vital to how a nation is imagined. History gives the nation a body (**"corporeality"**). The nation is treated as sacred, immune to change and inflexible. It is also the will of the people; secession is a change in territorial span.
+- The lecture then asks: was nationalism the product of a sense of community that already existed?
+- So **heterogeneity** among the population is contrary to the general assumptions about a nation (past-paper answer; homogeneity, remembering triumphs and forgetting violence all fit). {2023,2024}
+- The notes add that the memory-and-forgetting idea comes from **Ernest Renan**'s lecture "What is a Nation?" {notes+}
+> gellner | theories of nationalism
+> smith | "shared myths and historical memories"
+@gellner | Ernest Gellner | Gellner | 1
+- Nationalism is connected to, and decided by, the **needs of industrial society**. Modernity is the foundation of nations and nationalisms.
+- Industrial society shakes up old identity markers and class differences. **Education** produces a degree of homogenisation: everyone learns the same standard culture.
+- But moulding people into one homogeneous whole doesn't always work: "high" culture can coexist with peasant and artisan cultures.
+- In one line: nationalism is a product of industrial modernity, spread through education.
+@smith | Anthony D. Smith | A. D. Smith | 1
+- The nation: "Populations possessing a historic similarity, **shared myths and historical memories**, a mass, **public culture**, a **single economy** and **common rights and duties** for all members, which are legitimized by the principles of nationalism."
+@anderson | Benedict Anderson | Anderson | 1
+- The nation is an **"imagined community"**: you will never meet most of your fellow nationals, yet you feel bound to them.
+- It depends on **print-capitalism** (newspapers and novels) and is propped up by three pieces of modern apparatus: the **census, the map and the museum**.
+> raj | census, map and museum applied to India
+@hobsbawm | "Invented tradition" | Invented tradition | 3
+- The phrase is on the slides. The notes add that it belongs to the historian **Eric Hobsbawm**: traditions that feel ancient but were made quite recently, often for national purposes. {notes+}
+@modernity | The nation as a product of modernity | Modernity | 2
+- The nation and nationalism are outcomes of modernity. They came from the **European Enlightenment** and from **Romantic** thought.
+- Monarchy was replaced by democratic nation-states. Ideas of "self-determination, states and sovereignty" were carried to the rest of the world by **Western imperialism**.
+> global_south | the twist
+> gellner | industrial modernity
+@global_south | The nation in the Global South | Global South | 2
+- The European model is often treated as universal, but it differs from what happened in the Global South, whose societies are multi-ethnic, multi-religious and multilingual, with globalisation on top.
+- From there the concept of the nation looks **forced, a psychological construct**.
+- These ideas did not grow naturally in the Global South: borders between empires and dynasties were never fixed, and power and sovereignty were decentralised.
+> raj | India specifically
+@raj | India: a creation of the British Raj | British Raj | 1
+- The geographical and political idea of an Indian nation was a **creation of the British Raj**.
+- Its ingredients: Western education, scientific and social discoveries, print-capitalism, and the creation of an Indian intelligentsia.
+- The sentence to remember: India's antiquity, blurry territory and fluid populations were made concrete by **colonial museums, map-making and census** procedures. That is Anderson applied to India.
+> inner_domain | but modernity didn't reach everyone
+> civilisation | Bharatvarsha takes on new meaning in colonial times
+@inner_domain | Nationalism in the inner, spiritual domain | Inner domain | 1
+- Modernity, education and print-capitalism did not reach every Indian in the same way. So nationalism, unable to take shape in the rational public domain, was imagined and experienced in the **spiritual, inner domain**, and spread into popular awareness from there.
+- The notes add that this argument is associated with the historian **Partha Chatterjee**. {notes+}
+- What does inner nationalism look like? A **goddess**: India as Mother Goddess.
+> bankim | the goddess appears
+@bankim | Bankimchandra Chatterjee (1838–1894) | Bankim | 1
+- He stands at the birth of Indian nationalism.
+- His character **Kamalakanta** takes an overdose of **opium** and has a vision: floating alone on the great stream of time, "like a child without a mother", calling "Where is my mother? Where is Bengal?"
+- He sees an idol of the **saptami** day (the seventh day of the Durga festival), draped in gold, laughing and floating on the water: "this was my mother, my country". Ten jewelled arms stretched in ten directions, weapons, the enemy at her feet, the lion beneath her.
+- The nation is drowned now but will rise one day, "resplendent in new glory, carrier of new strength".
+> vande_mataram | his song
+> tagore_mother | another Bengali song to the Mother
+@vande_mataram | Vande Mataram | Vande Mataram | 1
+- "I bow to thee, Mother, richly-watered, richly-fruited, cool with the winds of the south, dark with the crops of the harvests, the Mother!"
+- Then martial: "Terrible with the clamorous shout of **seventy million** throats, and the sharpness of swords raised in twice seventy million hands, who sayeth to thee, Mother, that thou art weak?"
+- She is Durga with ten weapons, **Kamala** (Lakshmi) at play in the lotuses, and **Speech** (Saraswati), giver of all lore: power, wealth and learning. "It is thy image we raise in every temple."
+- The notes add that the song appears in Bankim's novel **Anandamath (1882)** and later became India's **national song**. {notes+}
+@tagore_mother | Tagore (1861–1941): a song to the Mother | Tagore's Mother | 2
+- "When did you come out of the heart of Bengal, O Mother dear, with such inexplicable splendour!" Refrain: **the doors of your golden temple have unlocked**.
+- Her right hand holds a blazing sword; her left hand takes away fear; her third eye glares; her untied hair is a cloud hiding thunder; her robes are sunlight-coloured. The mother who once sat poor and desolate in torn clothes is transformed.
+> jana_gana_mana | Tagore again
+> karna_kunti | Tagore retells the Mahabharata
+@jana_gana_mana | Jana Gana Mana | Jana Gana Mana | 2
+- "Thou art the ruler of the minds of all people, dispenser of India's destiny."
+- It names Punjab, Sind, Gujarat, Maratha, Dravida, Odisha and Bengal; the Vindhyas and Himalayas; the Yamuna and Ganges; the waves of the Indian Sea. "Victory, victory, victory to thee."
+- India is built up as a **catalogue of places** united under one ruler of minds.
+> fundamental_unity | ancient texts also list the regions
+@iqbal | Muhammad Iqbal (1877–1938): Saare Jahan Se Achha | Iqbal | 1
+- "Better than the entire world is our Hindustan. We are its **nightingales**, and it is our **garden** abode."
+- The tallest mountain is "our **sentry** and our watchman"; thousands of rivers play in its lap. "O flowing waters of the Ganges, do you remember that day when our **caravan** first disembarked on your waterfront?"
+- "**Religion does not teach us to bear animosity among ourselves.** We are of Hind, our homeland is Hindustan."
+- Ancient Greece, Egypt and Rome vanished without trace, but "our name and sign live on today".
+> firaq | the same caravan image
+@bharati | Subramania Bharati (1882–1921): "Indian Republic" | Bharati | 1
+- The great Tamil poet. Refrain: "Long live the Republic of Bharat! Victory to the Republic of Bharat!"
+- **Thirty crores** of people share this commonwealth. "We shall now lay down the law and die to preserve it. We'll rather send the world up in flames than suffer one man to starve."
+- "This is what Lord **Krishna** said: I live in all living things."
+- It ends: "We are of the same caste and race, we are children of Bharat all; we are equal in law and stature, and **every one is Bharat's King**!" A republic of equality: no hunger, no caste.
+> puranas | Krishna of the Bhagavata Purana
+@firaq | Firaq Gorakhpuri (1896–1982) | Firaq | 2
+- The Urdu poet: "On the soil of Hindustan, O Firaq, **caravans** from all over the world kept coming, and so was Hindustan made."
+- India made of arrivals. It pairs with Iqbal's caravan at the Ganges: two Urdu poets, one image.
+@name_india | The name "India" | The name "India" | 1
+- In its current form the term is fairly recent. The composers of the Vedic hymns (around **1500 BC**) did not think of themselves as "Indians". Like "Hindu" and "Buddhist", the term is applied with hindsight: a historical construct, but too hard to avoid.
+- The Constitution: "**India, that is Bharat, shall be a union of states.**"
+- Other names: Bharata, **Bharatavarsha**, Bharatam, Aryavarta, Jambudvipa, Indica, Al-Hind, Hindustan, Indostan, Mauryadesa, Himvarsha, and **Tianzhu** (the Chinese name).
+> civilisation | Bharatvarsha gains new meaning in colonial times
+@fundamental_unity | The fundamental unity of India | Fundamental unity | 2
+- Despite huge differences, there was and is enough in common in literary and intellectual traditions to study this part of the world as a unit. Cultural continuity between many texts supports this.
+- You needn't fully agree that the commonality was invented by Western Orientalists. All commonality is invented, but this invention came **centuries before the British**.
+- The evidence: ancient texts and the epics **list the regions** of what is now India and describe their peoples. More distant known regions, such as **Greece**, are not included.
+> boundaries | yet boundaries are fluid
+@boundaries | Geographical boundaries | Boundaries | 2
+- Boundaries are drawn arbitrarily in each era. India's latest were drawn in **1947** and have been disputed ever since.
+- Earlier "India" meant the **Indian subcontinent**. Many social scientists prefer **"South Asia"** (Sri Lanka, Nepal, Pakistan, Bangladesh), which isn't foolproof: is Myanmar part of it? Myanmar links with Thailand; parts of Pakistan link with Afghanistan.
+- Every unit shades into its neighbours. All boundaries are fluid and shifting.
+@why_cil | Why "Comparative" Indian Literature? | Why comparative? | 2
+- It acknowledges the differences that exist in India and **does not take commonality and cultural continuity for granted**. The comparative route covers both the differences and the commonalities.
+> cultural_unity | the twin aspects of unity and diversity
+@indianness | India, Indian, Indianness | Indianness | 2
+- India as Mother, Goddess, Nature and Civilisation.
+- Quote: in a contentious polity the sense of unity in diversity is often absent, yet "Indians share a **family resemblance** in the sense that there is a **distinctive Indian stamp** on certain universal experiences: growing up male or female, sex and marriage, behaviour at work, status and discrimination, the body in illness and health, religious life and, finally, ethnic conflict."
+- The slide stresses two words: **share** and **distinctive**.
+
+%C | Literature | Part 3 | Literature, language and folklore
+@lang_culture | Language and culture | Language & culture | 2
+- Language is a mode of human expression and helps shape the speaker's identity. The slide's equation: **language = communication = community**. Language is a repository of culture.
+- Culture: the way of life, especially the customs and beliefs, of a particular people at a particular time, including music, art and literature.
+@what_lit | What is literature? | What is literature | 2
+- A mode of cultural expression; a product of the creative imagination.
+- Written artistic works, especially those with high creative merit and lasting value.
+- It represents the language, culture and tradition of a people, and it is a **historical document**.
+- It introduces new worlds of experience; gives joy; makes us wonder and think; lets us appreciate beauty in form and expression.
+@lit_teaches | What literature can teach | Literature teaches | 3
+- Research quoted on the slide: "literature provides otherwise unavailable insights into the ways **emotions** are produced, experienced and enacted in human social life."
+- Human emotions and values; moral and intellectual lessons; it makes us better people and thinkers ("hopefully!"); stories tell us about ourselves and real life; how to lead a balanced life; how to argue our case better.
+@why_write | Why people write | Why write | 2
+- 1 To keep records of significant experience. 2 To share experience with an interested group. 3 For free individual expression, which contributes to mental and physical health. 4 A higher purpose.
+- Hook: **record, share, express, higher purpose**.
+@doing_cil | Doing Comparative Indian Literature | Doing CIL | 3
+- A comprehensive overview of India's literatures, their themes and concerns. Appreciating, analysing and **problematising** Indian Literature.
+- How cultural, economic, political and social forces shape literary production in India. Pertinent issues of translation. All genres of writing.
+- The outcome: the implications of being an Indian.
+> translation | issues of translation
+@folklore | Folklore: verbal and nonverbal | Folklore | 1
+- To understand India's literature you need the written classics **and** the oral traditions, of which folklore is an integral part.
+- **Verbal** folklore: proverbs, riddles, lullabies, tales, ballads, prose narratives, songs.
+- **Nonverbal** folklore: dances, games, floor and wall designs, artefacts and toys, performing arts such as street magic and theatre.
+- A large stock of shared folk material travels across India and the world; common motifs surface across regions, states and countries.
+> perception_reality | epics live in folk and written traditions
+> cultural_unity | unity through folk narratives
+@folk_performance | Folk performers and contexts | Folk contexts | 3
+- Tales and songs work differently depending on the teller or singer, the time and place, and the listeners.
+- Performers are professional (singers, troupes) and domestic (mothers, aunts, grandmothers).
+- Sung at festivals, while watching crops or cattle, rowing boats, working in fields or at home, in calendar rituals, and at marriages, births and deaths.
+- Their antiquity is as amazing as their mobility, yet they stay current as **variants**. New parallels are made every day.
+@folk_songs | Nine categories of folk song | Folk-song types | 1
+- 1 Male-centred: heroism and adventure. 2 **Female-centred**: domestic motifs and an alternative world view that **questions all kinds of traditions and hierarchies**. 3 Family relationships: affection, rivalry, incest, betrayal, cruelty. 4 Love in all its dimensions. 5 Fate, gods and demons. 6 Humorous. 7 Ribald. 8 The natural environment. 9 The community and its cultural and social practices.
+> tamil_epics | strong women who anticipate Bhakti's rebels
+> valmiki_vs_kamban | women's voices in crisis
+
+%D | One or many | Part 4 | Indian Literature or Literatures?
+@concept_il | The concept of Indian Literature | The concept | 2
+- Hard to define: it isn't one literature written in one language.
+- Defining a literature is easier when the nation is a clearly definable cultural entity, because culture and literature are closely linked. India isn't an easy cultural entity to define, so **both the singular and the plural** are used.
+@nilavilakku | Nilavilakku: many wicks, one light | Nilavilakku | 1
+- "Many tongues, one voice." There is no common Indian language, but there is a common Indian literature, depending on how you look at it.
+- The analogy is the traditional Indian **lamp with many wicks**, the Nilavilakku, from **K. M. George**. Past papers call it "**base lamps**" (distractors: temple bells, anklets, chandelier). {2023,2024}
+- "The lamp is the same, the oil is the same, but it is the wicks that determine the brightness of light. The lights from various wicks merge imperceptibly and produce a brightness which is the totality of many lights. Just as many wicks produce one light, India's many languages produce one literature."
+- Lamp = India. Oil = the shared sources. Wicks = the languages. One light = Indian Literature.
+- This map is drawn as that lamp: each cluster is a wick around the light at the centre.
+@unity_diversity | Unity in diversity | Unity in diversity | 2
+- Each language community expresses its own experience distinctly, but India's geopolitical and cultural territories have always been **porous**. Cultures give and receive; there is a spiritual oneness.
+- Points of convergence are **thematic, generic and ideological**, and rarely confined to one language or region. Literature explores beyond narrow confines.
+@civilisation | Indian civilisation vs Macaulay | Macaulay | 1
+- The concept of "**Bharatvarsha**" took on new significance and meaning in **colonial** times (past-paper answer; distractors Buddhist revival, medieval, ancient). {2023,2024}
+- **T. B. Macaulay**: "a single shelf of a good European library was worth the whole native literature of India" (past-paper distractors: James Mill, Robert Clive, Friedrich Max Müller). {2023,2024}
+- The "civilizing mission" and "the white man's burden". Civilisation: "an advanced state of human society, in which a high level of culture, science, industry, and government has been reached."
+- So asserting the glory and antiquity of Indian civilisation became part of the nationalist project.
+> bankim | the nationalist answer
+> name_india | Bharatavarsha among India's names
+@against_plural | Arguments for the singular | Against the plural | 1
+- 1 **Language can't be the only criterion** for dividing literature (past-paper answer: "language cannot be the only yardstick"; distractors region, class, gender). {2023,2024}
+- 2 Literature can be grouped by class, race, caste, gender, archetype, mode of narration and so on.
+- 3 "**European** literature" and "**Latin American** literature" cut across languages: many languages, one literature.
+- 4 The reverse: **Spanish** and **English** literatures take national names (Peruvian, Cuban, Mexican, Argentine; American, British, Australian, Canadian, Indian): one language, many literatures.
+- 5 Border-crossings between Indian languages happen all the time. 6 Multilingualism and polyglot fluidity are at the core of Indian creativity.
+> commonality | evidence of commonality
+> complit | genre across languages
+@commonality | Commonality in Indian literature | Commonality | 1
+- Most Indian writers, **from Kabir to A. K. Ramanujan**, are bilingual if not multilingual.
+- Forms and genres cross languages: from the **mahakavya** (epic) and the **doha** (couplet) to the novel and the short story.
+- Movements that crossed linguistic and regional barriers: **Bhakti, the Progressive and the Modernist**.
+- Shared patterns of experience, thought, feeling, concern and expression. Both pan-Indian and regional elements shaped Indian literature.
+> ramanujan | the Ramanujan of "Kabir to Ramanujan"
+> bhakti | Bhakti crossed barriers
+@literary_past | India's literary past | Literary past | 3
+- A literary history should account for the whole heritage, however scattered or loose.
+- Literature in India is as old as its sculpture, painting or music, but hasn't received the historical attention those arts have.
+- There is a common literary past; Indian Literature means literatures in Indian languages, classical and modern, and has to be inclusive.
+- The paradox: **homogenisation is dangerous, but pure heterogeneity erases what cultures share**. That tension is the whole course in one sentence.
+> sahitya_akademi | after Independence
+@sahitya_akademi | Sahitya Akademi | Sahitya Akademi | 1
+- Formally inaugurated by the Government of India on **12 March 1954**.
+- The Government Resolution: a national organisation to develop Indian letters, set high literary standards, foster and co-ordinate literary activity in all Indian languages, and through them **promote the cultural unity of the country**. Past-paper answer to "mandated to... forging national cultural unity" (distractors: National Translation Mission, Sahitya Samvad, Central Institute of Indian Languages). {2023,2024}
+- India's **National Academy of Letters**, the central institution for literary dialogue, publication and promotion.
+- The only institution doing literary work in **24 Indian languages, including English**.
+- Works through seminars, lectures, symposia, discussions, readings, performances, translation workshops, journals, monographs, anthologies, encyclopaedias, dictionaries, bibliographies, who's-who of writers and literary histories.
+- Over **6,000 books**, at a pace of **one book every 19 hours**.
+- **24 awards** a year for literary works and an equal number for literary **translations**, each after a year-long scrutiny.
+- **Bhasha Samman**: for significant contributions to languages the Akademi doesn't formally recognise, and to classical and medieval literature.
+@perception_reality | Perception vs reality | Perception vs reality | 1
+- Indian Literature is often confused with ancient works in **Sanskrit**. A modern, forward-looking concept of Indian Literature has not been formulated.
+- The thesis "India has one literature that is written in many languages" has **never been properly explored and validated**.
+- **Tamil is the only language with a continuous literary tradition.** Its early grammar, the **Tolkappiyam**, recognises exactly one other language as its equal and competitor: **Sanskrit**.
+- So what is classical Indian literature: Tamil? Sanskrit? Tamil and Sanskrit? The slide leaves the question mark.
+- The epics exist in **folk and written** traditions. Folk and popular traditions often oppose each other and the literary. There is **symbiosis between Tamil and Sanskrit**.
+> tolkappiyam | the grammar that names Sanskrit
+> kamban_intro | Tamil–Sanskrit symbiosis in practice
+@cultural_unity | Cultural unity and the link language | Cultural unity | 1
+- Plots from the Ramayana and Mahabharata are used in both **Tamil Sangam poetry and Sanskrit plays**.
+- Sanskrit was the language of high culture. Then came Apabhramsa, the **Prakrits (6th–11th centuries)** and Pali, yet **Sanskrit stayed a link language**. Past-paper answer to "link language in ancient times" (distractors Apabhramsha, Pali, Prakrit). {2023,2024}
+- Civilisational and cultural unity was expressed through Sanskrit texts, Tamil literature and folk narratives.
+- Conclusion: not a mechanical, unitary concept but a **comparative concept**, covering the twin aspects of unity and diversity.
+> prakrit | the everyday tongue
+> apabhramsa | literary by the 7th century
+
+%E | Ancient | Part 5 | Ancient Indian literature
+@four_periods | Four periods of Indian literature | Four periods | 1
+- **Ancient**: 2000 BC to 1000 AD. **Medieval**: 1000 to 1800 AD. **Under colonial rule**: 1800 to 1947. **Contemporary**: 1947 onwards.
+- Indian literature has a history of almost **4,000 years**. You can't understand the branches until you've explored the roots.
+> medieval_performance | medieval: texts written for performance
+@earliest_langs | Earliest writing: five languages | Five earliest languages | 1
+- **Sanskrit, Pali, Prakrit, Tamil and Kannada**. Past-paper answer; distractors swap Kannada for Gujari, Telugu or Apabhramsa. {2023,2024}
+- Each had its own socio-historical context, but they shared a common frame of reference in recurring patterns of thought and concern.
+- The subject of the earliest known texts: the relationship of man with the world around him, and with its creator.
+> kannada | Kannada is on the list
+@sruti | Sruti: "that which is heard" | Sruti | 1
+- The earliest period of Sanskrit literature is the **Vedic Age**, tentatively lasting until about **1200 BC**.
+- It saw the oral tradition of the Sruti texts, including the Vedas, meant to be recited and heard. Sruti is **heard, revealed and divine**.
+- Sruti = the Vedas with their **Samhitas, Brahmanas, Aranyakas and Upanishads**. So the **Puranas are not Sruti** (past-paper answer). {2023,2024}
+- "Sruti texts contain whatever is heard and revealed; Smriti texts are all that is remembered, recorded from memory and later consolidated into a literary tradition": **the whole statement is true**. {2023,2024}
+> smriti | its opposite
+> sbau | the four layers
+@vedas | The Vedas | The Vedas | 1
+- Veda comes from the verb **"vid", to know** (past-paper distractors: vadati, ved, viditva). {2023,2024}
+- People believed the Vedas were created by God; the human narrator was only the medium carrying the message.
+- Four Vedas: **Rig, Yajur, Sama and Atharva**. The **Rigveda** is the earliest (the oldest), with hymns and prayers to various gods. {2023,2024}
+- In them: man's earliest attempts to understand his place in the world and open a dialogue with the unknown through supplication, philosophical enquiry and speculation.
+> rigveda_reading | Reading One
+@samhitas | Samhitas | Samhitas | 1
+- Samhita means collection, literally **"joined together"**. The Vedas are Samhitas: the mantra texts of each Veda.
+- They contain **hymns, prayers, benedictions, sacrificial formulas and litanies** (past-paper answer; distractors Upanishads, Aranyakas, Brahmanas). {2023,2024}
+- Samhitas are Sruti, so they are **not Smriti** (past-paper answer). {2023,2024}
+@yagna | The sacrifice (yagna) | Yagna | 1
+- The central motif of the Vedas is the **sacrifice**, with instructions for performing it in honour of various gods to win their goodwill.
+- The main impulse: the desire for a good life: a long and healthy life, **cattle, children** and so on. A friendly god, once pleased, would grant the wishes.
+- The gods ruled natural forces: fire, water, wind and earth.
+> rv_bigpicture | you hear it in the hymns
+> nachiketa | Vajasravas' yajna; the fire-sacrifice boon
+@brahmanas | Brahmanas | Brahmanas | 1
+- The **commentaries** on the four Vedas: **eleven** Brahmanas, a large body of **prose**.
+- They comment on the mantras and prescribe their use in sacrifices. Their speculation is theological, but also philosophical, grammatical, etymological and metrical.
+- Studied **while carrying on daily life in the wider community**. Past-paper two-blank answer: "Brahmanas; Aranyakas". {2023,2024}
+- "The commentaries on the Vedas are to be found in the **Brahmanas and Aranyakas**" (past-paper answer). {2023,2024}
+> aranyakas | the forest counterpart
+@aranyakas | Aranyakas | Aranyakas | 1
+- **Three** Aranyakas, meant for study in the **seclusion of the forest** (aranya = forest).
+- Ritual explorations and allegorical speculations: a traditional phase of enquiry into Vedic knowledge. "Forest texts", transitional, giving the symbolic and meditative meaning of rituals.
+@upanishads | Upanishads | Upanishads | 1
+- The word means "**sitting down, with devotion, near the teacher** to receive instruction".
+- **Thirteen principal** Upanishads (past-paper answer; distractors 7, 10, 16). {2023,2024}
+- Mainly metaphysical: life, death, immortality, happiness, truth, God and the origins of life. They explore **Atman** (the self) and **Brahman** (ultimate reality).
+> upanishad_tales | Reading Two
+> maitreyi | "Come, sit near me"
+@sbau | Samhita → Brahmana → Aranyaka → Upanishad | S → B → A → U | 1
+- **Samhitas** (संहिता): collections of hymns and mantras, used in rituals and sacrifices.
+- **Brahmanas** (ब्राह्मण): prose ritual manuals explaining the procedures and meanings of rites.
+- **Aranyakas** (आरण्यक): "forest texts", transitional: the symbolic, meditative meaning of rituals.
+- **Upanishads** (उपनिषद्): philosophical discourses on Atman and Brahman.
+- From hymn, to ritual, to forest meditation, to philosophy: **from outer ritual to inner truth**.
+> shrinking_gods | outer ritual gives way to inner truth
+@smriti | Smriti: "that which is remembered" | Smriti | 1
+- What is **remembered**, recorded from memory and later consolidated into a literary tradition.
+- A break from the earlier Vedic tradition, because it is **attributed to human authors**.
+- The body of Smriti: the **six Vedangas, the epics and the Puranas**. So the Mahabharata, Ramayana, Vedangas and Bhagavata Purana are Smriti; the **Samhitas are not** (past-paper answer). {2023,2024}
+- Smriti texts are often written in **sutra** form.
+> vedangas | the six limbs
+> indian_epics | the epics are Smriti
+@vedangas | The six Vedangas | Vedangas | 1
+- The limbs or adjuncts of the Vedas: **siksha** (phonetics), **chandas** (metre), **vyakarana** (grammar), **nirukta** (etymology), **jyotisha** (astronomy), **kalpa** (rituals and ceremonies).
+> ramayana_tradition | chandas and Valmiki's anushtup metre
+@puranas | The Puranas | Puranas | 2
+- Part of Smriti, not Sruti. The most popular is the **Bhagavata Purana**, the story of **Krishna's** life.
+> bharati | "Lord Krishna said: I live in all living things"
+@sutra_dharma | Sutra and Dharma | Sutra & Dharma | 2
+- **Sutra means thread**: a short, aphoristic statement that "threads together" large bodies of knowledge as briefly as possible.
+- The texts lead towards **Dharma**: that which sustains, is firm and durable, and governs all human life.
+- Not only didactic: they use narrative techniques and drama, so the listener is entertained and instructed at once.
+> tolkappiyam | cuttirams are roughly sutras
+@post_vedic_poetry | Post-Vedic Sanskrit poetry | Post-Vedic poetry | 3
+- Ranges from the **amatory** (love) to the **moral** to the **renunciatory**.
+- Composed in courts under royal patronage; **more secular** in tone than its predecessors.
+@natyashastra | Bharata's Natyashastra | Natyashastra | 1
+- Written by **Bharata** (past-paper answer; distractors Bhasa, Visakhadatta, Kalidasa). {2023,2024}
+- Dated between the **1st century BC and the 1st century AD**.
+- A theoretical text on the performing arts that sets the ground rules for Sanskrit aesthetic theory, including the **Nava Rasas**.
+> vs_sanskrit_poetics | rasas vs Tamil emotions
+@sanskrit_drama | Sanskrit drama: conventions | Sanskrit drama | 2
+- Most plays were built around **romantic love or heroic valour**, with a noble or godly hero.
+- They began and ended with a **benediction for universal peace and prosperity**.
+- The hero achieves one of the four goals of life.
+- Destiny mattered, and so did the natural world: birds, flowers, animals, clouds. Sources: the Vedas, the Puranas and history. Characters came from a cross-section of society.
+- Some characters, especially **women and servants**, speak **Prakrit** (past-paper answer; distractors Tamil, Telugu, Kannada). {2023,2024}
+> purusharthas | the four goals
+> dramatists | who wrote the plays
+> prakrit | who speaks Prakrit
+@purusharthas | The four goals of life | Purusharthas | 1
+- **Dharma** (morality, duty) · **artha** (wealth) · **kama** (love, desire) · **moksha** (liberation).
+> mahabharata | the Mahabharata's stories teach all four
+@dramatists | Sanskrit dramatists | Dramatists | 1
+- **Bhasa and Kalidasa**: romances and heroic plays.
+- **Sudraka**: social comedies. The notes add his play *Mricchakatika*, "The Little Clay Cart". {notes+}
+- **Visakhadatta**: political intrigue and royal court life. The notes add *Mudrarakshasa*, "The Signet Ring of the Minister". {notes+}
+> kalidasa | Kalidasa in the past papers
+@verse_prose_forms | Sanskrit verse and prose forms | Verse & prose forms | 1
+- **Mahakavya**: long poems following the prescribed rules of good poetry.
+- **Laghukavya**: lyric poetry.
+- **Inscriptions**: show ornate prose and verse in use, and introduce the genre of the **Prasasti**, a eulogy of the ruling king.
+- **Gadyakavya**: literary prose romances.
+- **Akhyayika**: invented stories about historical characters.
+- **Scientific prose**: medicine, astrology, grammar, prosody, astronomy, erotics, politics, performing arts, law.
+- **Campu**: mixed prose and verse.
+- **Fables**: see the Panchatantra and the Kathasaritsagara.
+> fables | the fables
+> meghaduta | a lyric poem (laghukavya)
+@fables | Panchatantra and Kathasaritsagara | Fables | 1
+- The most popular fables: **Vishnusharma's Panchatantra** and **Somadeva's Kathasaritsagara**.
+- Past paper: the Panchatantra falls under the category of **fable** (distractors gadyakavya, mahakavya, prasasti). {2023,2024}
+@social_tendencies | Social tendencies in Sanskrit thought | Taxonomy | 3
+- **Taxonomy** (classification) is the hallmark of Sanskrit thinkers: they classified language, natural phenomena and even emotions.
+- A hierarchical social order, with life regulated by a **dharma that is given and not open to debate**.
+- By the **6th century AD** knowledge had been codified, with strict rules for literary composition and even appreciation. That changed with the growing influence of **Buddhism and Jainism**.
+@prakrit | Prakrit | Prakrit | 1
+- Prakrit means **"natural" or "common"**: the language of everyday conversation and commerce. Sanskrit was the refined language of literary speech and ritual, and took training. The two grew side by side in complex negotiation and exchange.
+- In many Sanskrit plays some characters, especially **women and servants**, speak Prakrit. {2023,2024}
+- Prakrit texts took Sanskrit literary themes and rewrote them in the context of folk traditions.
+- The main evidence of Prakrit in literary composition: the **Ashokan Inscriptions**, the earliest dated Indian literary records.
+- By the **5th century AD**: songs, Buddhist **gathas**, Jaina writings, doctrinal treatises, and secular literature like the **Sattasai** anthologies, to which **women also contributed**; plus grammars, lexicons, poetics, metrics, astronomy and medicine.
+@apabhramsa | Apabhramsa | Apabhramsa | 2
+- A literary language by the **7th century AD**, first used in **Jaina** writings (so an openly religious tone).
+- Later used for **sandhi bandhas** (stories from the Puranas), biographies and religious narratives, and for **rasa bandhas** (lyrics with a fixed metre for the main body and other metres for variety).
+@kannada | Early Kannada | Early Kannada | 1
+- Rock edicts and inscriptions suggest Kannada existed as early as the **3rd century BC**.
+- Influences: Sanskrit, Prakrit, Vedic and Jaina legends, the Ramayana and the Mahabharata.
+- The earliest known literary work is the **Kavirajamargam** (around **850 AD**), a treatise on rhetoric, grammar, language and prosody that also comments on society, religion and culture. Past-paper answer (distractors Rajasekharavilasa, Lilavati, Vacanakavyas). {2024}
+- The parallel: Tamil and Kannada literature both begin with a grammar book.
+> tolkappiyam | the Tamil parallel
+@kannada_golden | The Golden Age of Kannada (10th century) | Pampa · Ponna · Ranna | 1
+- Its three great writers: **Pampa, Ponna and Ranna**, sometimes called the three gems.
+- Grand narratives took famous episodes from the epics and reinterpreted them locally; the works reflect the social, cultural and political life of the time.
+- Most writing of the age sought a distinct identity through language, landscape, myth, literature and culture.
+> upjeevya | the epics as source books
+@jaina_kannada | Jainism and early Kannada | Jaina dual vision | 2
+- Jainism was widely accepted. The dilemma of a man torn between living a full life and renunciation shapes all Jaina-inspired writing: the **dual vision of affirmation and denial**.
+> two_archetypes | the thread across languages
+@two_archetypes | Two archetypes; Bhakti reconciles them | Here vs hereafter | 1
+- The thread binding literature across all these languages: two parallel archetypes, movement **towards life** (erotic and material fulfilment) and **renunciation**.
+- Only the **Bhakti** movement could reconcile the "here" and the "hereafter".
+- In the **Virasaiva** movement, the **Vacanakaras** (makers of divine poetry in Kannada) blended these emotions into an integral vision.
+> bhakti | Bhakti
+> nachiketa | Nachiketa refuses pleasure for truth
+
+%F | Sangam | Part 6 | Tamil Sangam literature
+@classical_canvas | Classical India: the canvas | Classical canvas | 3
+- A vast area of diverse traditions over the last **3,500 years**; every part of India produced classical literature.
+- Ancient India produced the Vedic corpus, the **Jain Agamas** (the sacred scriptures of Jainism) and the huge Buddhist literature, including writing from across Asia.
+- The south's four major languages, all classical with strong literary traditions: **Tamil, Kannada, Malayalam and Telugu**. Tamil's literary history is nearly **2,000 years** long.
+@sangam | Sangam literature | Sangam | 1
+- Tamil's claim to classical status rests on it; also called early classical Tamil literature.
+- Dates vary: 400 BCE–250 CE, 300 BCE–300 CE, or 300 BCE–100 CE (Part 5 dates the love and war poems to about 300 BC–100 AD).
+- **Over 2,000 poems**: breathtakingly direct, subtle in nuance, astonishingly contemporary.
+- Also spelled cankam, chankam, shangam. A Sangam is an **academy** where the poetry was composed and later anthologised.
+> three_sangams | the legend
+@three_sangams | The three Sangams (a legend) | Three Sangams | 1
+- **Three** academies where poets gathered to debate and approve literary works (past-paper answer; distractors 2, 4, 5). {2024}
+- **First**: Then-Madurai ("South Madurai"), south of present Kanyakumari, an ancient Pandyan city.
+- **Second**: **Kapadapuram**, near present-day Tiruchendur.
+- Both were swallowed by the sea and their works lost. The **Agattiyam** (the earliest Tamil grammar, from the first Sangam) was lost for ever; the **Tolkappiyam** survived from the second and guided the third.
+- **Third**: the historical city of **Madurai**. All surviving works come from it, except the Tolkappiyam.
+> tolkappiyam | the survivor
+> cilappatikaram | Madurai again
+@akam_puram | Akam and Puram | Akam & Puram | 1
+- The two major forms of Tamil Sangam poetics, set out in the Tolkappiyam (past-paper answer "'Akam' and 'Puram'"; distractors pair them with Cankam or Corkkam). {2023,2024}
+- **Akam** (அகம்): the interior landscape of the imagination, love in all its moods. Set in a specific place and time; characters are **not named** but identified by gender, occupation, region and role in the relationship.
+- **Puram** (புறம்): the outer world: heroism, war, court life, praise of kings, and the poet in search of a **generous patron**.
+- Both are **secular**, and both explore how nature relates to human emotion and experience.
+> tinais | akam's landscapes
+> tirukkural | two-fold becomes three-fold
+> cilappatikaram | a third, mythic category
+@sangam_features | Features: not religious | Not religious | 2
+- Most early traditions were religious in some form; Sangam literature is **not religious** in that sense.
+- A refreshing change: fresh, **not weighed down by literary conceits and mythological references**.
+- Still not unconnected with religion: the **Paripatal** has poems about four deities, **Vishnu, Shiva, Durga and Murugan**.
+@three_types | Three main types of Sangam work | Three types | 2
+- **Ettuttokai** (the Eight Anthologies), **Pattuppattu** (the Ten Long Poems) and the **Tolkappiyam** (the grammar treatise). "Eight, Ten, Grammar."
+> ettuttokai | the eight
+> pattuppattu | the ten
+> tolkappiyam | the grammar
+@ettuttokai | Ettuttokai: the Eight Anthologies | Ettuttokai (8) | 1
+- In order: 1 **Kuruntokai**, 2 **Narrinai**, 3 **Akananuru**, 4 **Ainkurunuru**, 5 **Kalittokai**, 6 **Purananuru**, 7 **Patirruppattu**, 8 **Paripatal**.
+- 1–5 are **love (akam)**; 6–7 are **heroism (puram)** and praise of kings; 8 (Paripatal) is **mixed**: love, heroism, praise of kings.
+- The trick: **Aka**nanuru has akam in it (love); **Pura**nanuru has puram (war). *Nanuru* means four hundred.
+- The first edition was published in **1877** by C. W. Thamotharampillai.
+> discovery | the 1877 edition
+@pattuppattu | Pattuppattu: the Ten Long Poems | Pattuppattu (10) | 2
+- 1 Kurincippattu, 2 Porunararruppatai, 3 Cirupanarruppatai, 4 Perumpanarruppatai, 5 Maturaikkanci, 6 Malaipatukatam, 7 Pattinappalai, 8 Mullaippattu, 9 Netunalvatai, 10 Tirumurukarruppatai.
+- **Mixed akam–puram** poetry.
+- The notes add that an *arruppatai* is a "guide poem": one bard directs another to a generous patron, which ties to puram. {notes+}
+@tolkappiyam | Tolkappiyam | Tolkappiyam | 1
+- The **earliest known Tamil work**, dated anywhere from about 300 BC to the 1st century AD. A text of **Tamil Sangam literature** (past-paper answer; distractors Jain, Buddhist and Sanskrit traditions). {2023,2024}
+- The first complete, classified and comprehensive treatise on **Tamil grammar**. It lays down the rules of Tamil poetics, distinctly different from Sanskrit poetics.
+- **Three sections**: the first two cover ancient Tamil linguistics (orthography, phonology, morphology, syntax); the third covers prosody, rhetoric, poetics, genres, themes, codes of behaviour and poetic diction. The tinais appear in the third.
+- **1,612 cuttirams**, which roughly correspond to Sanskrit sutras (aphorisms).
+- Sets out akam and puram, and recognises **Sanskrit** as Tamil's only literary equal and competitor.
+- Survived from the **second** Sangam.
+> sutra_dharma | cuttiram and sutra
+> akam_puram | sets them out
+@vs_sanskrit_poetics | Tamil vs Sanskrit poetics | Tamil vs Sanskrit poetics | 2
+- Sangam poetry has a syntax and poetics not found in North Indian poetry and is **not influenced** by Sanskrit poetics and prosody.
+- Its uniqueness: the division into akam (love) and puram (war).
+- Poems are also grouped by emotion (compare Bharata's **Nava Rasas**), but the emotions are portrayed very differently from the rasas.
+- Rasa theory has permanent emotions, **sthayi**, and transient ones, **vyabhichari**.
+@tinais | The five tinais | Five tinais | 1
+- *Tinai* means **mode**, a concept of **Tamil** poetics (past-paper answer; distractors Sanskrit, Telugu, Kannada). There are **five** tinais (past paper; distractors 4, 6, 7). {2024}
+- Emotions are expressed through landscape. Each tinai's imagery (flowers, trees, wildlife, people, climate, geography) carries the mood of one stage of a love relationship. The tinais appear in the prosody section, the third, of the Tolkappiyam.
+- **Kurinci** (குறிஞ்சி), hills: the lovers' **meeting**.
+- **Neytal** (நெய்தல்), seashore: secret meetings and lovers' **anxiety**.
+- **Palai** (பாலை), wasteland: a frustrating journey, **separation**.
+- **Mullai** (முல்லை), forest: **union** and happiness on the slide; traditionally, patient waiting.
+- **Marutam** (மருதம்), lowland: a lover's **unfaithfulness**.
+- Mnemonic: Hills Hold Hearts, Shores Stir Sighs, Wastes Wear Wanderers, Forests Find Fulfilment, Lowlands Lose Loyalty.
+- Not a tinai: **plateau**. Mountain, coast and jungle all map onto tinais (past-paper answer). {2024}
+> kurinci | sample poem
+> neytal | sample poem
+> palai | sample poem
+> mullai | sample poem
+> marutam | sample poem
+> godavari | Kamban's "five tracts described in classical poetry"
+@kurinci | Kurinci poem: "What she said" | Kurinci · hills | 2
+- To her girl friend, with her foster mother within earshot: "Bless you, listen to me: my man wore the flowers, their blossoms gold, their buds, sapphire; tell me, what do you call those trees on his **mountain slopes**?"
+- A pretend botany question that tells her foster mother she has a man from the mountains. Meeting.
+@neytal | Neytal poem: "What her girl friend said" | Neytal · shore | 2
+- To him, when he wanted to come by day: "O man of the seashore, where old women dry their wet streaming hair and look like a flock of **herons** in the bay, when people said, a **chariot** comes here often, splattering the dark **neytal lilies** near the bubbling backwaters, Mother said at once, Don't go out."
+- Gossip, secrecy and anxiety; the lilies mark the shore.
+@palai | Palai poem: "What he said" | Palai · wasteland | 2
+- "In the **desert**, in this long summer wilderness, seized and devoured by **wildfire**, if I should shut my eyes even a wink, I see: dead of night, a tall house in a cool yard, and the girl with freckles like **kino flowers**, hair flowing as with honey, her skin a young mango leaf."
+- The burning journey against the cool remembered house: separation.
+@mullai | Mullai poem: "What she said" | Mullai · forest | 2
+- "Only the dim-witted say it's evening when the sun goes down and the red sky reddens, when misery deepens, and the **mullai** begins to bloom in the dusk... **even noon is evening to one who has no one**."
+- Mullai is the jasmine that blooms at dusk. Tradition reads it as patient waiting; the slide says union, so give the slide's label in the exam.
+@marutam | Marutam poem: "What she said" | Marutam · lowland | 2
+- "In his country, **spotted crabs born in their mother's death** grow up with **crocodiles that devour their young**. Why is he here now? And why does he take these women, a jangle of gold bangles as they make love, only to leave them?"
+- Savage riverland images: unfaithfulness.
+- None of these poems names anyone: "What she said", "What he said", "What her girl friend said". That is the akam rule.
+@ramanujan | A. K. Ramanujan | A. K. Ramanujan | 1
+- Translator of the sample Sangam poems and, with **Kamil Zvelebil**, one of the modern scholars who translated and commented on large selections.
+- Also the far end of "**from Kabir to A. K. Ramanujan**": most Indian writers are bilingual if not multilingual.
+> commonality | Kabir to Ramanujan
+> discovery | the modern translators
+@discovery | The rediscovery of Sangam literature | Rediscovery | 1
+- Part of the 19th-century literary and historical rediscoveries by Western and Indian Orientalists, who organised old manuscripts, translated them and printed them.
+- **U. V. Swaminatha Iyer** (1855–1942) and **C. W. Thamotharampillai** (1832–1901) found the poems in crumbling **palm-leaf manuscripts** and copied and translated them for publication.
+- Thamotharampillai published the **first edition of the Ettuttokai in 1877**.
+- Modern translators: **A. K. Ramanujan** and **Kamil Zvelebil**.
+- Not connected with Sangam literature: **M. S. Swaminathan** (past-paper answer), the agricultural scientist. {2024,outside}
+@tirukkural | The didactic phase and the Tirukkural | Tirukkural | 1
+- A didactic phase under strong **Jain and Buddhist** influence. Part 5 places it around the 2nd–3rd centuries AD; Part 6 dates the Tirukkural to about 500 CE or earlier.
+- The **Tirukkural** (Tiruvalluvar) expanded the old two-fold division into three: **love, virtue, and polity and society**.
+@tamil_epics | The Tamil epics: Cilappatikaram and Manimekalai | Tamil twin epics | 1
+- Composed in the post-Sangam phase; they **departed from the Sanskrit epics** and reflect **Buddhist and Jain** world views.
+- At their centre are strong, empowered **women** with moral authority backed by religious sanction, who anticipate the **rebellious women of the Bhakti** period.
+- With the Tirukkural they count as classical Tamil texts. Kamban's Ramavataram does not (past-paper answer). {2023,2024}
+> cilappatikaram | the details the past papers test
+> folk_songs | female-centred songs question hierarchy
+@tamil_bhakti | Bhakti in Tamil | Tamil Bhakti | 1
+- It blossomed around the **6th–7th centuries AD** in the devotional hymns of **Saiva and Vaishnava saints** (past-paper answer; distractors pair Brahmin, Madhva or Gour saints). {2023,2024}
+- It stressed a **personal god** and protested against conventional rituals and scriptures. It reached full flowering in the medieval period.
+> bhakti | the pan-Indian movement
+
+%G | Epic | Part 7 | The epic and the Indian epics
+@epic_def | What is an epic? | Epic: definition | 1
+- Also called a **heroic poem**: a **long verse narrative** on a **serious subject** in a **formal or elevated style**, centred on a heroic or quasi-divine figure on whose actions the fate of a tribe, a nation or the human race depends.
+- Two kinds: **traditional** and **literary**.
+- Past paper: an epic does **not** have a "cramped or meagre setting". {2023,2024}
+> epic_features | its features
+@traditional_epics | Traditional (folk, primary) epics | Traditional epics | 1
+- Written versions of originally **oral** poems about a tribal or national hero in a warlike age.
+- Homer's **Iliad** and **Odyssey** (Greece); **Beowulf** (Anglo-Saxon); the **Chanson de Roland** (French); the **Poema del Cid** (Spanish); the **Nibelungenlied** (German).
+> literary_epics | Paradise Lost is not traditional
+> ramayana | twice the Iliad and Odyssey together
+@literary_epics | Literary epics | Literary epics | 1
+- Composed by an individual poet as a deliberate imitation of the traditional form.
+- **Virgil's Aeneid**, copied by **Milton** in **Paradise Lost**; Milton copied in turn by **Blake** in his "prophetic books" and **Keats** in **Hyperion** in the Romantic period.
+- So Paradise Lost is **not a traditional epic** (past-paper answer). {2023}
+- In epic, the fall of an enemy, as much as a friend or leader, is **tragic, not comic**. The epic gets its authority from a vision of nature as an **impersonal order**. **Renaissance** critics thought it the highest of all genres.
+@epic_features | Features of the epic | Epic features | 2
+- A hero of great national or even cosmic importance.
+- A setting **huge in scale**: worldwide or larger.
+- Gods and other supernatural beings take an interest or an active part.
+- A **ceremonial performance** in the **grand style**: formal diction, ornate syntax, sonorous names, allusions, **epic similes** and **epithets**.
+> valmiki_abduction | epic similes in action
+@epic_conventions | Epic conventions | Epic conventions | 2
+- The narrator states his **argument** (the epic theme), **invokes a muse** or guiding spirit, and asks the muse the **epic question**; the answer begins the story.
+- The story starts **in medias res**, in the middle of things, at a critical point in the action.
+- **Catalogues** of the main characters in formal detail, and **set speeches** that reveal temperaments and moral attitudes.
+@epic_spirit | "Epic" by spirit | Epic by spirit | 3
+- Applied to works with epic spirit and grandeur: Dante's **Divine Comedy** and Spenser's **The Faerie Queene**.
+- And to large prose fiction: Melville's **Moby Dick**, Tolstoy's **War and Peace**, Joyce's **Ulysses**.
+@indian_epics | The Indian epics | Indian epics | 1
+- The **Ramayana** and the **Mahabharata**, composed roughly between the **12th and 2nd centuries BC** and written down sometime in the **2nd century AD**.
+- Hindus know them as **Itihaas**, "that which occurred" (past-paper wording "that which happened"; distractors: myths and stories, historiography, social philosophy). {2023,2024}
+- Collective works that evolved over centuries.
+- Traditional or literary? **Both**: they grew out of oral tradition but are attributed to named poets, Valmiki and Vyasa.
+- The epics belong to Smriti.
+> smriti | part of Smriti
+> upjeevya | source books for later works
+@ramayana | The Ramayana | Ramayana | 1
+- **Twice as big as the Iliad and the Odyssey** put together. Attributed to the sage **Valmiki**, the **Adikavi** ("first poet").
+- A seminal text of the Hindu faith, with passages central to Hindu philosophy; its tales are the basis of festivals; it describes a marriage practice still observed today.
+- On one level, **Aryan expansion to the south**, ending in Rama's conquest of Lanka. On another, Prince Rama's exile, the abduction of his wife by Ravana, and the war in Lanka. Several sub-plots.
+> valmiki | the poet
+> mahabharata | nested inside the Mahabharata
+> kamban_intro | retold in Tamil
+@valmiki | Valmiki, the Adikavi | Valmiki | 1
+- The Ramayana is Sanskrit's first epic and **Maharishi Valmiki its first poet**, the "Adikavi" (past-paper answer; distractors Adi Shankara, Vyasa, Ilango Adigal). {2023,2024}
+- Nothing specific is known about his life. Popular belief: he supported his family by robbing and plundering until a meeting with seers turned him to knowledge, penance and meditation.
+- He saw a hunter kill the male of a pair of mating **cranes**. Moved by the female's cries: "O hunter, you have killed the crane in love, you will never achieve fame and honour." Its form and rhythm came to be called the **shloka**. The notes add that shloka is traditionally linked with *shoka*, sorrow. {notes+}
+- He is present in his own story: Sita takes shelter in his ashram, where her sons **Luv and Kush** grow up.
+- Not a Bhakti poet (past-paper answer). {2023}
+@ramayana_tradition | The Ramayana tradition and its dating | Ramayana dating | 1
+- Rama as **Maryada Purushottam**, the protector of ethics, is popular in the Vedic tradition and also in the **Jain and Buddhist** traditions, and has a long history in folklore.
+- **Winternitz**: the first form emerged in the **4th century BC**, the final form in the **2nd century AD**.
+- Some scholars think the Uttarakanda and parts of the Balakanda are later additions. The German scholar **Hermann Jacobi** accepts only **five kandas** as genuine. Either way, the modern Ramayana doesn't have a loose or incoherent structure.
+- Your notes say Jacobi's five run "from the Ayodhyakanda to the Uttarakanda", but that span is six books. Ayodhya to Yuddha makes five. Learn the number: **five**. {outside}
+- **24,000 shlokas**, mostly in the **Anushtup** metre ("anushtap chand"), of which Valmiki is credited as creator. The text exists in many forms.
+@mahabharata | The Mahabharata | Mahabharata | 1
+- The **largest poetic work in the world**: Hindu mythology, philosophy and religious treatise. Attributed to **Vyasa**, though clearly not written by one person at one time.
+- The text gives its own name as **Jaya**, "victory" (past-paper answer; distractors Maya, Daya, Chaya). {2023,2024}
+- It contains the **Bhagavad Gita**, the essence and source of Hindu philosophical and religious thought (past-paper answer; distractors Ramayana, Veda, Purana). {2023,2024}
+- Encyclopaedic and grand; its stories teach **dharma, artha, kama and moksha**.
+- Its creator knows the Ramakatha and includes an abridged version in three parvas: **Aranyaka, Drona and Shanti**. The most detailed is in the **Shanti Parva**, told by the sage **Markandeya** to a guilty, depressed **Yudhishthira**.
+> vyasa | the author
+> three_versions | Jaya, Bharata, Mahabharata
+> purusharthas | the four goals
+> karna_kunti | Tagore's retelling
+@vyasa | Veda Vyasa | Vyasa | 1
+- Full name **Krishna Dvaipayana Vyasa**, son of **Satyavati** and the sage **Parashar**.
+- **Dvaipayana**: born on an **island** in the Yamuna (dvipa = island). **Krishnamuni**: his dark complexion. **Veda Vyasa**: he explained the Vedas in the form of **Samhitas**.
+> samhitas | he arranged the Vedas as Samhitas
+@mbh_dating | The Mahabharata: dating and size | Mahabharata dating | 2
+- Scholars generally agree it **predates the Buddha** (before the 6th century BC).
+- About **100,000 shlokas**, hence the title **Shat Sahasra Samhita**, "the collection of a hundred thousand".
+- Too huge for one person: several writers contributed over time.
+@three_versions | Jaya, Bharata, Mahabharata | Three versions | 1
+- In sequence: **Jaya** by Veda **Vyasa**, **Bharata** by **Vaisampayana**, **Mahabharata** by **Sauti**.
+- **Eighteen parvas** (cantos); numerous commentaries.
+- "Whatever this epic contains is available elsewhere, but **whatever is not in the epic cannot be found anywhere**."
+@upjeevya | Upjeevya kavya: the epics as source books | Upjeevya kavya | 1
+- The Ramayana and the Mahabharata are **Upjeevya Kavya**: source books for later oral and written works on many subjects, adapted by writers in other Indian languages.
+> kamban_intro | Kamban is the example
+> kannada_golden | Kannada retellings
+
+%H | Readings | Parts 8–12 | Rig Veda, Upanishads, Valmiki, Kamban
+@rigveda_reading | Reading One: hymns from the Rig Veda | Rig Veda reading | 1
+- From around **1500 BC**, in **Ralph T. H. Griffith**'s translation of **1896**.
+- Five hymns: to **Agni, Vayu, Indra (twice) and the Ashvins**.
+> agni | hymn
+> vayu | hymn
+> indra | hymns
+> ashvins | hymn
+@agni | Agni, god of fire | Agni hymn | 1
+- The **very first hymn** of the Rig Veda: "I laud Agni, the **chosen Priest**, God, minister of sacrifice, the **hotar**, lavishest of wealth."
+- The **hotar** is the priest who invokes the gods. Fire carries the offering up, so Agni is the **messenger** between humans and gods: "He shall bring hitherward the Gods."
+- Praised by living and ancient seers; brings wealth "most rich in heroes, glorious"; sapient-minded, truthful; also called **Angiras**.
+- "O **dispeller of the night**"; ruler of sacrifices, **guard of the eternal Law**, the radiant one.
+- It ends: "Be to us easy of approach, **even as a father to his son**: Agni, be with us for our weal."
+> uma | can't burn a blade of grass
+> yagna | minister of sacrifice
+@vayu | Vayu, the wind (with Indra-Vayu and Mitra-Varuna) | Vayu hymn | 1
+- "Beautiful Vayu, come, for thee these **Soma** drops have been prepared: drink of them, hearken to our call." Soma is the sacred drink pressed from a plant.
+- Then **Indra-Vayu** together: "the drops are yearning for you both. Come swiftly."
+- **Mitra** (of holy strength) and **Varuna** (destroyer of foes), "who make the **oil-fed rite** complete"; lovers and cherishers of **Law**, strong by birth, with wide dominion.
+- The notes add that this Law is **rita**, the cosmic order Varuna especially guards. {notes+}
+> uma | can't move a blade of grass
+@indra | Indra (two hymns) | Indra hymns | 1
+- "O come ye hither, sit ye down: to Indra sing ye forth your song." "The **richest of the rich**, the Lord of treasures excellent."
+- His **pair of tawny horses**, yoked for battle, can't be challenged by any enemy. "Grown at once to perfect strength", "born to drink the Soma juice"; Somas mixed with **curd**.
+- Called **Shatakratu**, "of a hundred powers". "Keep slaughter far from us, for thou canst."
+- Second hymn: "Lord of all men, **fair of cheek**". "Give, Indra, wide and lofty fame, wealthy in cattle and in strength, lasting our lifetime"; riches "borne home in **wains**" (wagons). The **Treasure-Lord** of wealth.
+> uma | meets Uma
+> surpanakha_lament | later imprisoned by Ravana's son
+@ashvins | The Ashvins, twin horsemen | Ashvins hymn | 1
+- "Now **Morning** with her earliest light shines forth, dear **Daughter of the Sky**": Dawn (**Ushas**). The Ashvins arrive with her.
+- "Sons of the sea, mighty to save, discoverers of riches"; also called **Nasatyas**; their chariot flies with winged steeds.
+- "Come in the **ship of these our hymns**"; the **Kanvas** (a family of poets) are named; the road of heaven was made manifest; they came to **Manu** long ago; the "circumambient Ashvins"; "aids which none may interrupt".
+- Twins, **healers and rescuers**; the hymn is full of light breaking through darkness.
+@rv_bigpicture | The Rig Veda: the big picture | Rig Veda: big picture | 2
+- Addressed to gods of **natural forces**: fire, wind, storm and sky, dawn.
+- The setting is the **sacrifice**: Soma, fire and oil.
+- The asks are **worldly**: wealth, cattle, heroes, fame and long life. A dialogue with the unknown through supplication.
+> yagna | exactly the lecture's point
+@upanishad_tales | Reading Two: tales from the Upanishads | Upanishad tales | 1
+- The book's note: the Upanishads were "begun in the **6th or 7th century B.C.**, and edited, modified and amplified from time to time through a period of **a thousand years** by eminent seers."
+- Three stories: **Uma the Golden**, **Yajnavalkya and Maitreyi**, **Nachiketa**. The notes add their sources: the **Kena**, **Brihadaranyaka** and **Katha** Upanishads. {notes+}
+> uma | story one
+> maitreyi | story two
+> nachiketa | story three
+> three_tales | comparing them
+@uma | Uma the Golden (Kena Upanishad) | Uma the Golden | 1
+- The gods defeat the demons and grow proud: "Victory is ours, greatness is ours." A dazzling **Light** appears in a field.
+- **Agni** ("I can burn everything on earth") can't burn a single **blade of grass**. **Vayu** ("I can blow everything away") can't move it.
+- **Indra** goes himself. The Light vanishes; in its place stands **Uma**, "the Golden One".
+- "The Light is **Brahma**, the Creator, the Supreme God, the Only God. You are only His manifestation. Your victories were really His victories."
+- He can't be seen, described or conceived, yet whenever we speak, hear or smell, He is there. "**If you think you know Him, then you really know very little of Him.**" "He who sees Him in everything comes to know Him."
+- The way: **restraint of the body, cultivation of the mind, and righteous action**. Whoever knows Him is freed from sin and becomes immortal.
+> shrinking_gods | the Vedic gods made powerless
+@maitreyi | Yajnavalkya and Maitreyi (Brihadaranyaka Upanishad) | Maitreyi | 1
+- **Mithila** (modern North Bihar), about 2,500 years ago, famous for philosophers; even kings took part in debates.
+- The sage **Yajnavalkya** has two wives: **Katyayani**, a good housewife, and **Maitreyi**, who loves to hear his teachings.
+- Leaving for the forest, he divides his hut and belongings. Katyayani agrees. Maitreyi asks whether the whole world's wealth would make her immortal. "No. Immortality can't be obtained by riches."
+- "Come, **sit near me**" (the meaning of "Upanishad"). A husband, a wife, sons and wealth are loved not for their own sake but for the sake of the **Self**.
+- The Thing is to us "as the sound is in the **drum**, the musical note in the **veena**."
+- **Salt water in the sea**: individual selves merge into the Great Soul at death. "We do not exist after death."
+- "The consciousness which knows can never itself be known." It ends in **silence**: "The Silence indeed became like the One to both of them."
+> upanishads | "sitting near"
+> valmiki_abduction | Mithila: Sita is "the Maithil dame"
+@nachiketa | Nachiketa (Katha Upanishad) | Nachiketa | 1
+- The Brahmin **Vajasravas** performs a great yajna, giving away everything, but gives **lean, useless cows**.
+- His son asks three times, "Father, to whom will you offer me?" The angry answer: "I will offer you to **Death**!"
+- **Yama** is away. Nachiketa waits at his door **three days and three nights** without food or water. Ashamed, Yama grants **three boons**.
+- Boon 1: that his father's anger subside and he be received gladly. Boon 2: the **fire sacrifice** that leads men and women to Heaven. Boon 3: the **truth about death**, whether people live on.
+- Yama tempts him: a hundred years, sons and grandsons, cattle, elephants, horses, gold, kingship of the world, chariots of singing women. Nachiketa refuses: "None of the gifts you offer is everlasting... Man can never be satisfied by pleasure alone."
+- **Duty and Pleasure** are separate: whoever chooses duty ultimately gets pleasure. The notes add the Sanskrit pair **shreyas** (the good) and **preyas** (the pleasant). {notes+}
+- The soul is never born and never dies; "the soul neither slays nor is slain"; "smaller than the smallest, larger than the largest". It is known only by **grace**, not by scriptures, discussion or sharp intelligence.
+- The path is "narrow and sharp, like the **razor's edge**... **Awake, Arise**, bestir yourself, and stop not till the goal is reached." The notes add Somerset Maugham's novel title and Swami Vivekananda's motto. {notes+}
+> chariot | the chariot image
+> yagna | a sacrifice gone wrong
+> two_archetypes | renunciation over pleasure
+@chariot | The chariot image and the ladder | Chariot image | 1
+- **Soul** = lord of the chariot · **Body** = the chariot · **Intelligence** = the driver · **Conscience** = the reins · **Senses** = the horses.
+- With a weak conscience and an unguided driver, the senses run away. Use the reins and the horses are controlled. Supreme Bliss is only for the disciplined.
+- The ladder: sense-objects are above the senses; the mind above sense-objects; the intellect above the mind; the soul above the intellect; greater than the soul, the **seed of the world**; greatest of all, beyond words, the **Ultimate Person**, the Supreme Soul in all beings.
+@three_tales | Comparing the three tales | Three tales | 2
+- All three are about knowing the ultimate reality: Brahman, the Great Soul, the Supreme.
+- Worldly things fail in each: fire and wind; wealth; heaven's pleasures.
+- The teachers are unexpected: a goddess (Uma), a husband teaching his wife, Death teaching a boy.
+- The learners are surprising too: the king of the gods, a woman, a child.
+- All three end at the **limits of language**.
+@valmiki_abduction | Reading Three: Valmiki's abduction of Sita | Abduction of Sita | 1
+- Ralph Griffith's **rhyming** translation. Ravana drops his holy-man disguise: "I wear each form as wills my mind." He boasts he can lift the land, drink the ocean dry and defy Death.
+- "The **ten-faced** rover of the night, with **twenty arms** exposed to sight": red eyes, crimson robes, like a **dark cloud**.
+- He woos Sita, "resplendent as the dawn of day", and insults Rama: "A woman spoke and he resigned his home and kingdom." The woman is **Kaikeyi**.
+- Epic simile: like the planet **Mercury** stealing the light of the star **Rohini**. He grabs her hair: "the **Maithil** dame with lotus eyes". The forest gods flee.
+- His magic chariot is drawn by **asses**: "So might a soaring **eagle** bear a **serpent's** consort through the air."
+- Sita calls on **Lakshmana**, curses Ravana ("in the day of harvest pain comes like the ripening of the grain"), and blames **Queen Kaikeyi**.
+- She bids farewell to Janasthan and its cassia trees and "O pleasant stream **Godavari**", and asks trees, birds and deer to tell Rama. Rama would bring her back "though **Yama**'s self reclaimed his prey".
+- Last, she asks the **vulture** on a tall tree (Jatayu, unnamed here) to tell Rama and Lakshmana.
+> jatayu | vulture vs mother bird
+> godavari | the same river in Kamban
+> valmiki_vs_kamban | the comparison
+> nachiketa | Yama
+@kamban_intro | Reading Four: the Kamba Ramayana | Kamba Ramayana | 1
+- **Kamban** composed it in **Tamil** around the **12th century**: the *Ramavataram*, a **retelling, not a translation**. The extract is from the **Aranya Kandam** (the forest book). The notes give the date and title as added context. {notes+}
+- Being medieval, Kamban's Ramavataram is **not** a classical or ancient Tamil text (past-paper answer). {2023,2024}
+> upjeevya | an upjeevya kavya in action
+> jatayu | Jatayu
+> godavari | the river
+> surpanakha | Surpanakha
+@jatayu | Jatayu in Kamban | Jatayu | 2
+- "My children, stay here and do your **tapas**" (penance). "I will guard you against all danger."
+- He leads them to the place the sage **Agastya** had recommended, "guarding them **like a mother bird its young ones**".
+- In Valmiki he is only "the vulture on a lofty tree".
+@godavari | The Godavari and Panchavati | Godavari | 2
+- The river, spread like an ornament of the earth, flows through "**the five tracts described in classical poetry**": the five tinais. Kamban slips Sangam poetics into Rama's story.
+- The river seems to **worship** the travellers: its face shining with lotuses, its eyes tulips, its hands the waves scattering flowers at their feet.
+- They reach **Panchavati**, where Lakshmana builds a hut.
+> tinais | the five tracts
+@surpanakha | Surpanakha in Kamban | Surpanakha | 1
+- "A fell disease from her birth, born to destroy root and branch the rakshasa clan."
+- Her inner monologue: is this **Manmatha**, the god of love whom Shiva burnt bodiless, reborn? His arms reach his knees like the trunks of the **diggajas**; how lucky the earth is to be a woman; his shoulders outdo **Meru**; he is a **sapphire mountain**. "What penance has penance done, to be wooed by such beauty?"
+- Her modesty shrinks "**like a miser's fame**". A mantra to **Lakshmi** gives her a lovely form: koel, peacock, swan, lightning creeper.
+- Rama, "**the first of the vedic gods**", asks who she is: "Brahma's great-granddaughter, sister of **Kubera** and of Ravana... a maiden named **Kamavalli**."
+- She says she hates her clan's ways and got this form by penance. Rama thinks, "A woman's mind is too deep to plumb."
+- The battle of excuses: caste (he is kshatriya, she brahmin) → her father was a Vedic brahmin and her mother, chaste as Arundhati, the daughter of King **Chalakantaka**. Men shouldn't wed rakshasis → "I'm a **Vidyadhari** now". Her brothers must give her → the Vedas allow the **Gandharva** marriage. Rama laughs: "The grace of the rakshasas, no less!"
+- Sita appears ("a queen of heaven sprung from the earth", "the flower of chastity"). Surpanakha: "There is no end to beauty, only limits to an artist's skill." Then she calls **Sita** a rakshasi who lives on flesh.
+- Sita clings to Rama: "a **coral creeper against a raincloud**".
+- That night love spreads through her "like poison from the fangs of an angry cobra". She plans to carry Sita off. **Lakshmana**, guarding Sita "as a miser minds his hoard", cuts off her **nose, ears and nipples**. In Valmiki it is nose and ears.
+- "That bright sword... **sowed the seed for the war** that was to end with the hacking of the ten crowned heads of Ravana."
+> surpanakha_lament | her lament and tactics
+> khara | she runs to Khara
+> uma | Brahma again
+@surpanakha_lament | Surpanakha's lament and tactics | Lament & tactics | 2
+- To **Ravana**: you lifted Kailasa, enslaved the gods of **wind, water, fire and death**, bear a sword from Shiva and broke the diggajas' tusks. Has your might passed to mere men, "the meat we rakshasas feed upon"? "What a scandal!"
+- To her **nephew**, who imprisoned **Indra** (the notes add: **Indrajit**), and to **Khara and Dushana**: have you fallen asleep like **Kumbhakarna**? The forest is Khara's domain.
+- To Rama: "See what I've got for loving you!" and "If one has her breasts, ears and nose cut off, will she still look beautiful?" Her excuse: "a **jealous frog**... the sight of a co-wife".
+- Her tactics: **threat**; **bargain**; **boast** (she can carry them into the sky); **insult** to Sita ("fragile flower"); **reframing** ("isn't a long nose a blemish in a woman?"); **philosophy** ("like and dislike are all in the mind"); **self-deception** ("my love for you is now doubled"); **strategy** ("only a snake knows the ways of a snake", "set a thief to catch a thief"); **compromise** (marry her to Lakshmana: "Have I not spent all my life with a woman who has **no waist**?").
+- Rama still has the arrow that killed **Tataka**, her mother's mother. Lakshmana eyes his spear; Rama: "Yes, if she won't go."
+- Her exit: "I only said what I said to find out your true nature." She will bring **Khara**, "swifter than the wind, more fierce than fire".
+> shrinking_gods | Ravana's enslaved gods
+@khara | Khara | Khara | 2
+- She falls at Khara's feet "like a dark cloud rendered ruddy"; her cry is a drumbeat tolling the rakshasas' death; she rolls "like a snake withered by lightning".
+- Her lie: "this beauty I should take to **Lanka's king**... they cut off my nose." Her motive shifts from her own lust to serving Ravana, which is how she will tempt him later.
+- **Fourteen** warriors, "each a hill with two hands", beg to go instead.
+> valmiki_abduction | the chain ends in the abduction
+@valmiki_vs_kamban | Valmiki vs Kamban | Valmiki vs Kamban | 1
+- **Language and tradition**: Sanskrit source text by the Adikavi vs a Tamil regional retelling, an upjeevya kavya.
+- **Local colour**: Kamban brings in Tamil landscape poetics, the five tinais.
+- **Rama**: openly divine yet playful in Kamban ("the first of the vedic gods", "the blue cloud", "a sapphire mountain"); absent, far away, in Valmiki's scene.
+- **Villains**: Valmiki's Ravana is a spectacle; Kamban's Surpanakha is a psychology.
+- **Women's voices**: Sita laments, curses and appeals to nature; Surpanakha argues, bargains and reframes.
+- **Nature**: in Valmiki the forest gods flee and nature carries messages; in Kamban the Godavari worships.
+- **Similes**: Valmiki's are cosmic and animal (Mercury and Rohini, the eagle and the serpent); Kamban's are sensuous and layered (a miser's fame, cobra venom, a coral creeper against a raincloud, a miser's hoard).
+- **Jatayu**: an anonymous vulture vs a mother bird. **Mutilation**: nose and ears vs nose, ears and breasts, named as the seed of the war.
+- **The causal chain**: Surpanakha disfigured → Khara → Ravana → Sita abducted → war in Lanka. Kamban gives the cause; Valmiki gives the effect.
+> shrinking_gods | the course-wide thread
+> complit | comparison in action
+@shrinking_gods | The shrinking Vedic gods | Shrinking gods | 1
+- In the Rig Veda, Agni, Vayu and Indra are mighty and praised for wealth.
+- In the Upanishad tale, the same three can't burn or move a blade of grass.
+- In the epics, Ravana has enslaved the gods: Indra imprisoned by his son, the gods of wind, fire and death his servants.
+- The old gods shrink, first before **Brahman**, then before **Ravana**, while a **personal, incarnate god, Rama**, rises. That points ahead to **Bhakti**.
+> bhakti | the personal god
+
+%I | Past papers only | Not in notes | Topics the 2023 and 2024 papers tested | 11
+@kalidasa | Kalidasa | Kalidasa | 1
+- Most scholars and critics believe he lived in the **Gupta Empire** (past-paper answer; distractors Shunga, Sinhala, Maurya). {2024}
+- In your notes: with Bhasa, a writer of romances and heroic plays. {notes}
+- Works: the plays **Abhijnanashakuntalam**, **Malavikagnimitram** and **Vikramorvashiyam**; the long poems **Kumarasambhava** and **Raghuvamsha**; the shorter poems **Meghaduta** and **Ritusamhara**. {outside}
+- The **Ritusamhara** is generally believed to have been written in his **youth** (past-paper answer; distractors Malavikagnimitra, Vikramorvashi, Meghaduta). {2024}
+- He is usually linked with the reign of Chandragupta II and the city of **Ujjain**. {outside}
+> meghaduta | his lyric poem
+> ashadh | a modern play about him
+> dramatists | Bhasa and Kalidasa
+@meghaduta | Meghaduta (The Cloud Messenger) | Meghaduta | 1
+- A **lyric poem** (past-paper answer; distractors belles-lettres, play, novel), i.e. laghukavya. {2023,2024}
+- A banished **Yaksha** has been away from his Himalayan home for **eight months** when the first cloud warns him of the rainy season (distractors 5, 6, 7). {2023,2024}
+- He sends the cloud as his messenger. Kalidasa lavishly describes the cities of **Vidisha and Ujjain** on its long journey from the **Vindhyas to the Himalayas** (distractors Nashik, Haridwar, Banaras). {2023,2024}
+- Added context: the Yaksha serves **Kubera** and is exiled for a year to Ramagiri; his home is **Alaka**; the cloud appears on the first day of **Ashadha**; the metre is mandakranta. {outside}
+> ashadh | the play takes its title from it
+> surpanakha | Kubera, Surpanakha's brother
+@ashadh | Ashadh Ka Ek Din (Mohan Rakesh) | Ashadh Ka Ek Din | 1
+- By **Mohan Rakesh**, a pioneer of the **Nayi Kahani** movement in Hindi (past-paper answer; distractors Nayi Jawani, Nayi Kavita, Naya Natak). {2024}
+- The protagonist **Kalidasa** won't take the post of court poet at **Ujjain** because he **does not want to be uprooted from his natural surroundings** (distractors: restoring his house, caring for his uncle Matul, scepticism about court life). {2024}
+- Kalidasa marries the princess **Priyangumanjari** (distractors Ambika, Shakuntala, Mallika). {2024}
+- After fame at court he takes the new name **Matrugupta** (distractors Chandragupta, Samudragupta, Kirtigupta). {2024}
+- The title comes from the **Meghaduta**, but scholars say the plot aligns more with **Abhijnanashakuntalam** (distractors Malavikagnimitra, Vikramorvashi, Raghuvamsha). {2024}
+- Added context: written in 1958, three acts, often called the first modern Hindi play. **Mallika** is his village sweetheart, **Ambika** her mother, **Matul** his maternal uncle, **Vilom** the rival Mallika later marries. As Matrugupta he governs **Kashmir**. {outside}
+> kalidasa | the real poet
+> meghaduta | the title
+@cilappatikaram | Cilappatikaram, "The Tale of an Anklet" | Cilappatikaram | 1
+- By **Ilanko Atikal** (Ilango Adigal), "**the venerable ascetic prince**" (past-paper answer; distractors Veeraraghavachariar, Cenkuttuvan, Cittalai Cattanar). {2024}
+- Set in the three kingdoms of the **Cholas, Pantiyas (Pandyas) and Cerals (Cheras)**; distractors bring in Chalukyas, Sinhalas and Gangas. {2024}
+- The ornament at the centre of the plot: an **anklet** (distractors waist chain, earring, necklace). {2024}
+- Its literary sequel: the **Manimekalai** (distractors Tolkappiyam, Tirukkural, Ettuttokai). {2024}
+- To the traditional Tamil categories, love/erotic (akam) and war/heroic (puram), Ilanko added a new one: **mythic/allegory** (distractor: transient/ephemeral). {2024}
+- Added context: Kannaki, her husband Kovalan and the courtesan Madhavi. Kovalan is executed in Madurai for the supposed theft of the queen's anklet; Kannaki proves his innocence with her own anklet and burns Madurai, and is worshipped as the goddess Pattini. Ilanko is traditionally the Chera prince, younger brother of King Cenkuttuvan. The three books are set in Pukar (Chola), Madurai (Pandya) and Vanci (Chera). The Manimekalai, by Cittalai Cattanar, follows the daughter of Kovalan and Madhavi. {outside}
+- In your notes: the twin Tamil epics depart from the Sanskrit epics, carry Buddhist and Jain world views, and centre strong women. {notes}
+> tamil_epics | from your notes
+> akam_puram | a third category
+> three_sangams | Madurai
+@karna_kunti | Tagore's Karna and Kunti | Karna & Kunti | 2
+- Tagore recreates the dialogue between **Karna and Kunti** on the eve of Kurukshetra. His treatment departs from the epic in being more **psychological** (distractors feminist, aristocratic, historical). {2024}
+- Added context: *Karna-Kunti Samvad* (1900), a dramatic poem set at twilight on the bank of the Ganga. Kunti asks Karna, her first-born, to join his five Pandava brothers; he refuses and stays with the side he expects to lose. {outside}
+> mahabharata | the source episode
+> tagore_mother | the same poet
+> valmiki_vs_kamban | retelling as psychology
+@bhakti | The Bhakti movement | Bhakti | 1
+- In Tamil, "Bhakti" quite literally stands for "**eating God**", per the course key (distractors consecration, devotion, piety). {2023}
+- It began in Tamil with the **Saiva and Vaishnava** saints. {notes,2023,2024}
+- It spread along the route **South → West → North → East**. {2023}
+- Bhakti poets include **Andal** (Tamil), **Lal Ded** (Kashmiri) and **Tukaram** (Marathi). **Valmiki is not** one. {2023,outside}
+- **Kabir** came from the working class; by profession he was a **weaver** (distractors boatman, cobbler, carpenter). {2023}
+- Songs of some Bhakti saint-poets made their way into the **Guru Granth Sahib** (distractors Dhammapada, Quran, Bible). {2023}
+- In your notes: Bhakti crossed linguistic and regional barriers, stressed a personal god, protested against ritual and scripture, reconciled the "here" and the "hereafter", and includes Kannada's Vacanakaras. {notes}
+> tamil_bhakti | where it began
+> two_archetypes | here and hereafter
+> nanak | into the Guru Granth Sahib
+> commonality | "from Kabir to Ramanujan"
+> shrinking_gods | the personal god rises
+@sufism | Sufism | Sufism | 1
+- From the Arabic *sufi* (a mystic), from ***suf***, plausibly the **blue woollen garment** of early Islamic ascetics, per the course key (distractors: yellow silk sash, green cotton headgear, white muslin raiment). {2023}
+- The key treats **Iman, Ihsan and Ishraq** as pillars of Sufism; **Hajj is not** one. Hajj is a pillar of Islam itself. {2023,outside}
+- Sufi thinkers: **Amir Khusraw, Bulleh Shah, Shah Qalandar**. **Javed Akhtar**, a modern lyricist, is not one. {2023}
+- The Chishti masters in the options: Khwaja **Moinuddin Chishti** (Ajmer), **Qutbuddin Bakhtiar Kaki**, **Fariduddin Ganjshakar** (Baba Farid) and **Nizamuddin Auliya** (Delhi). {2023,outside}
+> khusraw | the disciple
+> nanak | Sikhism fuses Bhakti and Sufi
+@khusraw | Amir Khusraw | Amir Khusraw | 1
+- Popularly known as **Tuti-e-Hind**, the Parrot of India (distractors Sher-e-Hind, Fakhr-e-Hind, Kaisar-i-Hind). {2023}
+- The spiritual disciple of **Hazrat Nizamuddin Auliya**. {2023}
+- Credited with introducing the **sitar and tabla** to India (distractors sarangi and bansuri, pakhawaj and mridangam, sarod and santoor). {2023}
+- Regarded as a Sufi thinker. {2023}
+- Added context: 1253–1325; wrote in Persian and Hindavi; called the father of qawwali; famous for riddles (paheliyan); served several Delhi sultans. {outside}
+> urdu | Hindavi
+@nanak | Guru Nanak and Sikhism | Guru Nanak | 1
+- He had a mystical experience at the age of **30** (distractors 10, 20, 40). {2023}
+- Before the Guru Gaddi passed to the **Guru Granth Sahib**, Sikhism was led by **ten** human Gurus (distractors 9, 11, 12). {2023}
+- Sikhism is a powerful fusion of the **Bhakti and Sufi** philosophies (distractors Hindu and Buddhist, Sufi and Baul, Saiva and Vaishnava). {2023}
+- Added context: 1469–1539, born at Talwandi (Nankana Sahib). {outside}
+> bhakti | Bhakti songs in the Granth
+> sufism | the Sufi strand
+@bulleh | Bulleh Shah | Bulleh Shah | 3
+- A Sufi thinker, listed in the key with Khusraw and Shah Qalandar. {2023}
+- Added context: the 18th-century Punjabi Sufi poet of Kasur. {outside}
+> sufism | Sufi thinkers
+@urdu | Urdu, Khariboli and Persian forms | Urdu & Khariboli | 2
+- Urdu has been called **Rekhta**, **Dakkhani** and **Hindavi**, but **never Bhatiali**, which is a Bengali boatmen's folk-song genre. {2023,outside}
+- **Khariboli**: the language of the common folk in and around **Delhi** in late medieval times (distractors Awadhi, Nastaliq, Dakkhani). {2023}
+- **Nastaliq** is a script, not a language. **Awadhi** is an eastern Hindi dialect. {outside}
+- Urdu, Arabic and Persian gave Indian literature the **ghazal, the qasida and the rubai**: "All of the above". {2023}
+> khusraw | he wrote in Hindavi
+> firaq | an Urdu poet in Part 2
+> iqbal | an Urdu poet in Part 2
+@medieval_performance | Medieval texts written for performance | Performance texts | 3
+- Literary texts written to complement performances came into vogue in **medieval** Indian literature, 1000–1800 (distractors ancient, colonial, contemporary). {2023}
+> four_periods | the medieval period

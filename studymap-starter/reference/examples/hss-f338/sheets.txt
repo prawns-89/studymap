@@ -1,0 +1,242 @@
+=sheet Look-alikes | Groups that get confused under time pressure. | groups
+## Sruti vs Smriti | sruti
+- Sruti :: heard, revealed, divine: Vedas = Samhitas + Brahmanas + Aranyakas + Upanishads | sruti
+- Smriti :: remembered, human authors: 6 Vedangas + epics + Puranas; often in sutra form | smriti
+## The four layers of Sruti | sbau
+- Samhitas :: collections, "joined together": hymns, prayers, benedictions, sacrificial formulas, litanies | samhitas
+- Brahmanas :: 11 prose commentaries; studied during daily life in the community | brahmanas
+- Aranyakas :: 3 forest texts; studied in the seclusion of the forest | aranyakas
+- Upanishads :: 13 principal; "sitting near the teacher"; Atman and Brahman | upanishads
+## Words that mean something | samhitas
+- Samhita :: joined together (collection) | samhitas
+- Sutra :: thread | sutra_dharma
+- Cuttiram :: Tamil aphorism, roughly a sutra (1,612 in the Tolkappiyam) | tolkappiyam
+- Shloka :: Valmiki's verse form, born from the crane's killing | valmiki
+- Sruti / Smriti :: heard / remembered | sruti
+- Upanishad :: sitting down, with devotion, near the teacher | upanishads
+- Aranya :: forest | aranyakas
+- Prakrit :: natural, common | prakrit
+- Itihaas :: that which occurred (papers: "that which happened") | indian_epics
+- Tinai :: mode | tinais
+- Veda :: from vid, to know | vedas
+- Hotar :: the priest who invokes the gods | agni
+- Shatakratu :: of a hundred powers (Indra) | indra
+- Dvipa :: island, hence Dvaipayana | vyasa
+- Nanuru :: four hundred (Akananuru, Purananuru) | ettuttokai
+## Theorists of the nation | gellner
+- Ernest Gellner :: industrial society; homogenisation through education | gellner
+- Anthony D. Smith :: shared myths and memories, public culture, single economy, common rights and duties | smith
+- Benedict Anderson :: imagined community; print-capitalism; census, map, museum | anderson
+- Ernest Renan (notes) :: memory and selective forgetting | memory_forgetting
+- Eric Hobsbawm (notes) :: invented tradition | hobsbawm
+- Partha Chatterjee (notes) :: nationalism in the spiritual, inner domain | inner_domain
+## Nation, state, country, people | vocab
+- Nation :: more abstract | vocab
+- State :: a sense of the structure of power | vocab
+- Country :: a tract of native land; in political talk it means "people" | vocab
+## Poets of the nation | bankim
+- Bankim (1838–1894) :: Kamalakanta's opium vision; Vande Mataram; seventy million throats | bankim
+- Tagore (1861–1941) :: "the doors of your golden temple have unlocked"; Jana Gana Mana | tagore_mother
+- Iqbal (1877–1938) :: nightingales and garden; mountain as sentry; caravan at the Ganges; religion doesn't teach animosity | iqbal
+- Bharati (1882–1921) :: Indian Republic; thirty crores; every one is Bharat's King | bharati
+- Firaq (1896–1982) :: Urdu; caravans came, and so Hindustan was made | firaq
+## Big numbers about people | indira
+- 55 crore children :: Indira Gandhi, 1971 (and six lakh villages) | indira
+- 30 crores :: Bharati's "Indian Republic" | bharati
+- 70 million throats :: Vande Mataram | vande_mataram
+## Sanskrit dramatists | dramatists
+- Bharata :: Natyashastra: theory of the performing arts (1st c. BC–1st c. AD) | natyashastra
+- Bhasa & Kalidasa :: romances and heroic plays | dramatists
+- Sudraka :: social comedy (Mricchakatika) | dramatists
+- Visakhadatta :: political intrigue and court life (Mudrarakshasa) | dramatists
+## Sanskrit forms | verse_prose_forms
+- Mahakavya :: long poem following the rules of good poetry | verse_prose_forms
+- Laghukavya :: lyric poetry (the Meghaduta is one) | verse_prose_forms
+- Prasasti :: eulogy of the ruling king; introduced by inscriptions | verse_prose_forms
+- Gadyakavya :: literary prose romance | verse_prose_forms
+- Akhyayika :: invented story about historical characters | verse_prose_forms
+- Campu :: mixed prose and verse | verse_prose_forms
+- Fable :: Panchatantra (Vishnusharma), Kathasaritsagara (Somadeva) | fables
+## Prakrit, Apabhramsa, bandhas | prakrit
+- Prakrit :: natural/common tongue; women and servants in plays; Ashokan inscriptions; Sattasai | prakrit
+- Apabhramsa :: literary by the 7th c. AD; first Jaina | apabhramsa
+- Sandhi bandha :: stories from the Puranas | apabhramsa
+- Rasa bandha :: lyrics: fixed main metre plus other metres | apabhramsa
+## First grammars | tolkappiyam
+- Agattiyam :: earliest Tamil grammar, lost with the 1st Sangam | three_sangams
+- Tolkappiyam :: earliest surviving Tamil work; from the 2nd Sangam; 3 sections, 1,612 cuttirams | tolkappiyam
+- Kavirajamargam :: earliest Kannada literary work, c. 850 AD | kannada
+## Three Sangams | three_sangams
+- 1st: Then-Madurai :: south of Kanyakumari; drowned; Agattiyam lost | three_sangams
+- 2nd: Kapadapuram :: near Tiruchendur; drowned; Tolkappiyam survived | three_sangams
+- 3rd: Madurai :: all surviving works except the Tolkappiyam | three_sangams
+## Eight Anthologies vs Ten Long Poems | ettuttokai
+- Ettuttokai (8) :: Kuruntokai, Narrinai, Akananuru, Ainkurunuru, Kalittokai (love) · Purananuru, Patirruppattu (war) · Paripatal (mixed) | ettuttokai
+- Pattuppattu (10) :: Kurincippattu, Porunararruppatai, Cirupanarruppatai, Perumpanarruppatai, Maturaikkanci, Malaipatukatam, Pattinappalai, Mullaippattu, Netunalvatai, Tirumurukarruppatai | pattuppattu
+## Sangam scholars | discovery
+- U. V. Swaminatha Iyer :: 1855–1942; rescued palm-leaf manuscripts | discovery
+- C. W. Thamotharampillai :: 1832–1901; first Ettuttokai edition, 1877 | discovery
+- A. K. Ramanujan, Kamil Zvelebil :: modern translators | ramanujan
+- M. S. Swaminathan :: NOT connected (agricultural scientist) | discovery
+## Traditional vs literary epics | traditional_epics
+- Traditional :: Iliad, Odyssey (Greek) · Beowulf (Anglo-Saxon) · Chanson de Roland (French) · Poema del Cid (Spanish) · Nibelungenlied (German) | traditional_epics
+- Literary :: Virgil's Aeneid → Milton's Paradise Lost → Blake's prophetic books, Keats's Hyperion | literary_epics
+- Epic by spirit :: Divine Comedy, Faerie Queene; Moby Dick, War and Peace, Ulysses | epic_spirit
+## Ramayana vs Mahabharata | ramayana
+- Ramayana :: Valmiki, Adikavi · 24,000 shlokas · anushtup · 2× Iliad+Odyssey · Winternitz 4th c. BC–2nd c. AD · Jacobi: 5 kandas | ramayana
+- Mahabharata :: Vyasa · ~100,000 shlokas (Shat Sahasra Samhita) · 18 parvas · original name Jaya · contains the Gita · predates the Buddha | mahabharata
+- Jaya → Bharata → Mahabharata :: Vyasa → Vaisampayana → Sauti | three_versions
+- Ramakatha inside the Mahabharata :: Aranyaka, Drona, Shanti Parvas; most detailed in Shanti (Markandeya → Yudhishthira) | mahabharata
+## Vyasa's three names | vyasa
+- Dvaipayana :: born on an island in the Yamuna | vyasa
+- Krishnamuni :: dark complexion | vyasa
+- Veda Vyasa :: explained the Vedas in the form of Samhitas | vyasa
+## Rig Veda gods | rigveda_reading
+- Agni :: chosen priest, hotar, messenger, dispeller of the night, guard of Law, "as a father to his son", Angiras | agni
+- Vayu :: Soma drops prepared; Indra-Vayu | vayu
+- Mitra & Varuna :: the oil-fed rite; lovers of Law (rita) | vayu
+- Indra :: richest of the rich; tawny horses; Shatakratu; fair of cheek; wains; Treasure-Lord | indra
+- Ashvins :: come with Dawn, Daughter of the Sky; Nasatyas; sons of the sea; ship of hymns; Kanvas; Manu | ashvins
+## Three Upanishad tales | three_tales
+- Uma the Golden (Kena) :: teacher: a goddess · learner: Indra · image: a blade of grass | uma
+- Yajnavalkya & Maitreyi (Brihadaranyaka) :: teacher: a husband · learner: a woman · images: drum and veena, salt in the sea | maitreyi
+- Nachiketa (Katha) :: teacher: Death · learner: a child · images: the chariot, the razor's edge | nachiketa
+## Valmiki vs Kamban | valmiki_vs_kamban
+- Similes: Valmiki :: Mercury stealing Rohini's light; an eagle bearing a serpent's consort | valmiki_abduction
+- Similes: Kamban :: modesty like a miser's fame; love like cobra venom; a coral creeper against a raincloud; a miser's hoard | surpanakha
+- Jatayu :: Valmiki: an unnamed vulture · Kamban: a mother bird | jatayu
+- Mutilation :: Valmiki: nose and ears · Kamban: nose, ears and breasts | surpanakha
+- Godavari :: Valmiki: Sita's farewell · Kamban: the river worships; flows through the five tinais | godavari
+## Surpanakha's circle | surpanakha
+- Kamavalli :: the name she gives Rama | surpanakha
+- Brahma :: she claims to be his great-granddaughter | surpanakha
+- Kubera, Ravana :: her brothers | surpanakha
+- King Chalakantaka :: her mother's father (her caste excuse) | surpanakha
+- Tataka :: her mother's mother (Rama's arrow) | surpanakha_lament
+- Indrajit (notes) :: her nephew, who imprisoned Indra | surpanakha_lament
+- Khara & Dushana :: the kinsmen she runs to; the forest is Khara's | khara
+- Kumbhakarna :: the brother famous for sleep | surpanakha_lament
+## Kalidasa (past papers) | kalidasa
+- Plays :: Abhijnanashakuntalam, Malavikagnimitram, Vikramorvashiyam | kalidasa
+- Long poems :: Kumarasambhava, Raghuvamsha | kalidasa
+- Short poems :: Meghaduta (lyric), Ritusamhara (his youth) | kalidasa
+- Era :: Gupta Empire | kalidasa
+## Ashadh Ka Ek Din (past papers) | ashadh
+- Mohan Rakesh :: Nayi Kahani pioneer | ashadh
+- Priyangumanjari :: the princess Kalidasa marries | ashadh
+- Matrugupta :: his new name at court | ashadh
+- Mallika / Ambika / Matul / Vilom :: sweetheart / her mother / his uncle / the rival | ashadh
+- Why he won't go :: doesn't want to be uprooted from his natural surroundings | ashadh
+- Plot parallel :: Abhijnanashakuntalam (title from the Meghaduta) | ashadh
+## Cilappatikaram people (past papers) | cilappatikaram
+- Ilanko Atikal :: author: "the venerable ascetic prince" | cilappatikaram
+- Cenkuttuvan :: Chera king, Ilanko's brother (a distractor) | cilappatikaram
+- Cittalai Cattanar :: author of the sequel, Manimekalai (a distractor) | cilappatikaram
+- Kannaki, Kovalan, Madhavi :: wife, husband, courtesan; the anklet | cilappatikaram
+## Sufi and Bhakti names (past papers) | sufism
+- Nizamuddin Auliya :: Khusraw's master (Delhi) | khusraw
+- Moinuddin Chishti :: Ajmer (a distractor) | sufism
+- Tuti-e-Hind :: Amir Khusraw, the Parrot of India | khusraw
+- Andal, Lal Ded, Tukaram, Kabir :: Bhakti poets (Kabir a weaver) | bhakti
+- Bulleh Shah, Shah Qalandar :: Sufi thinkers | sufism
+=sheet Which is NOT…? | Learn the full set and the outsider stands out. | cards
+- Not Sruti :: In the set: Vedas, Samhitas, Brahmanas, Aranyakas, Upanishads. Outsider: **Puranas, Vedangas, epics** | sruti
+- Not Smriti :: In the set: Vedangas, Ramayana, Mahabharata, Bhagavata Purana. Outsider: **Samhitas (and any Sruti text)** | smriti
+- Not a Veda :: In the set: Rig, Yajur, Sama, Atharva. Outsider: **Ayur Veda** | vedas
+- Not an earliest language :: In the set: Sanskrit, Pali, Prakrit, Tamil, Kannada. Outsider: **Telugu, Gujari, Apabhramsa** | earliest_langs
+- Not a tinai :: In the set: hills/mountain, seashore/coast, wasteland, forest/jungle, lowland. Outsider: **plateau** | tinais
+- Not a main ethnic group :: In the set: Indo-Aryan, Dravidian, Tibeto-Burman, Austroasiatic, Negrito. Outsider: **Parsis (and other communities)** | ethnic
+- Not a dilemma of "Indian literature" :: In the set: indigenous vs colonial languages; scheduled vs unscheduled; singular vs plural. Outsider: **elite vs popular culture** | dilemmas
+- Not a comparative study :: In the set: anything crossing language, time or art form. Outsider: **modern Bengali novel vs modern Bengali short story** | requirements
+- Not a traditional epic :: In the set: Iliad, Odyssey, Beowulf, Roland, Cid, Nibelungenlied. Outsider: **Paradise Lost, Aeneid, Hyperion** | literary_epics
+- Not an epic feature :: In the set: long verse narrative, serious subject, elevated style, huge setting. Outsider: **cramped or meagre setting** | epic_def
+- Not classical/ancient Tamil :: In the set: Tirukkural, Cilappatikaram, Manimekalai, Sangam poems. Outsider: **Kamban's Ramavataram (12th c.)** | kamban_intro
+- Not a Sangam scholar :: In the set: U. V. Swaminatha Iyer, C. W. Thamotharampillai, A. K. Ramanujan, Kamil Zvelebil. Outsider: **M. S. Swaminathan** | discovery
+- Not a purushartha :: In the set: dharma, artha, kama, moksha. Outsider: **yoga (or anything else)** | purusharthas
+- Not a Vedanga :: In the set: siksha, chandas, vyakarana, nirukta, jyotisha, kalpa. Outsider: **anything else** | vedangas
+- Not in Jana Gana Mana (slide translation) :: In the set: Punjab, Sind, Gujarat, Maratha, Dravida, Odisha, Bengal. Outsider: **Kashmir** | jana_gana_mana
+- Not a reason to write :: In the set: record, share, express, higher purpose. Outsider: **fame, prizes, patronage** | why_write
+- Not a Bhakti poet :: In the set: Andal, Lal Ded, Tukaram, Kabir. Outsider: **Valmiki** | bhakti
+- Not a Sufi thinker :: In the set: Amir Khusraw, Bulleh Shah, Shah Qalandar. Outsider: **Javed Akhtar** | sufism
+- Not a pillar of Sufism :: In the set: Iman, Ihsan, Ishraq. Outsider: **Hajj** | sufism
+- Not a name for Urdu :: In the set: Rekhta, Dakkhani, Hindavi. Outsider: **Bhatiali** | urdu
+=sheet Every number | Dates, counts and percentages. | table
+- ~4,000 yrs :: age of Indian literature (Part 5) | four_periods
+- 3,500 yrs :: "over the last three thousand five hundred years" (Part 6) | classical_canvas
+- ~2,000 yrs :: Tamil's literary history | classical_canvas
+- 2000 BC–1000 AD :: Ancient period | four_periods
+- 1000–1800 :: Medieval period | four_periods
+- 1800–1947 :: Indian literature under colonial rule | four_periods
+- 1947 → :: Contemporary; also India's latest boundaries | four_periods
+- ~1500 BC :: Rig Veda hymns; Vedic composers weren't "Indians" | rigveda_reading
+- ~1200 BC :: end of the Vedic Age | sruti
+- 4 :: Vedas | vedas
+- 11 :: Brahmanas | brahmanas
+- 3 :: Aranyakas | aranyakas
+- 13 :: principal Upanishads | upanishads
+- 6 :: Vedangas | vedangas
+- 4 :: purusharthas | purusharthas
+- 6th/7th c. BC :: Upanishads begun, edited over 1,000 years | upanishad_tales
+- 1st c. BC–1st c. AD :: Natyashastra | natyashastra
+- 5th c. AD :: Prakrit in songs, gathas, Sattasai | prakrit
+- 6th c. AD :: knowledge codified | social_tendencies
+- 6th–11th c. :: the Prakrits (Part 4) | cultural_unity
+- 7th c. AD :: Apabhramsa becomes literary | apabhramsa
+- 3rd c. BC :: earliest Kannada inscriptions | kannada
+- ~850 AD :: Kavirajamargam | kannada
+- 10th c. :: Kannada Golden Age: Pampa, Ponna, Ranna | kannada_golden
+- 6th–7th c. AD :: Tamil Bhakti blossoms | tamil_bhakti
+- 300 BC–1st c. AD :: Tolkappiyam | tolkappiyam
+- 1,612 :: cuttirams in the Tolkappiyam (3 sections) | tolkappiyam
+- 2,000+ :: Sangam poems | sangam
+- 3 :: Sangams (academies) | three_sangams
+- 8 / 10 :: Ettuttokai anthologies / Pattuppattu poems | three_types
+- 1–5, 6–7, 8 :: love, war, mixed (Ettuttokai) | ettuttokai
+- 400 :: nanuru (Akananuru, Purananuru); also India's spoken languages | ettuttokai
+- 5 :: tinais | tinais
+- 4 :: deities of the Paripatal: Vishnu, Shiva, Durga, Murugan | sangam_features
+- 1877 :: first Ettuttokai edition (Thamotharampillai) | discovery
+- 12th–2nd c. BC :: Indian epics composed | indian_epics
+- 2nd c. AD :: epics written down; Winternitz's final Ramayana | indian_epics
+- 4th c. BC :: Winternitz: first form of the Ramayana | ramayana_tradition
+- 5 :: kandas Jacobi accepts | ramayana_tradition
+- 24,000 :: Ramayana shlokas | ramayana_tradition
+- ~100,000 :: Mahabharata shlokas (Shat Sahasra Samhita) | mbh_dating
+- 18 :: Mahabharata parvas | three_versions
+- 3 :: parvas holding the Ramakatha | mahabharata
+- 1896 :: Griffith's Rig Veda translation | rigveda_reading
+- ~2,500 yrs ago :: Mithila of Yajnavalkya | maitreyi
+- 3 days & nights :: Nachiketa at Yama's door; 3 boons | nachiketa
+- 10 / 20 :: Ravana's faces / arms | valmiki_abduction
+- 14 :: Khara's warriors, "each a hill with two hands" | khara
+- 12th c. :: Kamban's Ramavataram | kamban_intro
+- 1971 :: Indira Gandhi: "India is an idea" | indira
+- 6 lakh / 55 crore :: villages / children (Indira) | indira
+- 79.80 / 14.23 / 2.30 :: Hindu / Muslim / Christian % | religions
+- 1.7 / 0.7 / 0.37 :: Sikh / Buddhist / Jain % | religions
+- 0.66 / 0.24 :: other religions / unspecified % | religions
+- 5 · 14 · 22 · 400 :: language families · scripts · scheduled · spoken | language_atlas
+- 3 :: civilisations: Hindu, Islamic, Christian | outcome
+- 7th day :: saptami: the idol in Kamalakanta's vision | bankim
+- 1882 :: Anandamath (notes) | vande_mataram
+- 12 Mar 1954 :: Sahitya Akademi inaugurated | sahitya_akademi
+- 24 :: Akademi languages incl. English; also 24 + 24 awards | sahitya_akademi
+- 6,000+ · 19 hrs :: Akademi books · one book every 19 hours | sahitya_akademi
+- 20/20/20/40 :: Quiz 1 / Quiz 2 / assignment / comprehensive | evaluation
+- 9 :: categories of folk song | folk_songs
+- 4 :: reasons people write | why_write
+- 6 :: course aims | aims
+- 8 months :: the Yaksha's absence (past papers) | meghaduta
+- 30 / 10 :: Nanak's age at his mystical experience / human Gurus (past papers) | nanak
+=sheet Watch-outs | Where the notes contradict themselves. | cards
+- Mullai :: The slide says union and happiness; tradition and the sample poem say waiting. Pick the slide's answer. | mullai
+- Jacobi's five kandas :: Your notes say "Ayodhya to Uttara", which is six books; Ayodhya to Yuddha is five. The number to learn is five. | ramayana_tradition
+- The Ramakatha in the Mahabharata :: The slide puts the most detailed telling in the Shanti Parva (Markandeya to Yudhishthira). In the epic itself, Markandeya's Rama story sits in the Aranyaka (Vana) Parva. For the quiz, follow the slide. | mahabharata
+- Sangam dates :: The slides give three ranges (400 BCE–250 CE, 300 BCE–300 CE, 300 BCE–100 CE). Part 5 uses 300 BC–100 AD. | sangam
+- Age of Indian literature :: "Almost 4,000 years" in Part 5; "the last 3,500 years" in Part 6. Match the wording of the question. | classical_canvas
+- Tirukkural's date :: Part 5 puts the didactic phase in the 2nd–3rd c. AD; Part 6 dates the Tirukkural to about 500 CE or earlier. | tirukkural
+- Prakrit's dates :: The Ashokan inscriptions (Prakrit) are the earliest dated records, yet Part 4 lists "the Prakrits (6th–11th centuries)" after Sanskrit. Don't let the second date trap you on Ashoka. | prakrit
+- Itihaas :: Notes: "that which occurred". Past papers: "that which happened". Same answer. | indian_epics
+- The lamp :: Notes: the Nilavilakku, a lamp with many wicks. Past papers: "base lamps". | nilavilakku
+- Earliest Tamil work :: The Tolkappiyam is the earliest known or surviving work. Legend makes the lost Agattiyam older still. | tolkappiyam
+- Bhakti in Tamil :: The key says "eating God", not "devotion". Devotion was the most common wrong answer. | bhakti

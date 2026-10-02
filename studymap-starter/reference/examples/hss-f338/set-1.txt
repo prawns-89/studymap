@@ -1,0 +1,641 @@
+!set Set 1 | 80 new questions with answers. | shuffle
+@complit | 
+Q Comparative literature, at its simplest, is the study of ________.
++ literatures in different languages, compared with one another
+- the literature of one language across its whole history
+- literary theory as distinct from literary history
+- translations of foreign classics into a national language
+= Part 1: literatures in different languages, compared with one another, either by genre or by theme and idea.
+
+@requirements | 
+Q Reading a Sanskrit text alongside a Hindi text is the course's example of comparison across ________.
++ time
+- art forms
+- genres within one language
+- religions
+= Comparison works across time: classical and medieval texts read alongside modern ones. Comparison across art forms means literature vs film.
+
+@evaluation | 
+Q In the course's evaluation scheme, the comprehensive exam carries ________ of the total.
++ 40%
+- 20%
+- 30%
+- 50%
+= Quiz 1 20%, Quiz 2 20%, in-class assignment 20%, comprehensive exam 40%.
+
+@method_discipline | 
+Q The recap at the start of the second lecture says comparative literature is not only a method but also a ________.
++ discipline
+- genre
+- canon
+- movement
+= Method and discipline: a tool for analysis and a field with its own theories, questions and approaches.
+
+@indira | 
+Q "India is not just its land, mountains and rivers... India is a thought, India is an idea." These words were spoken in 1971 by ________.
++ Indira Gandhi
+- Jawaharlal Nehru
+- Rabindranath Tagore
+- Sarojini Naidu
+= Indira Gandhi, 1971: "six lakh villages and towns... fifty-five crore children... India is an idea."
+
+@prasad | 
+Q In G. J. V. Prasad's "Desperately Seeking India", the speaker says that in Madras he is ________.
++ an Aryan spy
+- an invader
+- an exploiting trader
+- without a visa
+= Delhi: without a visa. Madras: an Aryan spy. Bombay: an invader. Assam: an exploiting trader.
+
+@ethnic | 
+Q Which of the following is NOT one of the five main ethnic groups of India listed on the slides?
++ Parsis
+- Negritos
+- Austroasiatics
+- Tibeto-Burmans
+= The five: Indo-Aryans, Dravidians, Tibeto-Burmans, Austroasiatics, Negritos. Parsis (Zoroastrians) are among the other communities.
+
+@language_atlas | 
+Q According to the language atlas of India, the country has ________ major writing systems.
++ 14
+- 5
+- 22
+- 400
+= Five families, fourteen scripts, twenty-two Eighth Schedule languages, four hundred spoken languages, thousands of dialects.
+
+@vocab | 
+Q A tract of native land, mostly rural or geographical areas, usually including the people who live there. This is how the slides define a ________.
++ country
+- nation
+- state
+- people
+= Country is the native land; nation is more abstract; state is the structure of power.
+
+@anderson | 
+Q Benedict Anderson says the nation is propped up by three pieces of modern apparatus: ________.
++ the census, the map and the museum
+- the newspaper, the novel and the theatre
+- the school, the army and the church
+- the court, the market and the temple
+= Anderson's imagined community rests on print-capitalism (newspapers and novels) and is propped up by the census, the map and the museum.
+
+@raj | 
+Q According to the lecture, the geographical and political idea of an Indian nation was a creation of ________.
++ the British Raj
+- the Mauryan empire
+- the Mughal empire
+- the Indian National Congress
+= Through Western education, scientific and social discoveries, print-capitalism and an Indian intelligentsia; museums, maps and the census made India concrete.
+
+@bankim | 
+Q In the passage from Bankimchandra Chatterjee, the narrator Kamalakanta sees his vision of the Mother after ________.
++ taking an overdose of opium
+- fasting for three days
+- falling asleep in a temple
+- nearly drowning in the Ganges
+= "Why did I take this overdose of opium?" He floats on the stream of time and sees the saptami idol of Durga: "this was my mother, my country."
+
+@vande_mataram | 
+Q In Vande Mataram the Mother is at once Durga, Kamala and Speech, that is, ________.
++ Durga, Lakshmi and Saraswati
+- Durga, Kali and Parvati
+- Lakshmi, Sita and Radha
+- Saraswati, Uma and Ganga
+= Durga with ten weapons, Kamala (Lakshmi) at play in the lotuses, Speech (Saraswati) the giver of lore: power, wealth and learning.
+
+@iqbal | 
+Q "Religion does not teach us to bear animosity among ourselves. We are of Hind, our homeland is Hindustan." These lines are from ________.
++ Muhammad Iqbal's Saare Jahan Se Achha
+- Subramania Bharati's "Indian Republic"
+- Rabindranath Tagore's Jana Gana Mana
+- Bankimchandra Chatterjee's Vande Mataram
+= Iqbal (1877–1938): nightingales and garden, the mountain as sentry, the caravan at the Ganges.
+
+@name_india | 
+Q Among the names for India listed on the slide, which one is the Chinese name?
++ Tianzhu
+- Jambudvipa
+- Indica
+- Al-Hind
+= Bharata, Bharatavarsha, Bharatam, Aryavarta, Jambudvipa, Indica, Al-Hind, Hindustan, Indostan, Mauryadesa, Himvarsha, and Tianzhu (Chinese).
+
+@lang_culture | 
+Q The slide's equation for language reads: language = ________ = community.
++ communication
+- culture
+- identity
+- literature
+= Language = communication = community. Language is also a repository of culture.
+
+@why_write | 
+Q Which of the following is NOT one of the four reasons people write, according to the slides?
++ To win fame and patronage at court
+- To keep records of significant experience
+- To share experience with an interested group
+- For free individual expression
+= Record, share, express (good for mental and physical health), and a higher purpose.
+
+@folklore | 
+Q Which of the following is an example of nonverbal folklore?
++ Floor and wall designs
+- Riddles
+- Lullabies
+- Ballads
+= Nonverbal: dances, games, floor and wall designs, artefacts and toys, performing arts. Riddles, lullabies and ballads are verbal.
+
+@folk_songs | 
+Q Female-centred folk songs are marked by domestic motifs and ________.
++ an alternative world view that questions traditions and hierarchies
+- heroism and adventure
+- ribald humour
+- praise of gods and demons
+= Male-centred songs are about heroism and adventure; female-centred ones question traditions and hierarchies.
+
+@nilavilakku | 
+Q In K. M. George's Nilavilakku analogy, the oil stands for ________.
++ the shared sources of Indian literatures
+- India's many languages
+- India as a nation
+- Indian Literature as a whole
+= Lamp = India; oil = shared sources; wicks = languages; one light = Indian Literature.
+
+@against_plural | 
+Q "European literature" and "Latin American literature" are cited as examples of ________.
++ many languages, one literature
+- one language, many literatures
+- literatures without a written tradition
+- literatures defined only by language
+= An argument for the singular. The reverse, one language with many literatures, is Spanish or English.
+
+@commonality | 
+Q Most Indian writers are bilingual if not multilingual, "from Kabir to ________".
++ A. K. Ramanujan
+- Rabindranath Tagore
+- Kamban
+- Amir Khusraw
+= From Kabir to A. K. Ramanujan: the same Ramanujan who translated the Sangam poems.
+
+@sahitya_akademi | 
+Q The Sahitya Akademi was formally inaugurated by the Government of India on ________.
++ 12 March 1954
+- 15 August 1947
+- 26 January 1950
+- 12 March 1964
+= 12 March 1954: India's National Academy of Letters.
+
+@perception_reality | 
+Q According to the slides, the only Indian language with a continuous literary tradition is ________.
++ Tamil
+- Sanskrit
+- Kannada
+- Bengali
+= Tamil. Its early grammar, the Tolkappiyam, recognises Sanskrit as its only literary equal and competitor.
+
+@unity_diversity | 
+Q The points of convergence in Indian literature are described as thematic, generic and ________.
++ ideological
+- linguistic
+- regional
+- religious
+= Thematic, generic and ideological, and rarely confined to one language or region.
+
+@why_cil | 
+Q The course calls itself Comparative Indian Literature because the comparative route ________.
++ All the options are correct
+- acknowledges the differences that exist in India
+- does not take commonality and cultural continuity for granted
+- covers both the differences and the commonalities
+- None of the options is correct
+= All three statements are on the slide.
+
+@four_periods | 
+Q Medieval Indian literature is dated to ________.
++ 1000 AD to 1800 AD
+- 2000 BC to 1000 AD
+- 1800 AD to 1947
+- 600 AD to 1500 AD
+= Ancient 2000 BC–1000 AD, Medieval 1000–1800, Colonial 1800–1947, Contemporary 1947 onwards.
+
+@sruti | 
+Q Scholars tentatively think the Vedic Age lasted until about ________.
++ 1200 BC
+- 2000 BC
+- 600 BC
+- 200 AD
+= The Vedic Age, the earliest period of Sanskrit literature, lasted until about 1200 BC.
+
+@vedas | 
+Q Which of the following is NOT one of the four Vedas?
++ Ayur Veda
+- Sama Veda
+- Yajur Veda
+- Atharva Veda
+= The four are the Rig, Yajur, Sama and Atharva.
+
+@samhitas | 
+Q The word Samhita literally means ________.
++ joined together
+- that which is heard
+- sitting near
+- thread
+= Samhita = collection, "joined together". Sruti = heard; Upanishad = sitting near; sutra = thread.
+
+@aranyakas | 
+Q There are ________ Brahmanas and ________ Aranyakas.
++ eleven; three
+- three; eleven
+- thirteen; eleven
+- eleven; thirteen
+= Eleven Brahmanas, three Aranyakas, thirteen principal Upanishads.
+
+@upanishads | 
+Q The word Upanishad means ________.
++ sitting down, with devotion, near the teacher to receive instruction
+- that which is remembered
+- the teaching of the forest
+- the end of the sacrifice
+= Sitting near the teacher. Yajnavalkya's "Come, sit near me" plays on it.
+
+@vedangas | 
+Q Among the six Vedangas, nirukta deals with ________.
++ etymology
+- metre
+- phonetics
+- astronomy
+= Siksha phonetics, chandas metre, vyakarana grammar, nirukta etymology, jyotisha astronomy, kalpa ritual.
+
+@smriti | 
+Q Smriti marks a break from the earlier Vedic tradition because it is ________.
++ attributed to human authors
+- sung rather than recited
+- written in Prakrit
+- concerned only with ritual
+= Sruti is revealed and divine; Smriti is remembered and human-made.
+
+@sanskrit_drama | 
+Q Sanskrit plays of the time began and ended with ________.
++ a benediction for universal peace and prosperity
+- a prayer to the patron king
+- a recital of the four goals of life
+- an invocation to the muse
+= They began and ended with a benediction for universal peace and prosperity.
+
+@dramatists | 
+Q Which Sanskrit dramatist is known for plays about political intrigue and royal court life?
++ Visakhadatta
+- Sudraka
+- Bhasa
+- Kalidasa
+= Bhasa and Kalidasa: romances and heroic plays. Sudraka: social comedy. Visakhadatta: political intrigue.
+
+@verse_prose_forms | 
+Q In Sanskrit literature, a campu is ________.
++ a work in mixed prose and verse
+- a eulogy of the ruling king
+- a literary prose romance
+- an invented story about a historical character
+= Campu = mixed prose and verse; prasasti = eulogy; gadyakavya = prose romance; akhyayika = invented story about historical characters.
+
+@brahmanas | 
+Q "The Brahmanas were meant for study in the seclusion of the forest, whereas the Aranyakas were studied while carrying on with daily life in the larger community."
++ The whole statement is false
+- The whole statement is true
+- Only true about the Brahmanas
+- Only true about the Aranyakas
+= It is reversed. Brahmanas were studied during daily life in the community; Aranyakas in the forest (aranya = forest).
+
+@kannada_golden | 
+Q The three great writers of the tenth-century Golden Age of old Kannada literature are ________.
++ Pampa, Ponna and Ranna
+- Basava, Allama and Akka
+- Pampa, Kamban and Ranna
+- Ponna, Ranna and Tiruvalluvar
+= Pampa, Ponna and Ranna, the "three gems".
+
+@three_sangams | 
+Q According to legend, the second Sangam flourished at ________.
++ Kapadapuram, near present-day Tiruchendur
+- Then-Madurai, south of Kanyakumari
+- Madurai
+- Kaveripattinam
+= First: Then-Madurai (drowned). Second: Kapadapuram (drowned). Third: Madurai.
+
+@three_sangams | 
+Q The earliest book on Tamil grammar, said to be lost for ever with the first Sangam, is the ________.
++ Agattiyam
+- Tolkappiyam
+- Tirukkural
+- Kavirajamargam
+= The Agattiyam was lost; the Tolkappiyam survived from the second Sangam.
+
+@ettuttokai | 
+Q Which of the Eight Anthologies deal with heroism (puram) and the praise of kings?
++ Purananuru and Patirruppattu
+- Akananuru and Kuruntokai
+- Narrinai and Ainkurunuru
+- Kalittokai and Paripatal
+= Anthologies 1–5 are love; 6–7 (Purananuru, Patirruppattu) heroism; 8 (Paripatal) mixed.
+
+@tolkappiyam | 
+Q The Tolkappiyam contains ________ cuttirams.
++ 1,612
+- 1,330
+- 2,000
+- 1,216
+= 1,612 cuttirams, roughly equivalent to Sanskrit sutras, in three sections.
+
+@tinais | 
+Q The tinai associated with the seashore and lovers' anxiety is ________.
++ Neytal
+- Kurinci
+- Marutam
+- Palai
+= Kurinci hills (meeting), Neytal seashore (anxiety), Palai wasteland (separation), Mullai forest (union), Marutam lowland (unfaithfulness).
+
+@mullai | 
+Q "Even noon is evening to one who has no one." This line belongs to the sample poem for ________.
++ Mullai, the forest
+- Palai, the wasteland
+- Neytal, the seashore
+- Kurinci, the hills
+= Mullai is the jasmine that blooms at dusk.
+
+@akam_puram | 
+Q In akam poetry, characters are ________.
++ not named, but identified by gender, occupation, region and role in the relationship
+- named after gods and heroes of the epics
+- always kings and their queens
+- named after the poet's patrons
+= Hence titles like "What she said", "What he said", "What her girl friend said".
+
+@discovery | 
+Q The first edition of the Ettuttokai was published in 1877 by ________.
++ C. W. Thamotharampillai
+- U. V. Swaminatha Iyer
+- A. K. Ramanujan
+- Kamil Zvelebil
+= Thamotharampillai (1832–1901), who with U. V. Swaminatha Iyer (1855–1942) rescued the poems from palm-leaf manuscripts.
+
+@tirukkural | 
+Q The Tirukkural expanded the old two-fold division of Tamil poetry into three: ________.
++ love, virtue, and polity and society
+- love, war and devotion
+- akam, puram and bhakti
+- dharma, artha and moksha
+= Love, virtue, and matters of polity and society.
+
+@traditional_epics | 
+Q Which of the following is a traditional (folk or primary) epic?
++ Poema del Cid
+- Aeneid
+- Paradise Lost
+- Hyperion
+= Traditional: Iliad, Odyssey, Beowulf, Chanson de Roland, Poema del Cid, Nibelungenlied. The others are literary epics.
+
+@epic_conventions | 
+Q The epic convention of beginning "in medias res" means beginning ________.
++ in the middle of things, at a critical point in the action
+- with an invocation to the muse
+- with a catalogue of the main characters
+- at the hero's birth
+= In medias res: in the middle of things.
+
+@indian_epics | 
+Q The Ramayana and the Mahabharata were composed roughly between ________ and written down sometime in the ________.
++ the 12th and 2nd centuries BC; 2nd century AD
+- the 6th and 4th centuries BC; 1st century BC
+- 1500 and 1200 BC; 6th century AD
+- the 2nd century BC and 2nd century AD; 10th century AD
+= Composed roughly in the 12th–2nd centuries BC; written down sometime in the 2nd century AD.
+
+@ramayana_tradition | 
+Q The Ramayana has about ________ shlokas, mostly in the ________ metre.
++ 24,000; anushtup
+- 100,000; anushtup
+- 24,000; mandakranta
+- 18,000; gayatri
+= 24,000 shlokas in the anushtup metre ("anushtap chand"), which Valmiki is credited with creating.
+
+@valmiki | 
+Q According to tradition, Valmiki's first shloka was born when he saw ________.
++ a hunter kill the male of a pair of mating cranes
+- Sita weeping in his ashram
+- Rama leave Ayodhya for exile
+- a vulture die defending a princess
+= "O hunter, you have killed the crane in love..." Its form and rhythm came to be called the shloka.
+
+@mahabharata | 
+Q In the Mahabharata, the most detailed version of the Ramakatha is in the ________, where it is told by ________.
++ Shanti Parva; the sage Markandeya to Yudhishthira
+- Aranyaka Parva; Vyasa to Arjuna
+- Drona Parva; Krishna to Arjuna
+- Shanti Parva; Bhishma to Yudhishthira
+= The Ramakatha appears in the Aranyaka, Drona and Shanti Parvas. The slides put the most detailed version in the Shanti Parva, told by Markandeya to a guilty, depressed Yudhishthira.
+
+@three_versions | 
+Q In the sequence of the Mahabharata's three versions, the Bharata is attributed to ________.
++ Vaisampayana
+- Vyasa
+- Sauti
+- Markandeya
+= Jaya by Vyasa, then Bharata by Vaisampayana, then Mahabharata by Sauti.
+
+@vyasa | 
+Q Vyasa is called "Dvaipayana" because ________.
++ he was born on an island in the Yamuna
+- he was dark in complexion
+- he explained the Vedas in the form of Samhitas
+- he composed two epics
+= Dvaipayana: the island (dvipa). Krishnamuni: dark complexion. Veda Vyasa: he explained the Vedas as Samhitas.
+
+@agni | 
+Q In the first hymn of the Rig Veda, Agni is called the "hotar", that is, ________.
++ the priest who invokes the gods
+- the pressed Soma juice
+- the destroyer of foes
+- the keeper of the treasury
+= "I laud Agni, the chosen Priest, God, minister of sacrifice, the hotar, lavishest of wealth."
+
+@indra | 
+Q Indra is called "Shatakratu", meaning ________.
++ of a hundred powers
+- lord of the tawny horses
+- richest of the rich
+- fair of cheek
+= Shatakratu means "of a hundred powers". The other options are also phrases from his hymns.
+
+@ashvins | 
+Q In the Rig Veda hymn, the Ashvins arrive with ________.
++ the Dawn, Daughter of the Sky
+- the Wind, son of the sea
+- the Night, sister of Agni
+- the Moon, lord of Soma
+= "Now Morning with her earliest light shines forth, dear Daughter of the Sky: high, Ashvins, I extol your praise."
+
+@uma | 
+Q In "Uma the Golden", Agni fails to ________ and Vayu fails to ________.
++ burn a blade of grass; move a blade of grass
+- light a lamp; blow out a lamp
+- burn a forest; uproot a tree
+- find the Light; reach the Light
+= The Light gives each god a single blade of grass. Neither can act on it without the Supreme's power.
+
+@maitreyi | 
+Q When Yajnavalkya decides to retire to the forest, which wife asks whether the whole world's wealth could make her immortal?
++ Maitreyi
+- Katyayani
+- Gargi
+- Arundhati
+= Katyayani accepts her share of the property; Maitreyi chooses knowledge.
+
+@nachiketa | 
+Q Nachiketa's second boon from Yama was ________.
++ to learn the fire sacrifice that leads men to Heaven
+- that his father's anger should subside
+- to know whether people live on after death
+- to live a hundred years with sons and grandsons
+= Boon 1: his father's peace. Boon 2: the fire sacrifice. Boon 3: the truth about death. A hundred years is one of Yama's temptations.
+
+@chariot | 
+Q In the Katha Upanishad's chariot image, the reins stand for ________.
++ conscience
+- intelligence
+- the senses
+- the body
+= Soul = lord, body = chariot, intelligence = driver, conscience = reins, senses = horses.
+
+@valmiki_abduction | 
+Q In Valmiki's account, Ravana's magic chariot is drawn by ________.
++ asses
+- horses
+- lions
+- elephants
+= A golden chariot pulled by asses, thundering as it flies.
+
+@valmiki_abduction | 
+Q Valmiki compares Ravana seizing Sita to the planet Mercury stealing the light of ________.
++ Rohini
+- Ushas
+- the Moon
+- Rahu
+= The epic simile: Mercury, with its evil power, stealing the lovely light of the star Rohini.
+
+@jatayu | 
+Q In Kamban's Ramavataram, Jatayu guards Rama, Sita and Lakshmana "________".
++ like a mother bird its young ones
+- as a miser minds his hoard
+- like a dark cloud rendered ruddy
+- like a sapphire mountain
+= The mother bird is Jatayu. Lakshmana guards Sita "as a miser minds his hoard".
+
+@surpanakha | 
+Q Surpanakha introduces herself to Rama as "a maiden named ________".
++ Kamavalli
+- Kamala
+- Tataka
+- Maithili
+= Kamavalli, roughly "creeper of desire". Tataka is her mother's mother; Maithili is Sita.
+
+@surpanakha | 
+Q To answer Rama's objection that the learned won't approve of men mating with rakshasis, Surpanakha claims she is now a ________.
++ Vidyadhari
+- Gandharva
+- Brahmin
+- Yakshi
+= "I'm a Vidyadhari now, a celestial being." The Gandharva marriage is the next excuse.
+
+@surpanakha_lament | 
+Q "Only a snake knows the ways of a snake." This line belongs to which of Surpanakha's tactics?
++ Strategy: offering to teach Rama the rakshasas' tricks
+- Threat: warning Rama of Ravana's anger
+- Reframing: saying a long nose is a blemish
+- Compromise: asking to marry Lakshmana
+= The strategy tactic, along with "set a thief to catch a thief".
+
+@valmiki_vs_kamban | 
+Q Part 12's causal chain runs: Surpanakha disfigured → ________ → Ravana → Sita abducted → war in Lanka.
++ Khara
+- Jatayu
+- Kumbhakarna
+- Vibhishana
+= Kamban gives the cause, Valmiki gives the effect.
+
+@meghaduta | beyond
+Q Kalidasa's Meghaduta is best classified as a ________.
++ lyric poem
+- mahakavya
+- play
+- prose romance
+= Both past papers: a lyric poem.
+
+@kalidasa | beyond
+Q Most scholars and critics place Kalidasa in the time of the ________.
++ Gupta Empire
+- Maurya Empire
+- Shunga Empire
+- Chola Empire
+= The 2024 paper: the Gupta Empire.
+
+@ashadh | beyond
+Q In Mohan Rakesh's Ashadh Ka Ek Din, Kalidasa gives which reason for not accepting the post of court poet at Ujjain?
++ He did not want to be uprooted from his natural surroundings
+- He had to look after his maternal uncle Matul
+- He disliked the artificial life of the court
+- He wanted to restore his dilapidated house
+= The 2024 paper. The other three were its distractors.
+
+@ashadh | beyond
+Q Mohan Rakesh was a pioneer of which Hindi literary movement?
++ Nayi Kahani
+- Nayi Kavita
+- Chhayavad
+- Naya Natak
+= The 2024 paper: Nayi Kahani, the "new story" movement.
+
+@cilappatikaram | beyond
+Q The Cilappatikaram is set across the three Tamil kingdoms of the ________.
++ Cholas, Pandyas and Cheras
+- Cholas, Pallavas and Chalukyas
+- Pandyas, Chalukyas and Cheras
+- Cholas, Gangas and Sinhalas
+= The 2024 paper spells them Cholas, Pantiyas and Cerals.
+
+@karna_kunti | beyond
+Q Tagore's recreation of the dialogue between Karna and Kunti departs from the Mahabharata in being more ________.
++ psychological
+- historical
+- feminist
+- aristocratic
+= The 2024 paper: psychological.
+
+@bhakti | beyond
+Q The Bhakti movement travelled across India along which regional route?
++ South–West–North–East
+- South–North–East–West
+- South–East–North–West
+- North–South–East–West
+= The 2023 paper. It began in the Tamil south with Saiva and Vaishnava saints.
+
+@sufism | beyond
+Q Which of the following is NOT one of the pillars of Sufism?
++ Hajj
+- Iman
+- Ihsan
+- Ishraq
+= The 2023 paper. Hajj is a pillar of Islam, not of Sufism.
+
+@khusraw | beyond
+Q Amir Khusraw was the spiritual disciple of ________.
++ Hazrat Nizamuddin Auliya
+- Khwaja Moinuddin Chishti
+- Baba Fariduddin Ganjshakar
+- Qutbuddin Bakhtiar Kaki
+= The 2023 paper. He was known as Tuti-e-Hind and is credited with the sitar and tabla.
+
+@nanak | beyond
+Q In Sikhism there is a powerful fusion of the ________ philosophies.
++ Bhakti and Sufi
+- Saiva and Vaishnava
+- Hindu and Buddhist
+- Sufi and Baul
+= The 2023 paper. Guru Nanak had his mystical experience at 30; ten human Gurus preceded the Guru Granth Sahib.
