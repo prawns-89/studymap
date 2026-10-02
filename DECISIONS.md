@@ -62,7 +62,7 @@ Choices the brief left open (BRIEF section 13), with the reason for each. Newest
 
 ### course.yaml, without changing the contract
 
-- **OS syllabus.** The midsem date, cheat-sheet rule and calculator go in the midsem `format`. The syllabus goes in `notes_for_claude`, the one-sheet allowance is `cheatsheet.pages: 2`, and the Pintos assignments are excluded with `ignore`.
+- **OS syllabus.** The midsem date, cheat-sheet rule and calculator go in the midsem `format`. The syllabus goes in `notes_for_claude`, and the Pintos assignments are excluded with `ignore`. The cheat-sheet budget stays at **8 pages** even though one A4 sheet is allowed: you print 8 pages 4-up onto one sheet, both sides.
 - **Proposed fields.** Optional per-exam `date` and `covers` (decks or topics) would let the Plan count down to the exam and scope the slide prior to its syllabus. That changes the folder contract, so it needs your approval first.
 
 ## M1: skeleton
