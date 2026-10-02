@@ -10,18 +10,10 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from ..issues import Issue
+
 TAGS_RE = re.compile(r"\s*\{([^{}]+)\}\s*$")
 TAG_STYLES = {"plain", "warm", "cool", "dashed"}
-
-
-@dataclass(frozen=True)
-class Issue:
-    file: str
-    line: int
-    msg: str
-
-    def __str__(self) -> str:
-        return f"{self.file}:{self.line}: {self.msg}" if self.line else f"{self.file}: {self.msg}"
 
 
 @dataclass
