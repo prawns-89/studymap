@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import hashlib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from ..course import OUT_DIR, display_path, load_config
@@ -26,6 +26,8 @@ class BuildResult:
     sha256: str
     stats: BuildStats | None      # the map's; None when the page has no map yet
     plan: dict | None = None      # weightage.json, when the page has a Plan tab
+    docs: int = 0                 # documents in the Lessons tab
+    broken_links: list[str] = field(default_factory=list)   # "lesson: target" for links to files that don't exist
 
 
 def resolve_content(course: Path, content: Path | None = None) -> Path:
@@ -110,8 +112,9 @@ def build(course: Path, content: Path | None = None, out: Path | None = None) ->
             for nd in data["nodes"]:      # facts keep `code` formatting (the reference md() has none)
                 nd["facts"] = [dict(h=h, tags=[]) for h in extra["nodes"][nd["id"]]["facts"]]
             data["content"] = extra
-            data["cheat"] = cheat_embed(course, cfg, cc, data["cfg"]["title"],
-                                        rep.analysis if rep.analysis.present else None)
+            if cfg.cheatsheet.allowed:   # `allowed: false` (open-book course): no tab, nothing to fit
+                data["cheat"] = cheat_embed(course, cfg, cc, data["cfg"]["title"],
+                                            rep.analysis if rep.analysis.present else None)
             files = cc.files
         else:
             c = load_valid(course, content)
@@ -119,6 +122,12 @@ def build(course: Path, content: Path | None = None, out: Path | None = None) ->
             files = c.files
     else:
         data = empty_data(title, "Exam plan")
+    from .docs import load_docs
+    docs, doc_files = load_docs(course, (out or course / OUT_DIR / "index.html").parent)
+    broken = [f"{d['id']}: {m}" for d in docs for m in d.pop("missing")]
+    if docs:                     # COURSE/lessons/*.md: the Lessons tab
+        data["docs"] = docs
+        files += doc_files
     if rep.weightage is not None:
         a = rep.analysis
         data["plan"] = plan_data(cfg, rep.weightage, a.topics, a.papers)
@@ -128,7 +137,8 @@ def build(course: Path, content: Path | None = None, out: Path | None = None) ->
     target = out or default_out
     write_atomic(target, page)
     raw = page.encode("utf-8")
-    res = BuildResult(out=target, size=len(raw), sha256=hashlib.sha256(raw).hexdigest(), stats=stats, plan=rep.weightage)
+    res = BuildResult(out=target, size=len(raw), sha256=hashlib.sha256(raw).hexdigest(), stats=stats, plan=rep.weightage,
+                      docs=len(docs), broken_links=broken)
     if target.resolve() == default_out.resolve():
         mp = course / OUT_DIR / "state.json"
         man = Manifest.load(mp)

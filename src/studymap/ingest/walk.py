@@ -19,6 +19,13 @@ CODE_LANG = {
     ".java": "java", ".js": "javascript", ".ts": "typescript", ".sh": "bash", ".bash": "bash", ".mk": "makefile",
     ".rs": "rust", ".go": "go", ".sql": "sql", ".r": "r", ".jl": "julia", ".tcl": "tcl", ".xdc": "tcl",
     ".pl": "perl", ".pm": "perl", ".lua": "lua", ".hs": "haskell", ".kt": "kotlin", ".ld": "plaintext",
+    # a languages course compares paradigms, so its examples are in the paradigms' own languages
+    ".lisp": "lisp", ".lsp": "lisp", ".cl": "lisp", ".el": "lisp", ".scm": "scheme", ".ss": "scheme",
+    ".rkt": "scheme", ".clj": "clojure", ".cljs": "clojure", ".ml": "ocaml", ".mli": "ocaml",
+    ".sml": "sml", ".fs": "fsharp", ".fsi": "fsharp", ".erl": "erlang", ".ex": "elixir", ".exs": "elixir",
+    ".elm": "elm", ".scala": "scala", ".rb": "ruby", ".swift": "swift", ".cs": "csharp",
+    ".mm": "objectivec", ".adb": "ada", ".ads": "ada", ".f90": "fortran", ".f": "fortran",
+    ".pas": "delphi", ".st": "smalltalk", ".pro": "prolog", ".p": "prolog",
 }
 CODE_NAMES = {"makefile": "makefile", "gnumakefile": "makefile", "dockerfile": "dockerfile", "cmakelists.txt": "cmake"}
 TEXT_EXT = {".md": "md", ".markdown": "md", ".txt": "txt", ".text": "txt", ".rst": "txt", ".adoc": "txt", ".tex": "tex"}

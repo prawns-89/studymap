@@ -19,8 +19,8 @@ uv sync                  # creates .venv with every dependency
 | `uv run studymap validate COURSE` | Checks the paper analysis and the content files, and reports problems as `file:line: message`. |
 | `uv run studymap report COURSE` | From the paper analysis, writes `COURSE/_studymap/report.md` and `analysis/weightage.json`. |
 | `uv run studymap schema topics\|papers` | Prints the JSON Schema of an analysis file. |
-| `uv run studymap build COURSE` | Writes `COURSE/_studymap/index.html`, with the Plan tab when there is a paper analysis and the map when there is content. It also refreshes `report.md`. `--content DIR` and `-o FILE` override the defaults. |
-| `uv run studymap cheatsheet COURSE` | Writes `cheatsheet.pdf`, auto-fitted to the page budget in `course.yaml`, plus `cheatsheet-4up.pdf` (4 pages per side). `--pages N` overrides the budget and `--min-pt` the smallest body text (default 6 pt; raise it to get bigger type and fewer blocks). |
+| `uv run studymap build COURSE` | Writes `COURSE/_studymap/index.html`, with the Plan tab when there is a paper analysis, the map when there is content, and a Lessons tab when `COURSE/lessons/` holds Markdown documents. It also refreshes `report.md`. `--content DIR` and `-o FILE` override the defaults. |
+| `uv run studymap cheatsheet COURSE` | Writes `cheatsheet.pdf`, auto-fitted to the page budget in `course.yaml`, plus `cheatsheet-4up.pdf` (4 pages per side). `--pages N` overrides the budget and `--min-pt` the smallest body text (default 6 pt; raise it to get bigger type and fewer blocks). With `cheatsheet: { allowed: false }` (an open-book exam) it makes nothing, and the site has no Cheat sheet tab; `--anyway` renders one regardless. |
 | `uv run studymap check COURSE` | Opens the built site in headless Chromium with the network blocked, tests it at four viewports, and saves screenshots to `COURSE/_studymap/check/`. |
 
 `verify` and `serve` exist, but each one only prints the milestone that delivers it (M4 and M6).

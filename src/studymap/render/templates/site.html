@@ -360,6 +360,41 @@ table.bars .v .m { color: var(--muted); font-size: 12.5px; margin-left: 4px; }
 .pq-ans { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 6px; }
 .caveat { background: var(--bad-soft); border-radius: 6px; padding: 6px 8px; font-size: 13.5px; }
 .tblwrap { overflow-x: auto; }
+/* lessons tab: long-form documents from COURSE/lessons/ */
+.docs-layout { display: grid; gap: 16px; }
+@media (min-width: 1040px) { .docs-layout { grid-template-columns: 250px minmax(0, 1fr); align-items: start; } }
+.docs-nav { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 8px; font-size: 14px; min-width: 0; }
+@media (min-width: 1040px) { .docs-nav { position: sticky; top: 70px; max-height: calc(100vh - 90px); overflow: auto; } }
+.docs-list, .docs-list ul { list-style: none; margin: 0; padding: 0; }
+.docs-list a { display: block; padding: 6px 9px; border-radius: 8px; color: var(--ink); text-decoration: none; line-height: 1.3; }
+.docs-list a:hover { background: var(--surface-2); }
+.docs-list a[aria-current="page"] { background: var(--accent-soft); font-weight: 650; }
+.docs-list .toc a { padding: 3px 9px 3px 20px; font-size: 13px; color: var(--muted); }
+.docs-pick-l { display: none; }
+#docs-pick { width: 100%; font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+@media (max-width: 1039px) { .docs-list { display: none; } .docs-pick-l { display: block; } }
+.doc { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 22px 26px; min-width: 0; font-size: 15.5px; line-height: 1.6; overflow-wrap: anywhere; }
+@media (max-width: 719px) { .doc { padding: 12px 14px 20px; font-size: 15px; } }
+.doc > p, .doc > ul, .doc > ol, .doc > blockquote, .doc > h1, .doc > h2, .doc > h3 { max-width: 82ch; }
+.doc h1 { font-size: 25px; line-height: 1.25; margin: 4px 0 14px; }
+.doc h2 { font-size: 20px; line-height: 1.3; margin: 30px 0 10px; padding-top: 16px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.doc h3 { font-size: 16.5px; margin: 22px 0 8px; scroll-margin-top: 80px; }
+.doc a { color: var(--accent); }
+.doc .xref { text-decoration: underline dotted; }
+.doc ul, .doc ol { padding-left: 22px; }
+.doc li { margin: 3px 0; }
+.doc code { font-size: .9em; background: var(--surface-2); padding: 1px 4px; border-radius: 4px; }
+.doc pre { background: var(--surface-2); padding: 10px 12px; border-radius: 8px; overflow-x: auto; font-size: 13px; line-height: 1.45; overflow-wrap: normal; }
+.doc pre code { background: none; padding: 0; font-size: inherit; }
+.doc blockquote { margin: 12px 0; padding: 2px 14px; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 0 8px 8px 0; }
+.doc details { margin: 10px 0; border: 1px solid var(--line); border-radius: 10px; padding: 6px 12px; background: var(--surface-2); }
+.doc details summary { cursor: pointer; font-weight: 650; color: var(--accent); }
+.doc details[open] summary { margin-bottom: 6px; }
+.doc table.mini { font-size: 14px; }
+.doc table.mini th, .doc table.mini td { padding: 4px 8px; vertical-align: top; }
+.doc hr { border: 0; border-top: 1px solid var(--line); margin: 24px 0; }
+.doc hr + h2 { border-top: 0; padding-top: 0; margin-top: 0; }   /* a rule before a section already separates it */
+.doc-pager { display: flex; justify-content: space-between; gap: 12px; margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--line); }
 table.mini { border-collapse: collapse; font-size: 13px; margin: 6px 0; font-variant-numeric: tabular-nums; }
 table.mini th, table.mini td { border: 1px solid var(--line); padding: 2px 8px; text-align: left; }
 .gaps { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14.5px; }
@@ -384,6 +419,7 @@ table.mini th, table.mini td { border: 1px solid var(--line); padding: 2px 8px; 
 
 <nav class="tabs-bar" aria-label="Sections">
   <div class="wrap"><div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-view="docs" aria-selected="false">Lessons <span class="count" id="c-docs"></span></button>
     <button class="tab" role="tab" data-view="plan" aria-selected="false">Plan</button>
     <button class="tab" role="tab" data-view="map" aria-selected="true">Map</button>
     <button class="tab" role="tab" data-view="learn" aria-selected="false">Learn <span class="count" id="c-learn"></span></button>
@@ -395,6 +431,15 @@ table.mini th, table.mini td { border: 1px solid var(--line); padding: 2px 8px; 
 </nav>
 
 <main class="wrap">
+  <section class="view" id="v-docs" hidden aria-label="Lessons">
+    <div class="docs-layout">
+      <nav class="docs-nav" aria-label="Lessons">
+        <label class="docs-pick-l"><span class="sr-only">Lesson</span><select id="docs-pick"></select></label>
+        <ul class="docs-list" id="docs-list"></ul>
+      </nav>
+      <article class="doc" id="doc"></article>
+    </div>
+  </section>
   <section class="view" id="v-plan" hidden aria-label="Plan">
     <div class="plan-top"><h2>Exam plan</h2><div class="seg" id="plan-exam" role="group" aria-label="Choose an exam"></div></div>
     <p class="lede" id="plan-basis"></p>
@@ -525,6 +570,7 @@ if (!HAS_MAP) { $('.tab[data-view="map"]').hidden = true; $('.tab[data-view="atl
 const C = D.content || null;           // Markdown content model: modes, weights, lessons
 if (!C) $('.tab[data-view="learn"]').hidden = true; else { $('.tab[data-view="atlas"]').hidden = true; $("#c-learn").textContent = C.order.length; }
 if (!D.cheat) $('.tab[data-view="cheat"]').hidden = true;
+if (!(D.docs && D.docs.length)) $('.tab[data-view="docs"]').hidden = true; else $("#c-docs").textContent = D.docs.length;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const MODE_WORD = { apply: "practise", understand: "understand", recall: "cram" };
 const modeTag = m => m ? `<span class="tag ${m}">${MODE_WORD[m]}</span>` : `<span class="tag slides">slides only</span>`;
@@ -547,14 +593,14 @@ if (D.cfg.sources.length) foot.push(`<details><summary>Sources (${D.cfg.sources.
 $("#foot").innerHTML = foot.join("");
 
 // router
-const VIEWS = ["plan", "map", "learn", "atlas", "sheets", "questions", "cheat"];
+const VIEWS = ["docs", "plan", "map", "learn", "atlas", "sheets", "questions", "cheat"];
 const firstView = () => VIEWS.find(v => !$(`.tab[data-view="${v}"]`).hidden) || "map";
 const done = {};
 function show(view, o = {}) {
   if (!VIEWS.includes(view) || $(`.tab[data-view="${view}"]`).hidden) view = firstView();
   VIEWS.forEach(v => $("#v-" + v).hidden = v !== view);
   $$(".tab").forEach(t => t.setAttribute("aria-selected", String(t.dataset.view === view)));
-  if (!done[view]) { done[view] = true; ({ plan: () => Plan.build(), learn: () => Learn.build(), cheat: () => Cheat.build(), atlas: () => Atlas.build(), sheets: renderSheets, questions: () => Qs.build() })[view]?.(); }
+  if (!done[view]) { done[view] = true; ({ docs: () => Docs.build(), plan: () => Plan.build(), learn: () => Learn.build(), cheat: () => Cheat.build(), atlas: () => Atlas.build(), sheets: renderSheets, questions: () => Qs.build() })[view]?.(); }
   if (view === "map") Map_.resize();
   if (!o.keep) window.scrollTo(0, 0);
   if (!o.noHash) { try { history.replaceState(null, "", "#" + view); } catch (e) {} }
@@ -1003,8 +1049,50 @@ const Cheat = (() => {
   return { build };
 })();
 
-function boot() { const h = (location.hash || "").slice(1); show(VIEWS.includes(h) ? h : store.get("view", firstView()), { noHash: true }); Map_.fit(false); if (HAS_MAP) Panel(null); }
-window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if (VIEWS.includes(h)) show(h); });
+// lessons: Markdown documents from COURSE/lessons/, rendered at build time; links between them stay in the page
+const Docs = (() => {
+  const L = D.docs || [];
+  if (!L.length) return { build() {}, open() {} };
+  const byId = Object.fromEntries(L.map(d => [d.id, d]));
+  let cur = null, built = false;
+  const link = (id, label, frag = "") => `<a href="#docs/${esc(id)}" data-doc="${esc(id)}" data-frag="${esc(frag)}">${label}</a>`;
+  function nav() {
+    $("#docs-list").innerHTML = L.map(d => `<li>${link(d.id, esc(d.title)).replace("<a ", d.id === cur ? '<a aria-current="page" ' : "<a ")}${d.id === cur && d.toc.length ? `<ul class="toc">${d.toc.map(([h, t]) => `<li>${link(d.id, esc(t), h)}</li>`).join("")}</ul>` : ""}</li>`).join("");
+    $("#docs-pick").value = cur;
+  }
+  function open(id, frag = "") {
+    if (!byId[id]) id = L[0].id;
+    if (id !== cur) {
+      cur = id;
+      const i = L.findIndex(d => d.id === id), prev = L[i - 1], next = L[i + 1];
+      $("#doc").innerHTML = byId[id].html + `<nav class="doc-pager" aria-label="Previous and next lesson">${prev ? link(prev.id, "← " + esc(prev.title)) : "<span></span>"}${next ? link(next.id, esc(next.title) + " →") : ""}</nav>`;
+      nav(); store.set("doc", id);
+    }
+    const el = frag && document.getElementById("d-" + frag);
+    if (el) el.scrollIntoView(); else window.scrollTo(0, 0);
+    try { history.replaceState(null, "", "#docs/" + id + (frag ? "/" + frag : "")); } catch (e) {}
+  }
+  function build() {
+    if (built) return; built = true;
+    $("#docs-pick").innerHTML = L.map(d => `<option value="${esc(d.id)}">${esc(d.title)}</option>`).join("");
+    $("#docs-pick").addEventListener("change", e => open(e.target.value));
+    const go = ev => { const a = ev.target.closest("a[data-doc], a[data-frag]"); if (!a) return; ev.preventDefault(); open(a.dataset.doc || cur, a.dataset.frag || ""); };
+    $("#docs-list").addEventListener("click", go);
+    $("#doc").addEventListener("click", go);
+    open(store.get("doc", L[0].id));
+  }
+  return { build, open };
+})();
+
+function route(h, o) {
+  const [view, doc, frag] = h.split("/");
+  if (!VIEWS.includes(view)) return false;
+  show(view, o);
+  if (view === "docs" && doc) Docs.open(decodeURIComponent(doc), frag ? decodeURIComponent(frag) : "");
+  return true;
+}
+function boot() { if (!route((location.hash || "").slice(1), { noHash: true })) show(store.get("view", firstView()), { noHash: true }); Map_.fit(false); if (HAS_MAP) Panel(null); }
+window.addEventListener("hashchange", () => route(location.hash.slice(1), {}));
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot); else boot();
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { if (!$("#v-map").hidden && !Map_.selected) Map_.fit(false); });
 })();

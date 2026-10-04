@@ -167,6 +167,10 @@ def cmd_build(a) -> int:
         print("no map content yet: the page has the Plan tab only")
     if r.plan:
         print(f"plan: {len(r.plan['exams'])} exams · {len(r.plan['topics'])} topics · report.md refreshed")
+    if r.docs:
+        print(f"lessons: {r.docs} documents" + (f" · {len(r.broken_links)} links to missing files:" if r.broken_links else ""))
+        for b in r.broken_links:
+            print(f"  {b}")
     print(f"wrote {display_path(r.out)} ({r.size / 1024:.0f} KB, sha256 {r.sha256[:12]})")
     return 0
 
@@ -199,6 +203,11 @@ def cmd_cheatsheet(a) -> int:
     course = _course(a.course)
     cfg = load_config(course)
     rep = run_report(course, cfg)
+    if not cfg.cheatsheet.allowed and not a.anyway:
+        print(f"{display_path(course / 'course.yaml')}: cheatsheet.allowed is false, so no sheet was made.\n"
+              "  This exam allows more than a sheet (open book, or open laptop), so the site itself is the\n"
+              "  artefact and there is no page budget to fit. Pass --anyway to render one regardless.")
+        return 0
     cdir = resolve_content(course)
     if not is_markdown_content(cdir):
         raise FileNotFoundError(f"{cdir}: the cheat sheet needs Markdown content (FORMAT.md)")
@@ -267,6 +276,7 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("cheatsheet", help="render cheatsheet.pdf (and a 4-up copy), auto-fitted to the page budget")
     p.add_argument("course", type=Path)
     p.add_argument("--pages", type=int, help="page budget (default: cheatsheet.pages in course.yaml)")
+    p.add_argument("--anyway", action="store_true", help="render even when course.yaml says cheatsheet.allowed is false")
     p.add_argument("--min-pt", type=float, default=4.5,
                    help="smallest body text (default 4.5): below this, blocks are dropped instead of shrunk")
     p.set_defaults(fn=cmd_cheatsheet)

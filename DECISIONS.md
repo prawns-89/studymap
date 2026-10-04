@@ -2,6 +2,13 @@
 
 Choices the brief left open (BRIEF section 13), with the reason for each. Newest milestone first.
 
+## Open-book courses (added with CS F301 POPL)
+
+- **`cheatsheet.allowed: false` now does something.** It was parsed but never read. POPL's exams are open book and open laptop, so there is no sheet to fit: `studymap cheatsheet` declines with a reason (`--anyway` overrides), and the site leaves out the Cheat sheet tab. For such a course the site itself is the exam artefact.
+- **Ingest reads the paradigm languages.** A languages course compares paradigms in their own languages, and the three POPL `.lisp` files were being skipped as unsupported. Lisp, Scheme, Clojure, ML, F#, Erlang, Elixir, Scala, Ruby, Swift, C#, Objective-C, Ada, Fortran, Pascal, Smalltalk and Prolog extensions now map to their highlight.js names.
+- **A Lessons tab for long-form teaching.** `COURSE/lessons/*.md` (README first, then by file name) are rendered at build time into the same offline `index.html`: a lesson list with each lesson's sections, previous/next links, and routes like `#docs/03-scope-rules/shadowing`. The Learn tab's node format is built for short exam facts; an open-book course needs readable chapters with worked programs, so these are plain Markdown, rendered by `render/docs.py` (headings with anchors, nested lists, quotes, tables, `<details>` answer blocks, links between lessons). The renderer is a fuller subset than `text.py`'s, which stays for question text. Heading ids are prefixed `d-` so they can't clash with the page's own ids. Links from a lesson to course files (`../papers/2024-midsem.pdf`, `../slides/...pdf#page=79`, `../popl_tb.pdf#page=445`) are re-aimed from the lessons folder to wherever the page is written, so they open the real PDFs locally at the right page; a link to a file that doesn't exist is reported by `build` and shown unlinked. `check` opens the tab, follows a next link, opens an answer and tests for horizontal scroll.
+- **`check` scrolls a Plan bar into view before hovering it.** Playwright's `hover()` on a bar below the fold scrolls and hovers in one step, and the page's own scroll handler, which hides the tooltip so it cannot drift away from its row, then hid it. The page was right and the test was wrong; OS passed only because its first bar sits above the fold.
+
 ## Planned additions (agreed after M1)
 
 - **Optional 3D map view (three.js).** The 2D map stays the default, as the brief requires. An "Explore in 3D" toggle on the Map tab shows the same clusters, colours and click-to-open panel in 3D. three.js (MIT) is bundled into the page, adding about 0.7 MB toward the 8 MB budget, so it works offline and needs no CDN. It is scheduled for M6 unless it's moved earlier.

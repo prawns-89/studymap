@@ -89,6 +89,10 @@ def check(html: Path, shots: Path) -> CheckResult:
                     if not rows.count():
                         fail("the Plan tab drew no topic bars")
                     else:
+                        # scroll first, as a person would: the page hides the tooltip on scroll, and hover()
+                        # on a bar below the fold scrolls and hovers at once, so the late scroll event hid it
+                        rows.first.scroll_into_view_if_needed()
+                        pg.wait_for_timeout(100)
                         rows.first.tap() if phone else rows.first.hover()
                         pg.wait_for_timeout(150)
                         if not pg.locator(".ptip").is_visible():
@@ -142,6 +146,28 @@ def check(html: Path, shots: Path) -> CheckResult:
                     if not pg.locator("#panel .facts li").count():
                         fail("keyboard Enter on a focused node opened no facts")
 
+                tab = pg.locator('.tab[data-view="docs"]')
+                if tab.is_visible():           # Lessons: a document renders, and links between documents work
+                    tab.click()
+                    pg.wait_for_timeout(300)
+                    first = pg.locator("#doc h1").first
+                    if not first.count():
+                        fail("the Lessons tab shows no document")
+                    else:
+                        title = first.inner_text()
+                        nxt = pg.locator("#doc .doc-pager a").last
+                        if nxt.count():
+                            nxt.click()
+                            pg.wait_for_timeout(200)
+                            if pg.locator("#doc h1").first.inner_text() == title:
+                                fail("the Lessons tab's next link didn't change the document")
+                        ans = pg.locator("#doc details summary").first
+                        if ans.count():
+                            ans.click()
+                            if not pg.locator("#doc details[open]").count():
+                                fail("a lesson's answer block didn't open")
+                        res.shots.append(_shot(pg, shots, f"{name}-0-docs"))
+
                 for i, view in enumerate(["atlas", "sheets", "questions"], 3):
                     tab = pg.locator(f'.tab[data-view="{view}"]')
                     if tab.is_visible():
@@ -151,7 +177,7 @@ def check(html: Path, shots: Path) -> CheckResult:
                             fail(f"{view} tab didn't open its view")
                         res.shots.append(_shot(pg, shots, f"{name}-{i}-{view}"))
 
-                for view in ("plan", "map"):
+                for view in ("docs", "plan", "map"):
                     tab = pg.locator(f'.tab[data-view="{view}"]')
                     if tab.is_visible():
                         tab.click()
