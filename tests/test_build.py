@@ -153,6 +153,6 @@ def test_validate_reports_every_problem_with_file_and_line(tmp_path, capsys):
 
 
 def test_later_commands_say_which_milestone(capsys, tmp_path):
-    for cmd, ms in (("verify", "M4"), ("cheatsheet", "M5"), ("serve", "M6")):
+    for cmd, ms in (("verify", "M4"), ("serve", "M6")):
         assert main([cmd, str(tmp_path)]) == 2
         assert ms in capsys.readouterr().out

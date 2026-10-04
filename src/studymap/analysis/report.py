@@ -51,7 +51,8 @@ class Labels:
         return "; ".join(parts)
 
 
-def render(cfg: CourseConfig, w: dict, topics: TopicsFile, papers: PapersFile | None, index: dict) -> str:
+def render(cfg: CourseConfig, w: dict, topics: TopicsFile, papers: PapersFile | None, index: dict,
+           cheat: dict | None = None) -> str:
     L = Labels(papers, topics)
     title = " ".join(x for x in (cfg.code, cfg.name) if x) or "Course"
     out = [f"# {title}: exam report", "",
@@ -236,6 +237,19 @@ def render(cfg: CourseConfig, w: dict, topics: TopicsFile, papers: PapersFile | 
                        + ", ".join(L.q_short(q) for q in un["no_answer"]) + ".")
         for c in un["caveats"]:
             out.append(f"- **{L.q_short(c['id'])}:** {c['caveat']}")
+        out.append("")
+
+    # ------------------------------------------------------------------ cheat sheet
+    if cheat:
+        out += ["## Cheat sheet", "",
+                f"`cheatsheet.pdf`: {cheat['pages']} of {cheat['budget']} pages at {cheat['font_pt']:g} pt (smallest text "
+                f"{cheat['min_font']:g} pt), {cheat['kept']} items; `cheatsheet-4up.pdf` puts 4 pages on each side.", ""]
+        if cheat["dropped"]:
+            out += [f"Left out to fit ({len(cheat['dropped'])}), lowest priority first:", ""] + [f"- {d}" for d in cheat["dropped"]] + [""]
+        else:
+            out += ["Nothing was left out.", ""]
+        for pr in cheat.get("problems", []):
+            out.append(f"- **Problem:** {pr}")
         out.append("")
 
     # ------------------------------------------------------------------ method and sources

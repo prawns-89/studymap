@@ -11,9 +11,15 @@ from .course import OUT_DIR, CourseError, display_path, load_config
 
 LATER = {
     "verify": ("run every numerical check script and code runner", "M4"),
-    "cheatsheet": ("render cheatsheet.pdf with auto-fit", "M5"),
     "serve": ("local server with live reload while editing content", "M6"),
 }
+
+
+def _corpus(course: Path):
+    """The ingested corpus, so refs can be checked even before any paper analysis exists."""
+    from .analysis.corpus import Corpus
+    d = course / OUT_DIR / "corpus"
+    return Corpus(d) if (d / "index.json").exists() else None
 
 
 def _course(p: Path) -> Path:
@@ -83,6 +89,24 @@ def cmd_validate(a) -> int:
     except FileNotFoundError:
         if not an.present:
             raise FileNotFoundError(f"{a.course}: nothing to validate yet (no analysis/ and no content/)") from None
+        cdir = None
+    from .content import is_markdown_content
+    if cdir is not None and is_markdown_content(cdir):
+        from .analysis.weightage import compute
+        from .content import load, validate
+        cc = load(cdir)
+        w = compute(load_config(course), an.topics, an.papers, an.corpus) if an.topics and not an.errors else None
+        validate(cc, an if an.present and not an.errors else None, w, corpus=_corpus(course))
+        for i in cc.errors:
+            print(i)
+        for i in cc.warnings:
+            print(f"warning: {i}")
+        errors += len(cc.errors)
+        if not cc.errors:
+            modes = {m: sum(n.mode == m for n in cc.nodes) for m in ("apply", "understand", "recall")}
+            print(f"{display_path(cdir)}: ok · {len(cc.clusters)} clusters · {len(cc.nodes)} nodes · "
+                  f"{sum(len(n.facts) for n in cc.nodes)} facts · " + " · ".join(f"{v} {k}" for k, v in modes.items())
+                  + f" · {len(cc.warnings)} warnings")
         cdir = None
     if cdir is not None:
         try:
@@ -167,6 +191,35 @@ def cmd_check(a) -> int:
     return 1
 
 
+def cmd_cheatsheet(a) -> int:
+    from .analysis.stage import run_report
+    from .cheatsheet import build as make_sheet
+    from .content import is_markdown_content
+    from .render import ContentError, build, load_markdown, resolve_content
+    course = _course(a.course)
+    cfg = load_config(course)
+    rep = run_report(course, cfg)
+    cdir = resolve_content(course)
+    if not is_markdown_content(cdir):
+        raise FileNotFoundError(f"{cdir}: the cheat sheet needs Markdown content (FORMAT.md)")
+    try:
+        cc = load_markdown(course, cdir, rep.analysis if rep.analysis.present else None, rep.weightage)
+    except ContentError as e:
+        print("Fix these and run again:\n  " + "\n  ".join(map(str, e.issues)))
+        return 1
+    title = cc.settings.get("title") or " ".join(x for x in (cfg.code, cfg.name) if x) or course.name
+    r = make_sheet(cc, course / OUT_DIR, title, a.pages or cfg.cheatsheet.pages, cfg.cheatsheet.columns,
+                   analysis=rep.analysis if rep.analysis.present else None, weightage=rep.weightage,
+                   min_pt=a.min_pt)
+    print(f"{display_path(r.pdf)}: {r.pages} of {r.budget} pages at {r.font_pt:g} pt · {r.kept} blocks · "
+          f"body {r.body_font:g} pt, smallest {r.min_font:g} pt" + (f" · {len(r.dropped)} left out (see report.md)" if r.dropped else " · nothing left out"))
+    print(f"{display_path(r.pdf4)}: 4 pages per side")
+    for p in r.problems:
+        print(f"PROBLEM: {p}")
+    build(course)                       # the site's Cheat sheet tab and report.md pick up the fitted version
+    return 1 if r.problems else 0
+
+
 def cmd_later(a) -> int:
     what, ms = LATER[a.cmd]
     print(f"studymap {a.cmd}: {what}. Not built yet: it arrives in milestone {ms}.")
@@ -210,6 +263,13 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--html", type=Path, help="page to test (default: <course>/_studymap/index.html)")
     p.add_argument("--shots", type=Path, help="screenshot folder (default: <course>/_studymap/check)")
     p.set_defaults(fn=cmd_check)
+
+    p = sub.add_parser("cheatsheet", help="render cheatsheet.pdf (and a 4-up copy), auto-fitted to the page budget")
+    p.add_argument("course", type=Path)
+    p.add_argument("--pages", type=int, help="page budget (default: cheatsheet.pages in course.yaml)")
+    p.add_argument("--min-pt", type=float, default=4.5,
+                   help="smallest body text (default 4.5): below this, blocks are dropped instead of shrunk")
+    p.set_defaults(fn=cmd_cheatsheet)
 
     for name, (what, ms) in LATER.items():
         p = sub.add_parser(name, help=f"{what} [{ms}]")

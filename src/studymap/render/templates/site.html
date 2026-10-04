@@ -115,11 +115,11 @@ h3 { font-size: 16px; font-weight: 650; margin: 0 0 6px; text-wrap: balance; }
 .edge.intra { stroke: var(--cc); stroke-opacity: .42; }
 #mapsvg[data-z="0"] .edge.cross, #mapsvg[data-z="1"] .edge.cross { stroke-opacity: .17; }
 .node { cursor: pointer; }
-.node circle { fill: var(--cc); stroke: var(--surface); stroke-width: 1.5; }
+.node .dot { fill: var(--cc); stroke: var(--surface); stroke-width: 1.5; }
 .node text { fill: var(--ink); font-family: var(--font-ui); font-variation-settings: "wdth" 88; paint-order: stroke; stroke: var(--surface); stroke-width: 3.2px; stroke-linejoin: round; font-size: var(--fs); }
 .node.t1 { --fs: 14px; } .node.t2 { --fs: 12.5px; } .node.t3 { --fs: 11.5px; }
 .node.t1 text { font-weight: 600; } .node.t2 text { font-weight: 500; } .node.t3 text { font-weight: 450; fill: var(--muted); }
-.node:hover circle, .node:focus-visible circle { stroke: var(--ink); stroke-width: 2; }
+.node:hover .dot, .node:focus-visible .dot { stroke: var(--ink); stroke-width: 2; }
 .node:focus { outline: none; }
 #mapsvg[data-z="0"] .node text, #mapsvg[data-z="0"] .ctitle, #mapsvg[data-z="0"] .core text { display: none; }
 #mapsvg[data-z="1"] .node.v2 text, #mapsvg[data-z="1"] .node.v3 text, #mapsvg[data-z="2"] .node.v3 text { display: none; }
@@ -130,7 +130,7 @@ h3 { font-size: 16px; font-weight: 650; margin: 0 0 6px; text-wrap: balance; }
 #mapsvg[data-z="0"].has-sel .node.sel text, #mapsvg[data-z="0"].has-sel .node.nb text, #mapsvg[data-z="1"].has-sel .node.sel text, #mapsvg[data-z="1"].has-sel .node.nb text { font-size: calc(var(--fs) * var(--ls, 1)); }
 #mapsvg.has-sel .edge { stroke-opacity: .07; }
 #mapsvg.has-sel .edge.on { stroke: var(--accent); stroke-opacity: .9; stroke-width: 1.8; }
-.node.sel circle { stroke: var(--ink); stroke-width: 3; }
+.node.sel .dot { stroke: var(--ink); stroke-width: 3; }
 .ctitle .p { font-size: calc(12px * var(--lt2, 1)); letter-spacing: .14em; text-transform: uppercase; font-weight: 650; fill: var(--cc); font-family: var(--font-ui); }
 .ctitle .n { font-size: calc(25px * var(--lt, 1)); fill: var(--cc); font-family: var(--font-display); }
 #mapsvg[data-z="3"] .ctitle { opacity: .55; }
@@ -269,6 +269,45 @@ table.tbl td:first-child { font-weight: 650; color: var(--warm); width: 34%; }
 .score { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .foot { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
 .foot summary { cursor: pointer; font-weight: 600; }
+/* map filters and badges */
+#mapsvg .node.dim { opacity: .1; }
+#mapsvg .node.dim text { display: none; }
+.map-filters { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-bottom: 10px; font-size: 13px; }
+.map-filters .grp { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.map-filters .lbl { color: var(--muted); font-weight: 600; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; margin-right: 2px; }
+.shape { display: inline-block; width: 10px; height: 10px; background: var(--muted); flex: none; }
+.shape.apply { border-radius: 2px; } .shape.understand { border-radius: 50%; } .shape.recall { transform: rotate(45deg) scale(.85); }
+.p-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 2px; }
+.p-tags .tag { margin-left: 0; }
+.src { font-size: 11px; color: var(--faint); margin-left: 6px; border-bottom: 1px dotted var(--faint); cursor: help; font-weight: 500; letter-spacing: 0; text-transform: none; }
+/* learn */
+.lesson { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-bottom: 16px; scroll-margin-top: 80px; min-width: 0; }
+.lesson.flash { animation: flash 1.6s ease-out; }
+.lesson-h { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.lesson-h h3 { font-size: 19px; margin: 0; flex: 1 1 260px; }
+.lesson .facts { font-size: 14.5px; }
+.lesson .sec { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 14.5px; min-width: 0; }
+.lesson .sec h4 { margin: 0 0 6px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+.lesson .sec p { margin: 6px 0; }
+.lesson pre { background: var(--surface-2); padding: 8px 10px; border-radius: 6px; overflow-x: auto; font-size: 13px; line-height: 1.45; }
+.steps { margin: 0; padding-left: 24px; display: grid; gap: 4px; }
+.steps li[hidden] { display: none; }
+.steps-ctl { display: flex; gap: 12px; align-items: center; margin-top: 8px; }
+.steps-ctl[hidden] { display: none; }
+.plainlist { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.wcards { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+.wcard { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--bg); }
+.wcard summary { cursor: pointer; font-weight: 560; }
+.miscon { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.miscon li { display: grid; gap: 2px; }
+.miscon .no { color: var(--bad); } .miscon .ok { color: var(--good); }
+.formulas { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.formulas code { display: inline-block; border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; background: var(--bg); font-size: 13.5px; white-space: pre-wrap; }
+details.sol { margin-top: 6px; border-left: 3px solid var(--accent-soft); padding-left: 10px; }
+details.sol > summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.lesson .links-row { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; }
+/* cheat sheet tab */
+.cheat-frame { width: 100%; height: min(78vh, 1100px); border: 1px solid var(--line); border-radius: 10px; background: #fff; }
 /* plan */
 .plan-top { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin-bottom: 8px; }
 .plan-top h2 { margin: 0; }
@@ -347,9 +386,11 @@ table.mini th, table.mini td { border: 1px solid var(--line); padding: 2px 8px; 
   <div class="wrap"><div class="tabs" role="tablist">
     <button class="tab" role="tab" data-view="plan" aria-selected="false">Plan</button>
     <button class="tab" role="tab" data-view="map" aria-selected="true">Map</button>
+    <button class="tab" role="tab" data-view="learn" aria-selected="false">Learn <span class="count" id="c-learn"></span></button>
     <button class="tab" role="tab" data-view="atlas" aria-selected="false">Atlas <span class="count" id="c-atlas"></span></button>
     <button class="tab" role="tab" data-view="sheets" aria-selected="false">Cram sheets</button>
     <button class="tab" role="tab" data-view="questions" aria-selected="false">Questions <span class="count" id="c-q"></span></button>
+    <button class="tab" role="tab" data-view="cheat" aria-selected="false">Cheat sheet</button>
   </div></div>
 </nav>
 
@@ -373,6 +414,7 @@ table.mini th, table.mini td { border: 1px solid var(--line); padding: 2px 8px; 
     </div>
   </section>
   <section class="view" id="v-map" aria-label="Map">
+    <div class="map-filters" id="map-filters" hidden></div>
     <div class="map-layout">
       <div class="map-stage" id="stage">
         <svg id="mapsvg" data-z="1" role="img" aria-label="Mind map: clusters of ideas around a central idea, with links between related ideas">
@@ -389,6 +431,17 @@ table.mini th, table.mini td { border: 1px solid var(--line); padding: 2px 8px; 
       </div>
       <aside class="panel" id="panel" aria-live="polite"></aside>
     </div>
+  </section>
+  <section class="view" id="v-learn" hidden aria-label="Learn">
+    <div class="plan-top"><h2>Learn</h2><div class="seg" id="learn-mode" role="group" aria-label="Show lessons by how to study them"></div></div>
+    <p class="lede">A short lesson for every topic, cluster by cluster. Steps open one at a time; solutions and model answers stay hidden until you ask.</p>
+    <div class="atlas-layout"><nav class="toc" id="learn-toc" aria-label="Lessons"></nav><div id="learn-list"></div></div>
+  </section>
+  <section class="view" id="v-cheat" hidden aria-label="Cheat sheet">
+    <div class="plan-top"><h2>Cheat sheet</h2></div>
+    <p class="lede" id="cheat-lede"></p>
+    <div class="toolbar"><button class="btn" type="button" id="cheat-print">Make cheat sheet (print / save as PDF)</button><a class="btn" id="cheat-pdf" href="cheatsheet.pdf" target="_blank" rel="noopener">Open cheatsheet.pdf</a><a class="btn" id="cheat-pdf4" href="cheatsheet-4up.pdf" target="_blank" rel="noopener">4 pages per side</a></div>
+    <iframe class="cheat-frame" id="cheat-frame" title="Cheat sheet preview"></iframe>
   </section>
   <section class="view" id="v-atlas" hidden aria-label="Atlas">
     <h2>Atlas</h2>
@@ -469,6 +522,20 @@ if (HAS_MAP) $("#stats").innerHTML = `<span><b>${m.nodes}</b>ideas</span><span><
 else if (D.plan) { const c = D.plan.counts; $("#stats").innerHTML = `<span><b>${c.papers}</b>past papers</span><span><b>${c.questions}</b>questions</span><span><b>${c.topics}</b>topics</span>`; }
 if (!D.plan) $('.tab[data-view="plan"]').hidden = true;
 if (!HAS_MAP) { $('.tab[data-view="map"]').hidden = true; $('.tab[data-view="atlas"]').hidden = true; }
+const C = D.content || null;           // Markdown content model: modes, weights, lessons
+if (!C) $('.tab[data-view="learn"]').hidden = true; else { $('.tab[data-view="atlas"]').hidden = true; $("#c-learn").textContent = C.order.length; }
+if (!D.cheat) $('.tab[data-view="cheat"]').hidden = true;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const MODE_WORD = { apply: "practise", understand: "understand", recall: "cram" };
+const modeTag = m => m ? `<span class="tag ${m}">${MODE_WORD[m]}</span>` : `<span class="tag slides">slides only</span>`;
+// a past paper question, answer visible when opened (Plan, map panel and Learn share it)
+function pastQ(id) {
+  const q = D.plan && D.plan.questions[id]; if (!q) return "";
+  const ans = q.answer ? `<div class="pq-ans"><div class="sect-h">${q.hints ? "Hints" : "Answer (key)"}</div>${q.answer}</div>`
+                       : `<p class="muted">No answer in the key yet: worked solutions come in M4.</p>`;
+  return `<details class="pq"><summary><span class="where">${esc(q.label)}</span> ${esc(q.type)} · ${MODE_WORD[q.mode]}</summary><div class="pq-body">${q.text}${ans}${q.caveat ? `<p class="caveat"><b>Careful:</b> ${q.caveat}</p>` : ""}</div></details>`;
+}
+const topicQs = topic => D.plan ? Object.keys(D.plan.questions).filter(k => D.plan.questions[k].topics.includes(topic)) : [];
 $("#c-atlas").textContent = m.nodes; $("#c-q").textContent = m.questions || "";
 if (!D.sheets.length) $('.tab[data-view="sheets"]').hidden = true;
 if (!D.sets.length) $('.tab[data-view="questions"]').hidden = true;
@@ -480,14 +547,14 @@ if (D.cfg.sources.length) foot.push(`<details><summary>Sources (${D.cfg.sources.
 $("#foot").innerHTML = foot.join("");
 
 // router
-const VIEWS = ["plan", "map", "atlas", "sheets", "questions"];
+const VIEWS = ["plan", "map", "learn", "atlas", "sheets", "questions", "cheat"];
 const firstView = () => VIEWS.find(v => !$(`.tab[data-view="${v}"]`).hidden) || "map";
 const done = {};
 function show(view, o = {}) {
   if (!VIEWS.includes(view) || $(`.tab[data-view="${view}"]`).hidden) view = firstView();
   VIEWS.forEach(v => $("#v-" + v).hidden = v !== view);
   $$(".tab").forEach(t => t.setAttribute("aria-selected", String(t.dataset.view === view)));
-  if (!done[view]) { done[view] = true; ({ plan: () => Plan.build(), atlas: () => Atlas.build(), sheets: renderSheets, questions: () => Qs.build() })[view]?.(); }
+  if (!done[view]) { done[view] = true; ({ plan: () => Plan.build(), learn: () => Learn.build(), cheat: () => Cheat.build(), atlas: () => Atlas.build(), sheets: renderSheets, questions: () => Qs.build() })[view]?.(); }
   if (view === "map") Map_.resize();
   if (!o.keep) window.scrollTo(0, 0);
   if (!o.noHash) { try { history.replaceState(null, "", "#" + view); } catch (e) {} }
@@ -500,6 +567,7 @@ document.addEventListener("click", ev => {
   const [kind, a, c] = b.dataset.go.split("|");
   if (kind === "map") { show("map", { keep: true }); Map_.select(a, true); $("#stage").scrollIntoView({ block: "nearest", behavior: reduceMotion ? "auto" : "smooth" }); }
   else if (kind === "atlas") { show("atlas", { keep: true }); Atlas.reveal(a); }
+  else if (kind === "learn") { show("learn", { keep: true }); Learn.reveal(a); }
   else if (kind === "q") { show("questions"); Qs.reveal(a, c); }
 });
 
@@ -533,7 +601,11 @@ const Map_ = !HAS_MAP ? { select() {}, resize() {}, fit() {}, get selected() { r
     if (n.id === cid) return;
     const r = { 1: 8.5, 2: 6, 3: 4.5 }[n.tier];
     const g = sv("g", { class: `node t${n.tier} v${n.vis} ${kc(n.c)}`, transform: `translate(${n.x},${n.y})`, tabindex: "0", role: "button", "aria-label": n.plain, "data-id": n.id });
-    g.appendChild(sv("circle", { r }));
+    const md = C && C.nodes[n.id] ? C.nodes[n.id].mode : "";
+    g.appendChild(md === "apply" ? sv("rect", { class: "dot", x: -r, y: -r, width: 2 * r, height: 2 * r, rx: (r * .3).toFixed(1) })
+      : md === "recall" ? sv("rect", { class: "dot", x: -r * .9, y: -r * .9, width: 1.8 * r, height: 1.8 * r, transform: "rotate(45)" })
+      : sv("circle", { class: "dot", r }));
+    if (C && C.nodes[n.id]) { g.dataset.mode = C.nodes[n.id].mode; g.dataset.weight = C.nodes[n.id].weight; }
     const t = sv("text", { x: n.side > 0 ? r + 6 : -(r + 6), y: 4.2, "text-anchor": n.side > 0 ? "start" : "end" }); t.textContent = n.label; g.appendChild(t);
     $("#g-node").appendChild(g); nodeEls[n.id] = g;
     g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); select(n.id); } });
@@ -541,6 +613,17 @@ const Map_ = !HAS_MAP ? { select() {}, resize() {}, fit() {}, get selected() { r
     g.addEventListener("pointerleave", () => tip.hidden = true);
   });
   D.clusters.forEach(c => { const b = el("button", { class: "chip k" + c.color, type: "button", title: c.desc }, `<span class="sw"></span>${c.name}`); b.addEventListener("click", () => zoomToCluster(c.id)); $("#legend").appendChild(b); });
+  if (C) {  // filters: dim what doesn't match; shape = mode, size = weight
+    const F = { mode: new Set(), weight: new Set() }, box = $("#map-filters");
+    const grp = (key, label, items) => { const g = el("div", { class: "grp" }, `<span class="lbl">${label}</span>`);
+      items.forEach(([v, html]) => { const b = el("button", { class: "chip", type: "button", "aria-pressed": "false" }, html);
+        b.addEventListener("click", () => { F[key].has(v) ? F[key].delete(v) : F[key].add(v); b.setAttribute("aria-pressed", String(F[key].has(v))); filt(); }); g.appendChild(b); });
+      box.appendChild(g); };
+    grp("mode", "Show", [["apply", '<span class="shape apply"></span>practise'], ["understand", '<span class="shape understand"></span>understand'], ["recall", '<span class="shape recall"></span>cram']]);
+    grp("weight", "Weight", [["high", "high"], ["med", "med"], ["low", "low"]]);
+    box.hidden = false;
+    function filt() { Object.values(nodeEls).forEach(g => { if (!g.dataset.mode) return; const ok = (!F.mode.size || F.mode.has(g.dataset.mode)) && (!F.weight.size || F.weight.has(g.dataset.weight)); g.classList.toggle("dim", !ok); }); }
+  }
   function apply() {
     vp.setAttribute("transform", `translate(${T.x.toFixed(2)},${T.y.toFixed(2)}) scale(${T.k.toFixed(4)})`);
     svg.dataset.z = T.k < 0.4 ? "0" : T.k < 0.64 ? "1" : T.k < 0.9 ? "2" : "3";
@@ -626,11 +709,17 @@ function Panel(id) {
   p.className = "panel " + kc(n.c);
   const links = ADJ[id].map(a => { const o = NODE[a.id]; return `<li class="${kc(o.c)}"><span class="sw"></span><span><button class="linkbtn" type="button" data-go="map|${o.id}">${o.title}</button> <span class="why">· ${why(n, a)}</span></span></li>`; }).join("");
   const qs = n.refs.map(r => { const q = SET[r.s].qs[r.n - 1]; return `<details><summary><span class="where">${refLabel(r)}</span>${q.q}</summary><div class="ans">Answer: <b>${q.opts[q.ans]}</b> <button class="linkbtn" type="button" data-go="${refAttr(r)}">open</button></div></details>`; }).join("");
-  p.innerHTML = `<div class="p-eyebrow"><span class="sw"></span>${CL[n.c].kicker ? CL[n.c].kicker + " · " : ""}${CL[n.c].name}</div><h2>${n.title}</h2>
-    <ul class="facts">${n.facts.map(f => `<li>${f.h}${f.tags.map(tagChip).join("")}</li>`).join("")}</ul>
+  const X = C && C.nodes[id];
+  const srcs = X ? X.srcs : [];
+  const tags = X ? `<div class="p-tags">${modeTag(X.mode)}<span class="tag">${X.weight} weight</span></div>` : "";
+  const pq = X && X.topic ? topicQs(X.topic) : [];
+  p.innerHTML = `<div class="p-eyebrow"><span class="sw"></span>${CL[n.c].kicker ? CL[n.c].kicker + " · " : ""}${CL[n.c].name}</div><h2>${n.title}</h2>${tags}
+    <ul class="facts">${n.facts.map((f, i) => `<li${srcs[i] && srcs[i].length ? ` title="${esc("Source: " + srcs[i].join("; "))}"` : ""}>${f.h}${f.tags.map(tagChip).join("")}</li>`).join("")}</ul>
+    ${X && X.lesson ? `<div class="panel-actions"><button class="btn" type="button" data-go="learn|${id}">Open the lesson</button></div>` : ""}
+    ${pq.length ? `<div class="sect"><div class="sect-h">Past questions on this (${pq.length})</div>${pq.map(pastQ).join("")}</div>` : ""}
     ${links ? `<div class="sect"><div class="sect-h">Linked ideas (${ADJ[id].length})</div><ul class="links">${links}</ul></div>` : ""}
     ${qs ? `<div class="sect"><div class="sect-h">Questions on this (${n.refs.length})</div><div class="qlist">${qs}</div></div>` : ""}
-    <div class="panel-actions"><button class="btn" type="button" data-go="atlas|${id}">Open in the atlas</button></div>`;
+    ${C ? "" : `<div class="panel-actions"><button class="btn" type="button" data-go="atlas|${id}">Open in the atlas</button></div>`}`;
 }
 
 const Atlas = (() => {
@@ -755,22 +844,15 @@ const Plan = (() => {
   const P = D.plan;
   if (!P) return { build() {} };
   const T = P.topics, QD = P.questions;
-  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const pct = x => (x >= 0.095 || x === 0) ? Math.round(x * 100) + "%" : (x * 100).toFixed(1) + "%";
   const num = x => String(Math.round(x * 10) / 10);
-  const MODE = { apply: "practise", understand: "understand", recall: "cram" };
-  const modeTag = id => { const m = T[id].mode; return m ? `<span class="tag ${m}">${MODE[m]}</span>` : `<span class="tag slides">slides only</span>`; };
+  const tModeTag = id => modeTag(T[id].mode);
   const sw = id => `<span class="sw k${T[id].color}" aria-hidden="true"></span>`;
   const COLS = `<colgroup><col class="cn"><col class="ct"><col><col class="cv"></colgroup>`;
   let cur = store.get("plan-exam", P.default_exam), all = false, built = false;
   if (!P.exams.some(e => e.name === cur)) cur = P.default_exam;
   const tip = el("div", { class: "tooltip ptip", role: "tooltip" }); tip.hidden = true; document.body.appendChild(tip);
-  function qItem(id) {
-    const q = QD[id]; if (!q) return "";
-    const ans = q.answer ? `<div class="pq-ans"><div class="sect-h">${q.hints ? "Hints" : "Answer (key)"}</div>${q.answer}</div>`
-                         : `<p class="muted">No answer in the key yet: worked solutions come in M4.</p>`;
-    return `<details class="pq"><summary><span class="where">${esc(q.label)}</span> ${esc(q.type)} · ${MODE[q.mode]}</summary><div class="pq-body">${q.text}${ans}${q.caveat ? `<p class="caveat"><b>Careful:</b> ${q.caveat}</p>` : ""}</div></details>`;
-  }
+  const qItem = pastQ;
   function showTip(tr, x, y) {
     const E = P.exams.find(e => e.name === cur), t = E.topics.find(t => t.id === tr.dataset.t), info = T[t.id];
     tip.textContent = "";
@@ -810,7 +892,7 @@ const Plan = (() => {
     // the order: topics until 80% of the share, then the rest in one line
     let run = 0; const first = [], rest = [];
     for (const t of rows) { if (run < 0.8) { first.push(t); run += t.share; } else rest.push(t); }
-    $("#plan-order").innerHTML = first.map(t => { const qs = t.questions.concat(t.samples); return `<li><details><summary><b>${esc(T[t.id].label)}</b> ${modeTag(t.id)} <span class="meta">${pct(t.share)}${RT ? ` · ≈${num(t.share * RT)} marks` : ""}${qs.length ? ` · asked ${qs.length}×` : ""}</span></summary>${qs.length ? qs.map(qItem).join("") : `<p class="muted">Not asked in the papers yet; it's here because of the slides.</p>`}</details></li>`; }).join("");
+    $("#plan-order").innerHTML = first.map(t => { const qs = t.questions.concat(t.samples); return `<li><details><summary><b>${esc(T[t.id].label)}</b> ${tModeTag(t.id)} <span class="meta">${pct(t.share)}${RT ? ` · ≈${num(t.share * RT)} marks` : ""}${qs.length ? ` · asked ${qs.length}×` : ""}</span></summary>${qs.length ? qs.map(qItem).join("") : `<p class="muted">Not asked in the papers yet; it's here because of the slides.</p>`}</details></li>`; }).join("");
     $("#plan-later").textContent = rest.length ? "Then, if time allows: " + rest.map(t => T[t.id].label).join(" · ") + "." : "";
     // practise / understand / cram
     const groups = { apply: [], understand: [], recall: [], none: [] };
@@ -849,6 +931,74 @@ const Plan = (() => {
     bars.addEventListener("focusout", () => tip.hidden = true);
     window.addEventListener("scroll", () => tip.hidden = true, { passive: true });
     render();
+  }
+  return { build };
+})();
+
+// learn: one lesson per node, built on first visit
+const Learn = (() => {
+  if (!C) return { build() {}, reveal() {} };
+  let built = false, mode = store.get("learn-mode", "");
+  const cards = {};
+  function build() {
+    if (built) return; built = true;
+    const list = $("#learn-list"), toc = $("#learn-toc");
+    D.clusters.forEach(c => {
+      const ids = C.order.filter(id => C.nodes[id].cluster === c.id);
+      if (!ids.length) return;
+      const sec = el("section", { class: "csec k" + c.color, id: "lsec-" + c.id }, `<div class="csec-h"><h2>${esc(c.name)}</h2><span class="d">${[c.kicker, ids.length + " lessons"].filter(Boolean).map(esc).join(" · ")}</span></div>`);
+      toc.appendChild(el("div", { class: "tc k" + c.color }, esc(c.name)));
+      ids.forEach(id => {
+        const n = NODE[id], X = C.nodes[id], pq = X.topic ? topicQs(X.topic) : [];
+        const links = (ADJ[id] || []).map(a => `<button class="lchip ${kc(NODE[a.id].c)}" type="button" data-go="learn|${a.id}"><span class="sw"></span>${esc(NODE[a.id].label)}</button>`).join("");
+        const art = el("article", { class: "lesson " + kc(n.c), id: "lesson-" + id, "data-mode": X.mode });
+        art.innerHTML = `<div class="lesson-h"><span class="sw"></span><h3>${n.title}</h3>${modeTag(X.mode)}<span class="tag">${X.weight} weight</span></div>
+          <ul class="facts">${X.facts.map((f, i) => `<li${X.srcs[i].length ? ` title="${esc("Source: " + X.srcs[i].join("; "))}"` : ""}>${f}</li>`).join("")}</ul>
+          ${X.lesson}
+          ${pq.length ? `<div class="sec"><h4>Past questions (${pq.length})</h4>${pq.map(pastQ).join("")}</div>` : ""}
+          <div class="links-row">${links ? `<span class="lbl" style="color:var(--muted);font-weight:600;font-size:12px;letter-spacing:.05em;text-transform:uppercase">Linked</span>${links}` : ""}<button class="linkbtn" type="button" data-go="map|${id}">Show on the map</button></div>`;
+        art.querySelectorAll("ol.steps").forEach(ol => { [...ol.children].forEach((li, i) => li.hidden = i > 0); });
+        sec.appendChild(art); cards[id] = art;
+        toc.appendChild(el("a", { href: "#", "data-go": "learn|" + id }, esc(n.label)));
+      });
+      list.appendChild(sec);
+    });
+    list.addEventListener("click", ev => {
+      const b = ev.target.closest("[data-step]"); if (!b) return;
+      const ol = b.closest(".sec").querySelector("ol.steps"), lis = [...ol.children];
+      if (b.dataset.step === "all") lis.forEach(li => li.hidden = false);
+      else { const nx = lis.find(li => li.hidden); if (nx) nx.hidden = false; }
+      if (!lis.some(li => li.hidden)) b.closest(".steps-ctl").hidden = true;
+    });
+    const seg = $("#learn-mode");
+    [["", "All"], ["apply", "Practise"], ["understand", "Understand"], ["recall", "Cram"]].forEach(([m, l]) => {
+      const b = el("button", { type: "button", "aria-pressed": String(m === mode), "data-m": m }, l);
+      b.addEventListener("click", () => { mode = m; store.set("learn-mode", m); apply(); }); seg.appendChild(b); });
+    apply();
+  }
+  function apply() {
+    $$("#learn-mode button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.m === mode)));
+    Object.values(cards).forEach(a => a.hidden = !!mode && a.dataset.mode !== mode);
+    $$("#learn-list .csec").forEach(s => s.hidden = ![...s.querySelectorAll(".lesson")].some(a => !a.hidden));
+  }
+  function reveal(id) {
+    build(); const a = cards[id]; if (!a) return;
+    if (a.hidden) { mode = ""; apply(); }
+    requestAnimationFrame(() => { a.scrollIntoView({ block: "start", behavior: reduceMotion ? "auto" : "smooth" }); a.classList.remove("flash"); void a.offsetWidth; a.classList.add("flash"); });
+  }
+  return { build, reveal };
+})();
+
+// cheat sheet: the same document as cheatsheet.pdf, printable from the browser
+const Cheat = (() => {
+  const H = D.cheat;
+  if (!H) return { build() {} };
+  let built = false;
+  function build() {
+    if (built) return; built = true;
+    $("#cheat-lede").textContent = H.lede;
+    const f = $("#cheat-frame"); f.srcdoc = H.doc;
+    $("#cheat-print").addEventListener("click", () => { try { f.contentWindow.focus(); f.contentWindow.print(); } catch (e) { const w = window.open("", "_blank"); if (w) { w.document.write(H.doc); w.document.close(); w.print(); } } });
   }
   return { build };
 })();

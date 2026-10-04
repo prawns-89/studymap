@@ -6,6 +6,47 @@ Choices the brief left open (BRIEF section 13), with the reason for each. Newest
 
 - **Optional 3D map view (three.js).** The 2D map stays the default, as the brief requires. An "Explore in 3D" toggle on the Map tab shows the same clusters, colours and click-to-open panel in 3D. three.js (MIT) is bundled into the page, adding about 0.7 MB toward the 8 MB budget, so it works offline and needs no CDN. It is scheduled for M6 unless it's moved earlier.
 
+## M3 and M5: content, the Learn tab and the cheat sheet
+
+### Content format (documented in `FORMAT.md`)
+
+- **Markdown per cluster**, not the reference kit's line DSL. The brief allowed either. Markdown won because the new model needs multi-line bodies (steps, worked solutions, code, tables) that the one-fact-per-line DSL cannot hold, and because you can edit it in any editor with highlighting. The reference DSL still builds (`map.txt` content keeps working), so nothing was lost.
+- **Node ids are topic ids.** A node called `mlfq` inherits that topic's mode, weight and past questions from the analysis automatically. A topic can be split into several nodes with `topic=<id>`.
+- **Mode and weight are inherited, not written by hand.** `weight` comes from `weightage.json`; `mode` comes from how the papers ask. Either can be overridden per node. A node whose topic was never asked must state its own mode, and `validate` says so.
+- **Sections are a fixed vocabulary** (`Steps`, `Worked example`, `Variant`, `Where marks are lost`, `Core idea`, `Why it works`, `Misconceptions`, `What changes if`, `Explain it back`, `Formulas`, `Lookalikes`, `Code`, `Trace`, `Write it`, `Links`), so the renderer and the cheat sheet know what each block is. An unknown heading is an error, not silently kept.
+- **Every fact cites a source** with `{src: ref}`, and the ref is checked against the ingested corpus: a page that does not exist is an error. Facts without a source are a warning (the brief's lint).
+- **Apply nodes** must have a worked example, a variant and a "where marks are lost"; missing ones are warnings, listed per node.
+- **Validation** reports `file:line: message` for every problem, including the layout-breaking case where a cluster's only node is the map centre.
+
+### Learn tab and map badges
+
+- **Shape is mode, size is weight, colour is cluster:** squares for practise, circles for understand, diamonds for cram. Shape rather than colour because colour is already spent on clusters, and shape survives colour blindness.
+- **Map filters** dim what does not match instead of removing it, so the layout never moves under you.
+- **Learn** builds one lesson per node on first visit: facts with their sources on hover, then the sections. Steps reveal one at a time; worked solutions, model answers and "what changes if" answers stay hidden until opened. Past paper questions on the node's topic are attached automatically, with the key's answer.
+- **The Atlas tab is hidden** when Markdown content is present: Learn supersedes it.
+
+### Cheat sheet
+
+Rebuilt after you showed me your MATH F432 sheet as the standard. The first version was a flat list of facts; this one copies that sheet's structure, because the structure is what makes it usable in an exam.
+
+- **Labelled blocks, not a list.** Every piece is tagged with what it is for: `KEY FORMULAS`, `HOW TO SOLVE`, `DIAGRAM`, `PAST PAPER`, `WORKED EXAMPLE`, `TRAP`, `LOOKALIKES`, `NOT`, `WHAT CHANGES IF`, `WHY IT WORKS`, `DERIVATION`, `EXPLAIN IT BACK`. A legend at the top says what each one means.
+- **`WHAT TO EXPECT IN THE EXAM`** opens every cluster and is generated, not written: the real past questions on that cluster with their marks and type, plus the recurring patterns that cite them, each with one line on why that kind of knowing is needed.
+- **Front and back matter** come from the optional `content/sheet.md`: `How to think` (the decision procedure), `Master table` (question wording → method → formula), `Sanity checks`, `Notation decoder`. They are authored per course, because choosing a method is judgement, not arithmetic.
+- **Contents with real page numbers.** Rendered twice: the first pass is measured to find which page each section starts on, the second prints those numbers. Sections are located by their white-on-black heading spans, so the contents listing can't be mistaken for the headings it lists.
+- **Running header** on every page (course and `page N of M`), via Chromium's header template. Per-page "on this page: X → Y" like your MATH sheet is not possible with Chrome's print pipeline, which only exposes page numbers; the contents list covers the same need.
+- **Diagrams.** A new `### Diagram` section holds ASCII pictures (Gantt charts, address splits, process trees, buddy splits). They cannot wrap, so each is auto-sized to its longest line, and one too wide for a 47 mm column is promoted to a full-width band after its cluster so it stays legible.
+- **`CONCEPT Q` blocks.** A `### Conceptual questions` section (`- question :: answer`) carries the short conceptual probes this course rewards. It scores just below HOW TO SOLVE, so it survives a squeeze, and renders as answer-hiding cards in the Learn tab.
+- **Repeated sections render.** A node may now have two `Conceptual questions` or two `Worked example` sections; the sheet renders each in file order. Before, only the first was used and the rest were silently dropped, which lost a whole authoring pass before it was noticed.
+- **The 6 pt floor is a setting, not a rule.** The brief's acceptance criterion says a minimum font of 6 pt. You asked for 4 pt if it buys depth, so `MIN_PT` is now 4.0, the default floor is 4.5, and `--min-pt` sets it per run. The OS sheet currently sits at 5.4 pt with nothing dropped. This is a deliberate, requested deviation from section 12.5.
+- **Fitting is legibility-aware.** The brief says search 8 pt down to 6 pt, then drop. The search now also grows past 8 pt when the budget has room (4-up printing halves the apparent size), and `--min-pt` sets the floor: at the floor, blocks are dropped by priority rather than shrunk further. The default floor is 6 pt, matching your own 8-page 6.2 pt sheet, so nothing is dropped.
+- **QA distinguishes body text from labels.** The modal span size is the body text and must meet the floor; inline labels may be smaller but never below 4.4 pt. Two bugs this caught, both real: `white-space: pre` on code made the page wider than A4, so Chrome silently shrank everything to two-thirds size; and `break-inside: avoid` on a block taller than a column made Chrome drop the overflow. The clipping check compares letters only, because PDF extraction reorders list markers.
+
+- **One source, two outputs.** The same HTML document is embedded in the site's Cheat sheet tab (with a print button) and rendered to `cheatsheet.pdf` by headless Chromium. Before `studymap cheatsheet` runs, the tab shows a 7.5 pt draft.
+- **Item priority** follows the brief: formulas, compressed steps, high-weight facts, lookalikes, pitfalls, short worked examples, short code, then the remaining facts. Each item is scored by its kind times its node's weight, so low-weight material is dropped first.
+- **`cheatsheet-4up.pdf`** is generated beside it: 4 pages per side, so an 8-page budget lands on one A4 sheet, both sides, which is what the OS and CA exams allow.
+- **Typography**: a condensed sans (DejaVu Sans Condensed, Liberation Sans Narrow, Nimbus Sans Narrow), 4 columns, 6 mm margins, boxed formulas, black cluster bars, `break-inside: avoid` on items and `break-after: avoid` on headings so nothing is orphaned.
+- **QA on the finished PDF**: page count within budget, smallest font at least 6 pt, and every kept item's rendered text found in the PDF's extracted text (the clipping check). Problems are printed and listed in `report.md`.
+
 ## M2: papers
 
 ### Analysis files

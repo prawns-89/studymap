@@ -29,12 +29,13 @@ class BuildResult:
 
 
 def resolve_content(course: Path, content: Path | None = None) -> Path:
-    """The content folder: --content, else <course>/_studymap/content, else the course folder itself
-    when it directly holds a map.txt (a bare content folder, like the reference examples)."""
+    """The content folder: --content, else <course>/_studymap/content (Markdown per cluster, or the reference
+    kit's map.txt), else the course folder itself when it directly holds a map.txt (the reference examples)."""
+    from ..content import is_markdown_content
     if content is not None:
         return content
     inside = course / OUT_DIR / "content"
-    if (inside / "map.txt").exists():
+    if (inside / "map.txt").exists() or is_markdown_content(inside):
         return inside
     if (course / "map.txt").exists():
         return course
@@ -43,11 +44,42 @@ def resolve_content(course: Path, content: Path | None = None) -> Path:
 
 
 def load_valid(course: Path, content: Path | None = None) -> dsl.Content:
+    """The reference kit's line format (map.txt)."""
     cdir = resolve_content(course, content)
     c = dsl.load(cdir, display_path(cdir))
     if c.issues:
         raise ContentError(c.issues)
     return c
+
+
+def load_markdown(course: Path, cdir: Path, analysis=None, weightage: dict | None = None):
+    """The Markdown content model (FORMAT.md), validated against the analysis and corpus. Raises on errors."""
+    from ..analysis.corpus import Corpus
+    from ..content import load, validate
+    cc = load(cdir)
+    cdir_corpus = course / OUT_DIR / "corpus"
+    validate(cc, analysis, weightage, corpus=Corpus(cdir_corpus) if (cdir_corpus / "index.json").exists() else None)
+    if cc.errors:
+        raise ContentError(cc.errors)
+    return cc
+
+
+def cheat_embed(course: Path, cfg, cc, title: str, analysis=None) -> dict:
+    """The cheat sheet for the site's tab: the fitted document if `studymap cheatsheet` has run, else a 7.5 pt draft."""
+    import json
+    from ..cheatsheet import collect, document
+    out = course / OUT_DIR
+    fitted, info = out / "cheatsheet.html", out / "cheatsheet.json"
+    if fitted.exists() and info.exists():
+        j = json.loads(info.read_text(encoding="utf-8"))
+        lede = (f"{j['pages']} of {j['budget']} A4 pages at {j['font_pt']:g} pt, {cfg.cheatsheet.columns} columns, "
+                f"{j['kept']} items" + (f", {len(j['dropped'])} left out (listed in report.md)" if j["dropped"] else "")
+                + ". It prints as is; the 4-up file puts it on one sheet.")
+        return dict(doc=fitted.read_text(encoding="utf-8"), lede=lede)
+    parts = collect(cc, analysis)
+    n = sum(len(g) for p in parts for _, g in p.groups)
+    return dict(doc=document(parts, set(range(n)), 7.5, title, cfg.cheatsheet.columns, None),
+                lede="Draft at 7.5 pt: run `studymap cheatsheet` to fit it to the page budget and write cheatsheet.pdf.")
 
 
 def build(course: Path, content: Path | None = None, out: Path | None = None) -> BuildResult:
@@ -66,12 +98,27 @@ def build(course: Path, content: Path | None = None, out: Path | None = None) ->
         has_content = False
     files: list[Path] = []
     stats = None
+    title = " ".join(x for x in (cfg.code, cfg.name) if x) or course.resolve().name
     if has_content:
-        c = load_valid(course, content)
-        data, stats = build_data(c)
-        files = c.files
+        from ..content import is_markdown_content
+        from .lessons import content_data, to_map
+        cdir = resolve_content(course, content)
+        if is_markdown_content(cdir):
+            cc = load_markdown(course, cdir, rep.analysis if rep.analysis.present else None, rep.weightage)
+            data, stats = build_data(to_map(cc, title, "Study map"))
+            extra = content_data(cc)
+            for nd in data["nodes"]:      # facts keep `code` formatting (the reference md() has none)
+                nd["facts"] = [dict(h=h, tags=[]) for h in extra["nodes"][nd["id"]]["facts"]]
+            data["content"] = extra
+            data["cheat"] = cheat_embed(course, cfg, cc, data["cfg"]["title"],
+                                        rep.analysis if rep.analysis.present else None)
+            files = cc.files
+        else:
+            c = load_valid(course, content)
+            data, stats = build_data(c)
+            files = c.files
     else:
-        data = empty_data(" ".join(x for x in (cfg.code, cfg.name) if x) or course.resolve().name, "Exam plan")
+        data = empty_data(title, "Exam plan")
     if rep.weightage is not None:
         a = rep.analysis
         data["plan"] = plan_data(cfg, rep.weightage, a.topics, a.papers)

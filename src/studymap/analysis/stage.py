@@ -31,7 +31,9 @@ def run_report(course: Path, cfg: CourseConfig) -> ReportResult:
     res.weightage = w
     res.report = out / "report.md"
     res.written += write_if_changed(a.dir / "weightage.json", json.dumps(w, indent=1, ensure_ascii=False) + "\n")
-    res.written += write_if_changed(res.report, render(cfg, w, a.topics, a.papers, a.corpus.index))
+    ch = out / "cheatsheet.json"
+    cheat = json.loads(ch.read_text(encoding="utf-8")) if ch.exists() else None
+    res.written += write_if_changed(res.report, render(cfg, w, a.topics, a.papers, a.corpus.index, cheat))
     mp = out / "state.json"
     man = Manifest.load(mp)
     man.begin("report")

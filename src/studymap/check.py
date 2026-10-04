@@ -16,7 +16,7 @@ VIEWPORTS = [("desktop", 1440, 900, "light"), ("desktop-dark", 1440, 900, "dark"
              ("phone", 390, 844, "light"), ("phone-dark", 390, 844, "dark")]
 LOCAL = ("file:", "data:", "blob:", "about:")
 NEAREST = """() => { const s = document.getElementById('stage').getBoundingClientRect(); let best = null, bd = 1e9;
-  for (const c of document.querySelectorAll('#g-node .node circle')) { const r = c.getBoundingClientRect();
+  for (const c of document.querySelectorAll('#g-node .node .dot')) { const r = c.getBoundingClientRect();
     const d = Math.hypot(r.x + r.width / 2 - s.x - s.width / 2, r.y + r.height / 2 - s.y - s.height / 2);
     if (d < bd) { bd = d; best = [r.x + r.width / 2, r.y + r.height / 2]; } } return best; }"""
 
